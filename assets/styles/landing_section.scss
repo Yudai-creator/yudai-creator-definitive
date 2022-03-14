@@ -1,0 +1,52 @@
+// HERO SECTION STYLES
+
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+
+    .logo {
+        max-width: 3em;
+        max-height: 3em;
+        cursor: pointer;
+    }
+
+    .fries_menu {
+        cursor: pointer;
+    }
+
+
+
+    .blob-right-corner {
+        position: absolute;
+        top: -150px;
+        left: 60%;
+        max-width: 20em;
+
+        z-index: -1;
+    }
+
+    .blob-stroke{
+        position: absolute;
+        max-width: 5em;
+
+        z-index: -1;
+    }
+
+    .blob-right-corner-shadow {
+        position: absolute;
+        top: -158px;
+        left: 52%;
+        max-width: 22em;
+
+        z-index: -2;
+    }
+
+
+}
