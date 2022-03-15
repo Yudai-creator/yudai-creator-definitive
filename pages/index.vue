@@ -8,7 +8,8 @@
       </figure>
 
       
-      <svg class="fries_menu" xmlns="http://www.w3.org/2000/svg" width="39" height="17" viewBox="0 0 39 17">
+      <div class="wrapper">
+        <svg class="fries_menu" xmlns="http://www.w3.org/2000/svg" width="39" height="17" viewBox="0 0 39 17">
         <g id="fries_menu" data-name="fries menu" transform="translate(-3362 30)">
           <rect id="Rectángulo_101" data-name="Rectángulo 101" width="39" height="3" rx="1.5" transform="translate(3362 -16)" fill="#00a1ff"/>
           <rect id="Rectángulo_148" data-name="Rectángulo 148" width="27" height="3" rx="1.5" transform="translate(3374 -23)" fill="#00a1ff"/>
@@ -20,11 +21,20 @@
       
       <img class="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape">
       <img class="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
+      <img class="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
       <img class="blob-right-corner-shadow" src="~/static/landing_assets/blob shape right corner shadow.svg" alt="blob_shape">
-      
-      
-
+      </div>
     </header> 
+    <div class="hero_text-headline">
+      <h2><span>Designers</span> visualize solutions.</h2>
+      <h2><span>Developers</span> turn them into reality.</h2>
+
+      <p>I do both!</p>
+    </div>
+
+    <div class="hero_cta-button">
+      <a class="cta-button" href="#">See my work</a>
+    </div>
   </div>
   
 </template>
@@ -61,28 +71,34 @@ export default {
   padding: 0;
 }
 
-body {
-    background-color: $bg-color;
-    overflow-x: hidden;
+html{
+  overflow-x: hidden;
 }
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: $bg-color;
+    color: $text-color;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    // scrollbar-width: none;
+    // -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    
+}
+
+// body::-webkit-scrollbar{
+//   display: none;
+// }
 
 
 
 @media (max-width: 480px){
   
-    .anim{
-      font-size: 1.2rem;
-      padding: 0;
-    }
-
-  .brand-wrapper{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    left: 20%;
-    top: 20%;
-  }
+  
 }
 
 </style>
