@@ -42,15 +42,19 @@
     </div>
 
     <div class="hero_cta-button">
-      <a class="cta-button" href="#">See my work</a>
+      <ButtonPrimary/>
     </div>
   </div>
   
 </template>
 
 <script>
+import ButtonPrimary from '../components/ButtonPrimary.vue'
 import {gsap} from "gsap" 
 export default {
+  components: {
+    ButtonPrimary
+  },
   mounted(){
     const {intro, yudai, warning, texts, brand, social, building} = this.$refs
 
