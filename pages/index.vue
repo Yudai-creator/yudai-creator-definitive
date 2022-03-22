@@ -19,17 +19,26 @@
       
 
       
-      <img class="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape">
-      <img class="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
-      <img class="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
-      <img class="blob-right-corner-shadow" src="~/static/landing_assets/blob shape right corner shadow.svg" alt="blob_shape">
+      <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape">
+      <img id="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
+      <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
+      <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross">
+      <img id="blob-right-corner-shadow" src="~/static/landing_assets/blob shape right corner shadow.svg" alt="blob_shape">
       </div>
     </header> 
+
     <div class="hero_text-headline">
       <h2><span>Designers</span> visualize solutions.</h2>
       <h2><span>Developers</span> turn them into reality.</h2>
 
       <p>I do both!</p>
+
+      <img id="blob-text-shadow" src="~/static/landing_assets/blob shape text shadow.svg" alt="blob_shadow">
+
+      <img id="blue_cross3" src="~/static/landing_assets/blue cross.svg" alt="cross">
+      <img id="blue_cross4" src="~/static/landing_assets/blue cross2.svg" alt="cross">
+
+      <img id="dots" src="~/static/landing_assets/dots compound 1.svg" alt="dots">
     </div>
 
     <div class="hero_cta-button">

@@ -27,7 +27,7 @@ header {
 
 
 
-        .blob-right-corner {
+        #blob-right-corner {
             position: absolute;
             top: -155px;
             left: -140px;
@@ -36,7 +36,7 @@ header {
             z-index: -1;
         }
 
-        .blob-stroke {
+        #blob-stroke {
             position: absolute;
             max-width: 17em;
             left: -150px;
@@ -45,13 +45,19 @@ header {
             z-index: -1;
         }
 
-        .blue_cross {
+        #blue_cross {
             position: absolute;
             left: -140px;
             max-width: 1em;
         }
 
-        .blob-right-corner-shadow {
+        #blue_cross2{
+            position: absolute;
+            top: 100px;
+            max-width: 1em;
+        }
+
+        #blob-right-corner-shadow {
             position: absolute;
             top: -165px;
             left: -170px;
@@ -64,6 +70,7 @@ header {
 
 .hero_text-headline {
     position: relative;
+    top: 2em;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -75,11 +82,38 @@ header {
     padding: 2rem;
 
     h2{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     span {
         color: $cta-color;
+    }
+
+    #blob-text-shadow{
+        max-width: 10em;
+        position: absolute;
+    }
+
+    #blue_cross3{
+        position: absolute;
+        max-width: 1em;
+        right: 30px;
+    }
+
+    #blue_cross4{
+        position: absolute;
+        left: 30px;
+        top: 100%;
+        max-width: 1em;
+    }
+
+    #dots{
+        position: absolute;
+        max-width: 2.5em;
+        left: 25px;
+        top: 10px;
+
+        z-index: -1;
     }
 }
 
@@ -87,6 +121,8 @@ header {
     padding: 2rem;
     display: flex;
     justify-content: center;
+
+    margin-top: 2rem;
 
     .cta-button {
         padding: 1.2rem;
