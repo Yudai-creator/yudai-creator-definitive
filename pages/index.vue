@@ -42,7 +42,7 @@
     </div>
 
     <div class="hero_cta-button">
-      <ButtonPrimary/>
+      <ButtonPrimary textContent="See my work"/>
     </div>
   </div>
   

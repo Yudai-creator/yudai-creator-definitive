@@ -1,17 +1,22 @@
 <template name="ButtonPrimary">
     <div>
-        <a class="cta-button" href="#">See my work</a>
+        <a class="cta-button" href="#">{{textContent}}</a>
     </div>
 </template>
 <script>
 // JS
 export default  {
-    
+    props:{
+        textContent: String,
+
+    }
 }
 </script>
 <style lang="scss" scoped>
 /* CSS */
 @use '~/assets/variables' as *;
+
+
 .cta-button {
         padding: 1.2rem;
         background-color: $cta-color;
