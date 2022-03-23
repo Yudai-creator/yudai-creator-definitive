@@ -14,7 +14,7 @@ header {
 
     .logo {
         max-width: 3em;
-        max-height: 3em;
+        
         cursor: pointer;
     }
 
@@ -109,8 +109,8 @@ header {
 
     #dots{
         position: absolute;
-        max-width: 2.5em;
-        left: 25px;
+        max-width: 2em;
+        left: 40px;
         top: 10px;
 
         z-index: -1;
