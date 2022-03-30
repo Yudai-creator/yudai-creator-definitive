@@ -48,8 +48,12 @@
     </div>
 
     <!--About me section-->
+    <div class="about_blobs">
+      <img id="blob-left-corner" src="~/static/about-me_assets/blob-shape-left-corner.svg" alt="blob_shape">
+      <img id="blob-left-corner-shadow" src="~/static/about-me_assets/blob-shape-left-corner-shadow.svg" alt="blob_shape">
+    </div>
     <div class="about_section">
-      <img class="about_profile-picture" src="~/static/imgs/yudai-pfp.png" alt="profile-pic">
+      <img class="about_profile-picture" src="~/static/imgs/yudai-pfp-shadow.png" alt="profile-pic">
       <div class="about_text">
         <p class="about_text">
           Hello dear visitant, Yudai here🖐
