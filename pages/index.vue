@@ -77,11 +77,27 @@
     <!-- Social media spot -->
     <div class="social-media_section">
       <img id="wave-top" src="~/static/social-media_assets/waves-top.png" alt="waves">
-      <div class="social-media_spot-twitter">
-        <h2>I share my everyday learnings and achievements</h2>
-        <div class="spot-twitter_banner">
+      <div class="social-media_twitter-spot">
+        <h2>I share my everyday learnings and achievements in my social media accounts.</h2>
+        <div class="twitter-spot_info">
           <img id="twitter-banner" src="~/static/social-media_assets/BANNER TWITTER.png" alt="banner">
+          <div class="twitter-spot_feed">
+            <ul>
+              <li>
+                UI/UX guides for beginners
+              </li>
+              <li>
+                Frontend developer roadmap
+              </li>
+            </ul>
+          </div>
+          <div class="twitter-spot_cta">
+            <svg id="twitter-logo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 23.333 20.333">
+              <path d="M22.936,9.086c.015.223.015.445.015.666,0,6.783-4.812,14.6-13.607,14.6A12.855,12.855,0,0,1,2,22.048a9.322,9.322,0,0,0,1.155.064,9.176,9.176,0,0,0,5.938-2.192A4.847,4.847,0,0,1,4.62,16.361a5.686,5.686,0,0,0,.9.079,4.763,4.763,0,0,0,1.26-.175A5.053,5.053,0,0,1,2.949,11.23v-.064a4.581,4.581,0,0,0,2.161.651A5.23,5.23,0,0,1,2.977,7.545a5.376,5.376,0,0,1,.651-2.588,13.322,13.322,0,0,0,9.862,5.369,6.239,6.239,0,0,1-.119-1.176,4.964,4.964,0,0,1,4.783-5.131,4.625,4.625,0,0,1,3.494,1.62A9.067,9.067,0,0,0,24.683,4.4a5.073,5.073,0,0,1-2.1,2.828,9.078,9.078,0,0,0,2.753-.795A10.705,10.705,0,0,1,22.936,9.086Z" transform="translate(-2 -4.019)" fill="#25c1e9"/>
+            </svg>
+          </div>  
         </div>
+        <p>With more than 1k connections. Would you join me?</p>
       </div>
       <!-- <svg id="wave-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 377.25 92.606">
         <path d="M309.867,72.961C285.034,56.668,258.976,24.6,233.845,11.449c-25.861-13.563-52.834-12.773-78.735.305-18.183,9.175-35.839,24.3-54.073,32.743C67.155,60,32.213,52.134,0,21.743v72.47H377.25V75.284C355.932,93.368,331.889,87.416,309.867,72.961Z" transform="translate(0 -1.607)" fill="#010713"/>

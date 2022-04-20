@@ -13,7 +13,7 @@
         width: 100%;
     }
 
-    .social-media_spot-twitter{
+    .social-media_twitter-spot{
         padding: 2rem;
 
         h2{
@@ -21,14 +21,38 @@
             text-align: center;
         }
 
-        .spot-twitter_banner{
+        p{
+            text-align: center;
+        }
+
+        .twitter-spot_info{
             background-color: $bg-color;
             border: 2px solid $secondary-color;
             padding: 2rem;
+            margin-bottom: 2rem;
             max-width: 90%;
 
             #twitter-banner{
                 width: 90%;
+            }
+
+            .twitter-spot_feed{
+                padding: 1rem;
+                font-size: .75em;
+                li{
+                    color: $secondary-color;
+                    margin-bottom: .5rem;
+                }
+            }
+            .twitter-spot_cta{
+                width: 35%;
+                border-radius: 50%;
+                border: 2px solid $secondary-color;
+                background-color: $bg-color;
+
+                #twitter-logo{
+                    width: 50%;
+                }
             }
         }
     }
