@@ -1,12 +1,14 @@
 // ABOUT ME SECTION STYLES
 
 .about_blobs {
-    width: 100%;
+    width: auto;
+    height: auto;
     position: relative;
 
     #blob-left-corner {
         position: absolute;
         max-width: 20em;
+        display: inline-block;
 
         left: -170px;
     }

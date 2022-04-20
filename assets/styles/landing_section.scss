@@ -3,6 +3,10 @@
 
 header {
     position: relative;
+    width: auto;
+
+    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,59 +18,53 @@ header {
 
 
     .logo {
-        max-width: 3em;
+        max-width: 4em;
         
         cursor: pointer;
     }
 
-
-        .fries_menu {
+    .header_hamburger-menu {
             cursor: pointer;
         }
 
 
 
-        #blob-right-corner {
-            position: absolute;
-            top: -155px;
-            left: -140px;
-            max-width: 20em;
+    #blob-right-corner {
+        width: 80%;
+        position: absolute;
+        left: 60%;
 
+        z-index: -1;
+    }
 
-            overflow: hidden;
+    #blob-stroke {
+        position: absolute;
+        max-width: 17em;
+        left: -150px;
+        top: -30px;
 
-            z-index: -1;
-        }
+        z-index: -1;
+    }
 
-        #blob-stroke {
-            position: absolute;
-            max-width: 17em;
-            left: -150px;
-            top: -30px;
+    #blue_cross {
+        position: absolute;
+        left: -140px;
+        max-width: 1em;
+    }
 
-            z-index: -1;
-        }
+    #blue_cross2{
+        position: absolute;
+        top: 100px;
+        max-width: 1em;
+    }
 
-        #blue_cross {
-            position: absolute;
-            left: -140px;
-            max-width: 1em;
-        }
-
-        #blue_cross2{
-            position: absolute;
-            top: 100px;
-            max-width: 1em;
-        }
-
-        #blob-right-corner-shadow {
-            position: absolute;
-            top: -165px;
-            left: -170px;
-            max-width: 22em;
-
-            z-index: -2;
-        }
+    #blob-right-corner-shadow {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        overflow: hidden;
+        z-index: -2;
+    }
 }
 
 .hero_text-headline {
