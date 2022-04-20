@@ -8,24 +8,21 @@
           <img class="logo" src="~/static/imgs/yudai.png" alt="yudai_logo">
         </figure>
 
-        
-        <div class="wrapper">
-            <svg class="fries_menu" xmlns="http://www.w3.org/2000/svg" width="39" height="17" viewBox="0 0 39 17">
-            <g id="fries_menu" data-name="fries menu" transform="translate(-3362 30)">
-              <rect id="Rectángulo_101" data-name="Rectángulo 101" width="39" height="3" rx="1.5" transform="translate(3362 -16)" fill="#00a1ff"/>
-              <rect id="Rectángulo_148" data-name="Rectángulo 148" width="27" height="3" rx="1.5" transform="translate(3374 -23)" fill="#00a1ff"/>
-              <rect id="Rectángulo_102" data-name="Rectángulo 102" width="39" height="3" rx="1.5" transform="translate(3362 -30)" fill="#00a1ff"/>
-            </g>
-          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px">
+          <g id="surface1032491">
+            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(20.392157%,59.607846%,85.882354%);fill-opacity:1;" d="M 5 8 C 4.277344 7.988281 3.609375 8.367188 3.246094 8.992188 C 2.878906 9.613281 2.878906 10.386719 3.246094 11.007812 C 3.609375 11.632812 4.277344 12.011719 5 12 L 45 12 C 45.722656 12.011719 46.390625 11.632812 46.753906 11.007812 C 47.121094 10.386719 47.121094 9.613281 46.753906 8.992188 C 46.390625 8.367188 45.722656 7.988281 45 8 Z M 5 23 C 4.277344 22.988281 3.609375 23.367188 3.246094 23.992188 C 2.878906 24.613281 2.878906 25.386719 3.246094 26.007812 C 3.609375 26.632812 4.277344 27.011719 5 27 L 45 27 C 45.722656 27.011719 46.390625 26.632812 46.753906 26.007812 C 47.121094 25.386719 47.121094 24.613281 46.753906 23.992188 C 46.390625 23.367188 45.722656 22.988281 45 23 Z M 5 38 C 4.277344 37.988281 3.609375 38.367188 3.246094 38.992188 C 2.878906 39.613281 2.878906 40.386719 3.246094 41.007812 C 3.609375 41.632812 4.277344 42.011719 5 42 L 45 42 C 45.722656 42.011719 46.390625 41.632812 46.753906 41.007812 C 47.121094 40.386719 47.121094 39.613281 46.753906 38.992188 C 46.390625 38.367188 45.722656 37.988281 45 38 Z M 5 38 "/>
+          </g>
+        </svg>
+
           
 
           
-          <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape">
-          <img id="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
-          <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
-          <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross">
-          <img id="blob-right-corner-shadow" src="~/static/landing_assets/blob shape right corner shadow.svg" alt="blob_shape">
-        </div>
+        <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape">
+        <img id="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
+        <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
+        <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross">
+        <img id="blob-right-corner-shadow" src="~/static/landing_assets/blob shape right corner shadow.svg" alt="blob_shape">
+        
       </header> 
 
       <div class="hero_text-headline">
@@ -76,6 +73,9 @@
         </p>
       </div>
     </div>
+    <footer>
+
+    </footer>
   </div>
 
   
