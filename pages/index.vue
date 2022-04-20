@@ -18,7 +18,13 @@
  
         <!-- <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape"> -->
         <img id="blob-right-corner" src="~/static/landing_assets/blob-shape-right-corner.png" alt="blob_shape">
+        <svg id="blob-stroke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.655 208.389">
+          <path d="M5153.72-30.667s-48.06,46-47.1,76.558,62.157,32.615,70.487,45.317,67.924-3.09,83.944,61.8,141.614-28.151,141.614-28.151" transform="translate(-5105.607 31.389)" fill="none" stroke="#001d57" stroke-width="2"/>
+        </svg>
         <!-- <img id="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
+
+
+
         <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
         <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross"> -->
         <img id="blob-right-corner-shadow" src="~/static/landing_assets/blob-shape-right-corner-shadow.png" alt="blob_shape">
@@ -46,11 +52,11 @@
     </div>
 
     <!--About me section-->
-    <!-- <div class="about_blobs">
-      <img id="blob-left-corner" src="~/static/about-me_assets/blob-shape-left-corner.svg" alt="blob_shape">
-      <img id="blob-left-corner-shadow" src="~/static/about-me_assets/blob-shape-left-corner-shadow.svg" alt="blob_shape">
-    </div> -->
-    <!-- <div class="about_section">
+    <div class="about_blobs">
+      <img id="blob-left-corner" src="~/static/about-me_assets/blob-shape-left.png" alt="blob-shape">
+      <img id="blob-left-corner-shadow" src="~/static/about-me_assets/blob-shape-left-shadow.png" alt="blob-shape">
+    </div> 
+    <div class="about_section">
       <img class="about_profile-picture" src="~/static/imgs/yudai-pfp-shadow.png" alt="profile-pic">
       <div class="about_text">
         <p>
@@ -73,7 +79,8 @@
           and contribute with the society.
         </p>
       </div>
-    </div> -->
+    </div> 
+
     <!-- Social media spot -->
     <div class="social-media_section">
       <img id="wave-top" src="~/static/social-media_assets/waves-top.png" alt="waves">

@@ -39,10 +39,9 @@ header {
 
     #blob-stroke {
         position: absolute;
-        max-width: 17em;
-        left: -150px;
-        top: -30px;
-
+        width: 60%;
+        left: 55%;
+        top: .1%;
         z-index: -1;
     }
 
@@ -69,7 +68,7 @@ header {
 
 .hero_text-headline {
     position: relative;
-    top: 2em;
+    // top: 2em;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -89,7 +88,7 @@ header {
     }
 
     #blob-text-shadow{
-        max-width: 10em;
+        width: 30%;
         position: absolute;
     }
 
@@ -108,7 +107,7 @@ header {
 
     #dots{
         position: absolute;
-        max-width: 2em;
+        max-width: 3em;
         left: 40px;
         top: 10px;
 
