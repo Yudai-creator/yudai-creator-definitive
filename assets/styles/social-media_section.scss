@@ -1,10 +1,15 @@
 .social-media_section{
     width: 100%;
-    
+    position: relative;
     background-color: $primary-color;
 
 
     #wave-top{
+        width: 100%;
+    }
+
+    #wave-bottom{
+        
         width: 100%;
     }
 
@@ -26,9 +31,5 @@
                 width: 90%;
             }
         }
-    }
-
-    #wave-bottom{
-        width: 100%;
     }
 }

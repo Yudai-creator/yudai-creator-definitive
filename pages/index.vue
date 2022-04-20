@@ -17,11 +17,11 @@
         
  
         <!-- <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape"> -->
-        <!-- <img id="blob-right-corner" src="~/static/landing_assets/blob-shape-right-corner.png" alt="blob_shape"> -->
+        <img id="blob-right-corner" src="~/static/landing_assets/blob-shape-right-corner.png" alt="blob_shape">
         <!-- <img id="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
         <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
         <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross"> -->
-        <!-- <img id="blob-right-corner-shadow" src="~/static/landing_assets/blob-shape-right-corner-shadow.png" alt="blob_shape"> -->
+        <img id="blob-right-corner-shadow" src="~/static/landing_assets/blob-shape-right-corner-shadow.png" alt="blob_shape">
 
         
       </header> 
@@ -83,6 +83,9 @@
           <img id="twitter-banner" src="~/static/social-media_assets/BANNER TWITTER.png" alt="banner">
         </div>
       </div>
+      <!-- <svg id="wave-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 377.25 92.606">
+        <path d="M309.867,72.961C285.034,56.668,258.976,24.6,233.845,11.449c-25.861-13.563-52.834-12.773-78.735.305-18.183,9.175-35.839,24.3-54.073,32.743C67.155,60,32.213,52.134,0,21.743v72.47H377.25V75.284C355.932,93.368,331.889,87.416,309.867,72.961Z" transform="translate(0 -1.607)" fill="#010713"/>
+      </svg> -->
       <img id="wave-bottom" src="~/static/social-media_assets/waves-bottom.png" alt="waves">
     </div>
     <footer>
