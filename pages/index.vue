@@ -17,7 +17,7 @@
         
  
         <!-- <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape"> -->
-        <img id="blob-right-corner" src="~/static/landing_assets/blob-shape-right-corner.png" alt="blob_shape">
+        <img id="blob-right-corner" src="~/static/hero_assets/blob-shape-right-corner.png" alt="blob_shape">
         <svg id="blob-stroke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.655 208.389">
           <path d="M5153.72-30.667s-48.06,46-47.1,76.558,62.157,32.615,70.487,45.317,67.924-3.09,83.944,61.8,141.614-28.151,141.614-28.151" transform="translate(-5105.607 31.389)" fill="none" stroke="#001d57" stroke-width="2"/>
         </svg>
@@ -27,23 +27,31 @@
 
         <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
         <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross"> -->
-        <img id="blob-right-corner-shadow" src="~/static/landing_assets/blob-shape-right-corner-shadow.png" alt="blob_shape">
+        <img id="blob-right-corner-shadow" src="~/static/hero_assets/blob-shape-right-corner-shadow.png" alt="blob_shape">
 
         
       </header> 
 
-      <div class="hero_text-headline">
+      <div class="hero_section-headline">
         <h2><span>Designers</span> visualize solutions.</h2>
         <h2><span>Developers</span> turn them into reality.</h2>
 
         <p>I do both!</p>
 
-        <img id="blob-text-shadow" src="~/static/landing_assets/blob shape text shadow.svg" alt="blob_shadow">
+        <img id="blob-text-shadow" src="~/static/hero_assets/blob shape text shadow.svg" alt="blob_shadow">
 
-        <img id="blue_cross3" src="~/static/landing_assets/blue cross.svg" alt="cross">
-        <img id="blue_cross4" src="~/static/landing_assets/blue cross2.svg" alt="cross">
+        <svg id="blue_cross3" xmlns="http://www.w3.org/2000/svg">
+            <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z" fill="#00a1ff"/>
+        </svg>
 
-        <img id="dots" src="~/static/landing_assets/dots compound 1.svg" alt="dots">
+        <svg id="blue_cross4" xmlns="http://www.w3.org/2000/svg">
+            <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z" fill="#00a1ff"/>
+        </svg>
+
+        <!-- <img id="blue_cross3" src="~/static/hero_assets/blue cross.svg" alt="cross"> -->
+        <!-- <img id="blue_cross4" src="~/static/hero_assets/blue cross2.svg" alt="cross"> -->
+
+        <img id="dots" src="~/static/hero_assets/dots compound 1.svg" alt="dots">
       </div>
 
       <div class="hero_cta-button">
@@ -57,7 +65,11 @@
       <img id="blob-left-corner-shadow" src="~/static/about-me_assets/blob-shape-left-shadow.png" alt="blob-shape">
     </div> 
     <div class="about_section">
-      <img class="about_profile-picture" src="~/static/imgs/yudai-pfp-shadow.png" alt="profile-pic">
+      <div class="about_profile-picture-wrapper">
+        <img id="horizontal-dots" src="~/static/about-me_assets/dots-compound-horizontal.svg" alt="dots">
+        <img class="about_profile-picture" src="~/static/imgs/yudai-pfp-shadow.png" alt="profile-pic">
+      </div>
+      
       <div class="about_text">
         <p>
           Hello dear visitant, Yudai here🖐
@@ -65,7 +77,7 @@
         </p>
         
         <p>
-          I've been programming for 5 years, 
+          I've been programming for 5 years,
           and now I'm doing my best to get 
           into the tech industry as a 
           Frontend Developer.
@@ -147,7 +159,7 @@ export default {
 
 <style lang="scss" >
 @use '~/assets/variables' as *;
-@import '~/assets/styles/landing_section';
+@import '~/assets/styles/hero_section';
 @import '~assets/styles/about-me_section';
 @import '~assets/styles/social-media_section';
 
@@ -173,6 +185,7 @@ body {
     color: $text-color;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    //font-size: 2vw;
 
     // scrollbar-width: none;
     // -webkit-box-sizing: border-box;

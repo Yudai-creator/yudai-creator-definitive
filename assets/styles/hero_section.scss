@@ -66,10 +66,13 @@ header {
     }
 }
 
-.hero_text-headline {
+.hero_section-headline {
     position: relative;
+
+    // el bug mojoso
     // top: 2em;
-    margin-top: 2rem;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,15 +97,15 @@ header {
 
     #blue_cross3{
         position: absolute;
-        max-width: 1em;
         right: 30px;
+        width: 10%;
     }
 
     #blue_cross4{
         position: absolute;
         left: 30px;
         top: 100%;
-        max-width: 1em;
+        width: 10%;
     }
 
     #dots{
