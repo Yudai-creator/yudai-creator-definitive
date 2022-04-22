@@ -126,7 +126,26 @@
 
     <!-- Portfolio section -->
     <div class="portfolio_section">
+      <h2>Portfolio</h2>
+      <div class="portfolio_section-latest-work">
+        <h3>Latest work</h3>
+        <div class="latest-work_layout">
+          <DesignThumbnail textContent="Probando"/>
+          <DesignThumbnail textContent="Probando"/>
+          <DesignThumbnail textContent="Probando"/>
+        </div>
+      </div>
+      <div class="portfolio_section-projects">
+        <!-- Projects -->
+      </div>
+      <div class="hero_cta-button">
+        <ButtonPrimary textContent="Download CV"/>
+      </div>
+    </div>
 
+    <!-- Services -->
+    <div class="services_section">
+      
     </div>
     <footer>
 
@@ -139,10 +158,12 @@
 
 <script>
 import ButtonPrimary from '../components/ButtonPrimary.vue'
+import DesignThumbnail from '../components/DesignThumbnail.vue'
 // import {gsap} from "gsap" 
 export default {
   components: {
-    ButtonPrimary
+    ButtonPrimary,
+    DesignThumbnail
   },
   // mounted(){
   //   const {intro, yudai, warning, texts, brand, social, building} = this.$refs
