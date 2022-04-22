@@ -123,6 +123,11 @@
       </svg> -->
       <img id="wave-bottom" src="~/static/social-media_assets/waves-bottom.png" alt="waves">
     </div>
+
+    <!-- Portfolio section -->
+    <div class="portfolio_section">
+
+    </div>
     <footer>
 
     </footer>
@@ -134,26 +139,26 @@
 
 <script>
 import ButtonPrimary from '../components/ButtonPrimary.vue'
-import {gsap} from "gsap" 
+// import {gsap} from "gsap" 
 export default {
   components: {
     ButtonPrimary
   },
-  mounted(){
-    const {intro, yudai, warning, texts, brand, social, building} = this.$refs
+  // mounted(){
+  //   const {intro, yudai, warning, texts, brand, social, building} = this.$refs
 
-    const tl = new gsap.timeline({
-      stagger: .5
-    })
+  //   const tl = new gsap.timeline({
+  //     stagger: .5
+  //   })
 
-    tl.fromTo(intro, {scale: 0}, {duration: 1.5, scale: 1, ease: "circ"})
-      .fromTo(yudai, {scale: 0}, {duration: 1.5, scale: 1, ease: "circ"})
-      .fromTo(warning, {scale: 0}, {duration: 2, scale: 1, ease: "circ"})
-      //.fromTo(building, {y: -2, rotate: -10}, {duration: 1, y: 2, rotate: 10})
-      .fromTo(texts, {opacity: 1}, {duration: .6, opacity: 0, x: 20, ease: "expo"})
-      .fromTo(brand, {opacity: 0, x: 100}, {duration: .6, opacity:1, x: -50, ease: "circ"})
-      //.fromTo(social, {opacity: 0}, {duration: .5, opacitiy: 1})
-  }
+  //   tl.fromTo(intro, {scale: 0}, {duration: 1.5, scale: 1, ease: "circ"})
+  //     .fromTo(yudai, {scale: 0}, {duration: 1.5, scale: 1, ease: "circ"})
+  //     .fromTo(warning, {scale: 0}, {duration: 2, scale: 1, ease: "circ"})
+  //     //.fromTo(building, {y: -2, rotate: -10}, {duration: 1, y: 2, rotate: 10})
+  //     .fromTo(texts, {opacity: 1}, {duration: .6, opacity: 0, x: 20, ease: "expo"})
+  //     .fromTo(brand, {opacity: 0, x: 100}, {duration: .6, opacity:1, x: -50, ease: "circ"})
+  //     //.fromTo(social, {opacity: 0}, {duration: .5, opacitiy: 1})
+  // }
 };
 </script>
 
@@ -162,6 +167,7 @@ export default {
 @import '~/assets/styles/hero_section';
 @import '~assets/styles/about-me_section';
 @import '~assets/styles/social-media_section';
+@import '~assets/styles/portfolio_section';
 
 // global styles
 *{
