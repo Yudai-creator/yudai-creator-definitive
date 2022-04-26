@@ -31,6 +31,9 @@ header {
 
     #blob-right-corner {
         width: 80%;
+
+        // responsive width
+        // max-width: 60em;
         position: absolute;
         left: 60%;
 
@@ -40,6 +43,7 @@ header {
     #blob-stroke {
         position: absolute;
         width: 60%;
+        max-width: 40em;
         left: 55%;
         top: .1%;
         z-index: -1;
