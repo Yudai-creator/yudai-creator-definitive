@@ -22,10 +22,12 @@ export default {
 <style lang="scss" scoped>
     .card-container{
         background-color: #020B1D;
-        width: 50%;
+        width: 300px;
+        height: 300px;
         position: relative;
 
         border-radius: 10px;
+        box-shadow: 2px 2px 10px #00000083;
         // max-width: 40%;
 
         padding: 2rem;
