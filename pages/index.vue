@@ -95,7 +95,12 @@
 
     <!-- Social media spot -->
     <div class="social-media_section">
-      <img id="wave-top" src="~/static/social-media_assets/waves-top.png" alt="waves">
+      <!-- <img id="wave-top" src="~/static/social-media_assets/waves-top.png" alt="waves"> -->
+      <div class="social-media_section-divider-top">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
+      </div>
       <div class="social-media_twitter-spot">
         <h2>I share my everyday learnings and achievements in my social media accounts.</h2>
         <div class="twitter-spot_info">
@@ -121,7 +126,12 @@
       <!-- <svg id="wave-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 377.25 92.606">
         <path d="M309.867,72.961C285.034,56.668,258.976,24.6,233.845,11.449c-25.861-13.563-52.834-12.773-78.735.305-18.183,9.175-35.839,24.3-54.073,32.743C67.155,60,32.213,52.134,0,21.743v72.47H377.25V75.284C355.932,93.368,331.889,87.416,309.867,72.961Z" transform="translate(0 -1.607)" fill="#010713"/>
       </svg> -->
-      <img id="wave-bottom" src="~/static/social-media_assets/waves-bottom.png" alt="waves">
+      <!-- <img id="wave-bottom" src="~/static/social-media_assets/waves-bottom.png" alt="waves"> -->
+      <div class="social-media_section-divider-bottom">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
+      </div>
     </div>
 
     <!-- Portfolio section -->

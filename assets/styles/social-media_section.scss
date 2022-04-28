@@ -4,13 +4,45 @@
     background-color: $primary-color;
 
 
-    #wave-top{
+    .social-media_section-divider-top {
+        position: relative;
+        top: 0;
+        left: 0;
         width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
     }
 
-    #wave-bottom{
-        
+    .social-media_section-divider-top svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 100px;
+    }
+
+    .social-media_section-divider-top .shape-fill {
+        fill: #010713;
+    }
+
+    .social-media_section-divider-bottom {
+        position: relative;
+        bottom: 0;
+        left: 0;
         width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .social-media_section-divider-bottom svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 100px;
+    }
+
+    .social-media_section-divider-bottom .shape-fill {
+        fill: #010713;
     }
 
     .social-media_twitter-spot{
