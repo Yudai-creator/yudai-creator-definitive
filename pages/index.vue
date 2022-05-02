@@ -8,6 +8,23 @@
           <img class="logo" src="~/static/imgs/yudai.png" alt="yudai_logo">
         </figure>
 
+        <ul class="hero_nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+        </ul>
+
+        <div class="hero_contact-button">
+          <ButtonSecondary textContent="Contact"/>
+        </div>
+        
+
         <svg class="header_hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px">
           <g id="surface1032491">
             <path style=" stroke:none;fill-rule:nonzero;fill:rgb(20.392157%,59.607846%,85.882354%);fill-opacity:1;" d="M 5 8 C 4.277344 7.988281 3.609375 8.367188 3.246094 8.992188 C 2.878906 9.613281 2.878906 10.386719 3.246094 11.007812 C 3.609375 11.632812 4.277344 12.011719 5 12 L 45 12 C 45.722656 12.011719 46.390625 11.632812 46.753906 11.007812 C 47.121094 10.386719 47.121094 9.613281 46.753906 8.992188 C 46.390625 8.367188 45.722656 7.988281 45 8 Z M 5 23 C 4.277344 22.988281 3.609375 23.367188 3.246094 23.992188 C 2.878906 24.613281 2.878906 25.386719 3.246094 26.007812 C 3.609375 26.632812 4.277344 27.011719 5 27 L 45 27 C 45.722656 27.011719 46.390625 26.632812 46.753906 26.007812 C 47.121094 25.386719 47.121094 24.613281 46.753906 23.992188 C 46.390625 23.367188 45.722656 22.988281 45 23 Z M 5 38 C 4.277344 37.988281 3.609375 38.367188 3.246094 38.992188 C 2.878906 39.613281 2.878906 40.386719 3.246094 41.007812 C 3.609375 41.632812 4.277344 42.011719 5 42 L 45 42 C 45.722656 42.011719 46.390625 41.632812 46.753906 41.007812 C 47.121094 40.386719 47.121094 39.613281 46.753906 38.992188 C 46.390625 38.367188 45.722656 37.988281 45 38 Z M 5 38 "/>
@@ -70,7 +87,7 @@
         <img class="about_profile-picture" src="~/static/imgs/yudai-pfp-shadow.png" alt="profile-pic">
       </div>
       
-      <div class="about_text">
+      <div id="about-me" class="about_text">
         <p>
           Hello dear visitant, Yudai here🖐
           I'm a <span>web developer</span> and <span>UI designer</span>.
@@ -138,7 +155,7 @@
     <div class="portfolio_section">
       <h2>Portfolio</h2>
       <div class="portfolio_section-latest-work">
-        <h3>Latest work</h3>
+        <h3 id="work">Latest work</h3>
         <div class="latest-work_layout">
           <DesignThumbnail textContent="Probando"/>
           <DesignThumbnail textContent="Probando"/>
@@ -179,6 +196,7 @@
 
 <script>
 import ButtonPrimary from '../components/ButtonPrimary.vue'
+import ButtonSecondary from '../components/ButtonSecondary.vue'
 import DesignThumbnail from '../components/DesignThumbnail.vue'
 import ServiceCard from '../components/ServiceCard.vue'
 // import {gsap} from "gsap" 
@@ -186,7 +204,8 @@ export default {
   components: {
     ButtonPrimary,
     DesignThumbnail,
-    ServiceCard
+    ServiceCard,
+    ButtonSecondary
   },
   // mounted(){
   //   const {intro, yudai, warning, texts, brand, social, building} = this.$refs
