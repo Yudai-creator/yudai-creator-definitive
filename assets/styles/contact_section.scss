@@ -1,0 +1,20 @@
+// CONTACT SECTION
+
+.contact_section{
+    padding: 2rem;
+
+    h2{
+        text-align: center;
+    }
+
+    form{
+        margin-top: 2rem;
+
+        #input-email{
+            width: 50%;
+            background-color: #020B1D;
+            border-radius: 10px;
+            border: 2px solid #180D4D;
+        }
+    }
+}

@@ -178,12 +178,16 @@
         <ServiceCard icon="/services-assets/animation-ico.svg" headline="Motion graphics and animations" text="Make your website stand out, surprise your customers with a page full of life that will make their experience better."/>
         <ServiceCard icon="/services-assets/bx-devices.svg" headline="Responsive website design" text="Your website will fit perfectly in every device, making sure that your users don't miss your message."/>
       </div>
-      <!-- <ButtonPrimary textContent="Learn more" style="backgorundColor=none;"/> -->
+      <ButtonSecondary textContent="Learn more"/>
     </div>
 
     <!-- Contact -->
     <div class="contact_section">
-
+      <h2>Get in contact with me through this form</h2>
+      <form action="">
+        <label for="input-email">Your email</label>
+        <input id="input-email" type="text">
+      </form>
     </div>
     <footer>
 
@@ -232,6 +236,7 @@ export default {
 @import '~assets/styles/social-media_section';
 @import '~assets/styles/portfolio_section';
 @import '~assets/styles/services_section';
+@import '~assets/styles/contact_section';
 
 // global styles
 *{
