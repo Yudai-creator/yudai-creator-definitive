@@ -184,10 +184,24 @@
     <!-- Contact -->
     <div class="contact_section">
       <h2>Get in contact with me through this form</h2>
-      <form action="">
-        <label for="input-email">Your email</label>
-        <input id="input-email" type="text">
-      </form>
+
+      <div class="contact_form">
+        <form action="">
+          <div class="contact-form_control">
+            <label for="input-name">Your name</label>
+            <input id="input-name" type="text" required>
+          </div>
+          <div class="contact-form_control">
+            <label for="input-email">Your email</label>
+            <input id="input-email" type="text" required>
+          </div>
+          <div class="contact-form_control">
+            <label for="input-message">Your message</label>
+            <textarea id="input-message"  rows="7"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
     <footer>
 
