@@ -188,16 +188,16 @@
       <div class="contact_form">
         <form action="">
           <div class="contact-form_control">
-            <label for="input-name">Your name</label>
             <input id="input-name" type="text" required>
+            <label for="input-name">Your name</label>
           </div>
           <div class="contact-form_control">
-            <label for="input-email">Your email</label>
             <input id="input-email" type="text" required>
+            <label for="input-email">Your email</label>
           </div>
           <div class="contact-form_control">
+            <textarea id="input-message"  rows="7" required></textarea>
             <label for="input-message">Your message</label>
-            <textarea id="input-message"  rows="7"></textarea>
           </div>
           <button type="submit">Send</button>
         </form>

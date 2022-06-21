@@ -16,7 +16,7 @@
             margin-top: 2rem;
             width: 90%;
             .contact-form_control{
-                margin-bottom: 1.5rem;
+                margin-bottom: 1.8rem;
                 position: relative;
             }
             input, textarea{
@@ -26,10 +26,15 @@
                 border-radius: 1rem;
                 border: 2px solid #180D4D;
 
-                // &:focus~label{
-                //     top: -30px;
-                //     font-size: .5rem;
-                // }
+                &:focus~label,&:valid~label{
+                    top: -30px;
+                    font-size: .8rem;
+                }
+
+                &:focus{
+                    color: white;
+                    
+                }
             }
 
             label{
@@ -54,11 +59,6 @@
                 font-weight: bold;
                 font-size: 1.2rem;
             }
-        }
-
-        input:focus~label{
-            top: -30px;
-            font-size: .5rem;
         }
     }     
 }
