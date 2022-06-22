@@ -2,7 +2,7 @@
 
   <div>
     <!--Hero section-->
-    <div class="hero_section">
+    <div id="hero" class="hero_section">
       <header>
         <figure>
           <img class="logo" src="~/static/imgs/yudai.png" alt="yudai_logo">
@@ -10,7 +10,7 @@
 
         <ul class="hero_nav-links">
           <li>
-            <a href="#">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
             <a href="#about-me">About me</a>
@@ -21,7 +21,7 @@
         </ul>
 
         <div class="hero_contact-button">
-          <ButtonSecondary textContent="Contact"/>
+          <ButtonSecondary textContent="Contact" link="#contact_form"/>
         </div>
         
 
@@ -185,7 +185,7 @@
     <div class="contact_section">
       <h2>Get in contact with me through this form</h2>
       <div class="contact_form">
-        <form name="contact" action="/" method="POST" data-netlify="true">
+        <form id="contact_form" name="contact" action="/" method="POST" data-netlify="true">
           <div class="contact-form_control">
             <input id="input-name" name="name" type="text" required>
             <label for="input-name">Your name</label>

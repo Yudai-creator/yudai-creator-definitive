@@ -1,6 +1,6 @@
 <template name="ButtonPrimary">
     <div>
-        <a class="secondary-button" href="#">{{textContent}}</a>
+        <a class="secondary-button" :href={link}>{{textContent}}</a>
     </div>
 </template>
 <script>
@@ -8,7 +8,7 @@
 export default  {
     props:{
         textContent: String,
-
+        link: String
     }
 }
 </script>
