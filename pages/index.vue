@@ -186,17 +186,17 @@
       <h2>Get in contact with me through this form</h2>
 
       <div class="contact_form">
-        <form action="">
+        <form action="POST" data-netlify="true">
           <div class="contact-form_control">
-            <input id="input-name" type="text" required>
+            <input id="input-name" name="name" type="text" required>
             <label for="input-name">Your name</label>
           </div>
           <div class="contact-form_control">
-            <input id="input-email" type="text" required>
+            <input id="input-email" name="email" type="text" required>
             <label for="input-email">Your email</label>
           </div>
           <div class="contact-form_control">
-            <textarea id="input-message"  rows="7" required></textarea>
+            <textarea id="input-message" name="message"  rows="7" required></textarea>
             <label for="input-message">Your message</label>
           </div>
           <button type="submit">Send</button>

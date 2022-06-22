@@ -21,6 +21,7 @@
             }
             input, textarea{
                 width: 100%;
+                max-width: 700px;
                 padding: .6rem;
                 background-color: #020B1D;
                 border-radius: 1rem;
@@ -49,6 +50,7 @@
 
             button{
                 width: 100%;
+                max-width: 700px;
                 padding: 1rem;
                 background-color: $cta-color;
                 color: $bg-color;
