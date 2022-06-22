@@ -27,6 +27,8 @@
                 border-radius: 1rem;
                 border: 2px solid #180D4D;
 
+                color: antiquewhite;
+
                 &:focus~label,&:valid~label{
                     top: -30px;
                     font-size: .8rem;

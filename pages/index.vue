@@ -184,9 +184,8 @@
     <!-- Contact -->
     <div class="contact_section">
       <h2>Get in contact with me through this form</h2>
-
       <div class="contact_form">
-        <form action="POST" data-netlify="true">
+        <form name="contact" action="/" method="POST" data-netlify="true">
           <div class="contact-form_control">
             <input id="input-name" name="name" type="text" required>
             <label for="input-name">Your name</label>
