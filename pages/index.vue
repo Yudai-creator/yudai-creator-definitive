@@ -198,7 +198,7 @@
             <textarea id="input-message" name="message"  rows="7" required></textarea>
             <label for="input-message">Your message</label>
           </div>
-          <button type="submit">Send</button>
+          <input class="form_submit" type="submit" value="Send Message">
         </form>
       </div>
     </div>
