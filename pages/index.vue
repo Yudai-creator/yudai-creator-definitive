@@ -250,12 +250,12 @@ export default {
 
 <style lang="scss" >
 @use '~/assets/variables' as *;
-@import '~/assets/styles/hero_section';
-@import '~assets/styles/about-me_section';
-@import '~assets/styles/social-media_section';
-@import '~assets/styles/portfolio_section';
-@import '~assets/styles/services_section';
-@import '~assets/styles/contact_section';
+@import '~/assets/styles/sections/hero_section';
+@import '~assets/styles/sections/about-me_section';
+@import '~assets/styles/sections/social-media_section';
+@import '~assets/styles/sections/portfolio_section';
+@import '~assets/styles/sections/services_section';
+@import '~assets/styles/sections/contact_section';
 
 // global styles
 *{
