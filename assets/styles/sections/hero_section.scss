@@ -21,16 +21,15 @@ header {
 
     .logo {
         max-width: 4em;
-        
         cursor: pointer;
     }
 
-    .header_hamburger-menu {
-        cursor: pointer;
-        @media (min-width: 490px){
-            display: none;
-        }
-    }
+    // .header_hamburger-menu {
+    //     cursor: pointer;
+    //     @media (min-width: 490px){
+    //         display: none;
+    //     }
+    // }
 
     .hero_contact-button{
         @media (max-width: 490px){

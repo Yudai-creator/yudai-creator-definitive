@@ -24,15 +24,14 @@
           <ButtonSecondary textContent="Contact" link="#contact_form"/>
         </div>
         
+        <HamburgerMenu/>
 
-        <svg class="header_hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px">
+        <!-- <svg class="header_hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px">
           <g id="surface1032491">
             <path style=" stroke:none;fill-rule:nonzero;fill:rgb(20.392157%,59.607846%,85.882354%);fill-opacity:1;" d="M 5 8 C 4.277344 7.988281 3.609375 8.367188 3.246094 8.992188 C 2.878906 9.613281 2.878906 10.386719 3.246094 11.007812 C 3.609375 11.632812 4.277344 12.011719 5 12 L 45 12 C 45.722656 12.011719 46.390625 11.632812 46.753906 11.007812 C 47.121094 10.386719 47.121094 9.613281 46.753906 8.992188 C 46.390625 8.367188 45.722656 7.988281 45 8 Z M 5 23 C 4.277344 22.988281 3.609375 23.367188 3.246094 23.992188 C 2.878906 24.613281 2.878906 25.386719 3.246094 26.007812 C 3.609375 26.632812 4.277344 27.011719 5 27 L 45 27 C 45.722656 27.011719 46.390625 26.632812 46.753906 26.007812 C 47.121094 25.386719 47.121094 24.613281 46.753906 23.992188 C 46.390625 23.367188 45.722656 22.988281 45 23 Z M 5 38 C 4.277344 37.988281 3.609375 38.367188 3.246094 38.992188 C 2.878906 39.613281 2.878906 40.386719 3.246094 41.007812 C 3.609375 41.632812 4.277344 42.011719 5 42 L 45 42 C 45.722656 42.011719 46.390625 41.632812 46.753906 41.007812 C 47.121094 40.386719 47.121094 39.613281 46.753906 38.992188 C 46.390625 38.367188 45.722656 37.988281 45 38 Z M 5 38 "/>
           </g>
-        </svg>
+        </svg> -->
 
-        
- 
         <!-- <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape"> -->
         <img id="blob-right-corner" src="~/static/hero_assets/blob-shape-right-corner.png" alt="blob_shape">
         <svg id="blob-stroke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.655 208.389">
@@ -40,13 +39,9 @@
         </svg>
         <!-- <img id="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
 
-
-
         <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
         <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross"> -->
         <img id="blob-right-corner-shadow" src="~/static/hero_assets/blob-shape-right-corner-shadow.png" alt="blob_shape">
-
-        
       </header> 
 
       <div class="hero_section-headline">
@@ -222,13 +217,15 @@ import ButtonPrimary from '../components/ButtonPrimary.vue'
 import ButtonSecondary from '../components/ButtonSecondary.vue'
 import DesignThumbnail from '../components/DesignThumbnail.vue'
 import ServiceCard from '../components/ServiceCard.vue'
+import HamburgerMenu from '../components/HamburgerMenu.vue'
 // import {gsap} from "gsap" 
 export default {
   components: {
     ButtonPrimary,
     DesignThumbnail,
     ServiceCard,
-    ButtonSecondary
+    ButtonSecondary,
+    HamburgerMenu
   },
   // mounted(){
   //   const {intro, yudai, warning, texts, brand, social, building} = this.$refs
