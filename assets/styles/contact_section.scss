@@ -8,7 +8,7 @@
     }
 
     .contact_form{
-
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -56,7 +56,7 @@
 
             label{
                 position: absolute;
-                left: 5%;
+                left: 1%;
                 top: 0;
                 opacity: .3;
                 padding: .5rem;
@@ -65,5 +65,23 @@
             }
 
         }
-    }     
+    }    
+    .contact_email{
+        padding: 2rem;
+
+        h2{
+            margin-bottom: 1rem;
+        }
+
+        .email-container{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: .6rem;
+            background-color: #020B1D;
+            border-radius: 2rem;
+            border: 2px solid #180D4D;
+        }
+    } 
 }

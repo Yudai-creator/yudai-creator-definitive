@@ -201,6 +201,12 @@
           <input class="form_submit" type="submit" value="Send Message">
         </form>
       </div>
+      <div class="contact_email">
+        <h2>Or, email me at</h2>
+        <div class="email-container">
+          <p>yudaipx77@gmail.com</p>
+        </div>
+      </div>
     </div>
     <footer>
 
