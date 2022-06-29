@@ -263,6 +263,7 @@ export default {
 
 html{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {

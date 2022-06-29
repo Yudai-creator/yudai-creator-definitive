@@ -21,8 +21,8 @@ import {gsap} from "gsap"
 export default {
 
     methods:{
-        // perro(){
-        //     alert("Hola perros soy click event la meka")
+        // perro(e){
+        //     console.log(e)
         // },
         hamburgerMenu(){
             const {bar1, bar2, bar3} = this.$refs;
@@ -37,6 +37,7 @@ export default {
                         top: '45%', left: '15%', rotate: '-45deg'});
                         
                 bool = true;
+                console.log(bool);
             }else{
                 gsap.to(bar1, {duration: .1, width: '37px', height: '5px',
                         top: '25%', left: '25%', rotate: '0deg'});
@@ -45,6 +46,7 @@ export default {
                         top: '65%', left: '25%', rotate: '0deg'}); 
                         
                 bool = false;
+                console.log(bool);
             }
         }
     }
@@ -63,6 +65,7 @@ export default {
     //                     top: '45%', left: '15%', rotate: '-45deg'})
                 
     //             bool = true;
+    //             console.log(bool);
     //         }else{
     //             gsap.to(bar1, {duration: .1, width: '37px', height: '5px', 
     //                     top: '25%', left: '25%', rotate: '0deg'})
@@ -71,6 +74,7 @@ export default {
     //                     top: '65%', left: '25%', rotate: '0deg'})
                 
     //             bool = false;
+    //             console.log(bool);
     //         }
     //     })
     // }
