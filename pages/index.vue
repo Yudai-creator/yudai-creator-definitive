@@ -173,9 +173,9 @@
     </div>
 
     <!-- Services -->
-    <div class="services_section">
+    <div class="services__section">
       <h2>You can hire my services as freelancer</h2>
-      <div class="services_card-container">
+      <div class="services__card-container">
         <ServiceCard icon="/services-assets/bx-customize.svg" headline="Landing page that converts" text="Do you want a place to showcase your ideas, messages or services? Let's make an ideal Landing Page, built on the basis  of your ideas."/>
         <ServiceCard icon="/services-assets/animation-ico.svg" headline="Motion graphics and animations" text="Make your website stand out, surprise your customers with a page full of life that will make their experience better."/>
         <ServiceCard icon="/services-assets/bx-devices.svg" headline="Responsive website design" text="Your website will fit perfectly in every device, making sure that your users don't miss your message."/>

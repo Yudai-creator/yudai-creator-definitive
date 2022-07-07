@@ -20,14 +20,15 @@ export default {
 
 
 <style lang="scss" scoped>
+@import '~/assets/mixins';
     .card-container{
         background-color: #020B1D;
-        width: 300px;
-        height: 300px;
+        width: 260px;
+        height: 320px;
         position: relative;
 
         border-radius: 10px;
-        box-shadow: 2px 2px 10px #00000083;
+        box-shadow: 1px 1px 10px #01060f;
         // max-width: 40%;
 
         padding: 2rem;
@@ -35,11 +36,18 @@ export default {
     }
 
     .card_icon-wrapper{
+        position: absolute;
+        left: 92%;
+        top: -3%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        @include flexCenter(row);
         background-color: #020B1D;
-        margin-bottom: 1rem;
     }
 
     h3{
+        margin-top: 2rem;
         margin-bottom: 1rem;
     }
 
