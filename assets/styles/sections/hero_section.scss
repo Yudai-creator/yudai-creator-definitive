@@ -13,11 +13,12 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    // margin-left: 1.5rem;
+    // margin-right: 1.5rem;
+    // margin-top: 1rem;
+    // margin-bottom: 1rem;
 
+    padding: 1rem;
 
     .logo {
         max-width: 4em;
@@ -31,26 +32,21 @@ header {
     //     }
     // }
 
-    .hero_contact-button{
+    .hero__contact-button{
         @media (max-width: 490px){
             display: none;
             
         }
     }
 
-    .hero_nav-links{
-        
-
+    .hero__nav-links{
         @media (max-width: 490px){
-            display: none;
-            
+            display: none;  
         }
-
         li{
             list-style: none;
             display: inline;
             margin-left: 2.5rem;
-
             a{
                 text-decoration: none;
                 color: #e5e5e5;
@@ -102,7 +98,7 @@ header {
     }
 }
 
-.hero_section-headline {
+.hero__section-headline {
     position: relative;
 
     // el bug mojoso
@@ -154,7 +150,7 @@ header {
     }
 }
 
-.hero_cta-button {
+.hero__cta-button {
     padding: 2rem;
     display: flex;
     justify-content: center;

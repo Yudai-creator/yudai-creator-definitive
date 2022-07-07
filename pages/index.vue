@@ -2,13 +2,13 @@
 
   <div>
     <!--Hero section-->
-    <div id="hero" class="hero_section">
+    <div id="hero" class="hero__section">
       <header>
         <figure>
-          <img class="logo" src="~/static/imgs/yudai.png" alt="yudai_logo">
+          <img class="logo" src="~/static/imgs/yudai.png" alt="yudai-logo">
         </figure>
 
-        <ul class="hero_nav-links">
+        <ul class="hero__nav-links">
           <li>
             <a href="#hero">Home</a>
           </li>
@@ -20,8 +20,8 @@
           </li>
         </ul>
 
-        <div class="hero_contact-button">
-          <ButtonSecondary textContent="Contact" link="#contact_form"/>
+        <div class="hero__contact-button">
+          <ButtonSecondary textContent="Contact" link="#contact-form"/>
         </div>
         
         <HamburgerMenu/>
@@ -44,7 +44,7 @@
         <img id="blob-right-corner-shadow" src="~/static/hero_assets/blob-shape-right-corner-shadow.png" alt="blob_shape">
       </header> 
 
-      <div class="hero_section-headline">
+      <div class="hero__section-headline">
         <h2><span>Designers</span> visualize solutions.</h2>
         <h2><span>Developers</span> turn them into reality.</h2>
 
@@ -66,7 +66,7 @@
         <img id="dots" src="~/static/hero_assets/dots compound 1.svg" alt="dots">
       </div>
 
-      <div class="hero_cta-button">
+      <div class="hero__cta-button">
         <ButtonPrimary textContent="See my work"/>
       </div>
     </div>
