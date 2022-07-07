@@ -1,10 +1,10 @@
-.social-media_section{
+.social__section{
     width: 100%;
     position: relative;
-    background-color: $primary-color;
+    background-color: $bg-light;
 
 
-    .social-media_section-divider-top {
+    .social__section_divider-top {
         position: relative;
         top: 0;
         left: 0;
@@ -14,18 +14,18 @@
         transform: rotate(180deg);
     }
 
-    .social-media_section-divider-top svg {
+    .social__section_divider-top svg {
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
         height: 100px;
     }
 
-    .social-media_section-divider-top .shape-fill {
-        fill: #010713;
+    .social__section_divider-top .shape-fill {
+        fill: #01060f;
     }
 
-    .social-media_section-divider-bottom {
+    .social__section_divider-bottom {
         position: relative;
         bottom: 0;
         left: 0;
@@ -34,18 +34,18 @@
         line-height: 0;
     }
 
-    .social-media_section-divider-bottom svg {
+    .social__section_divider-bottom svg {
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
         height: 100px;
     }
 
-    .social-media_section-divider-bottom .shape-fill {
-        fill: #010713;
+    .social__section_divider-bottom .shape-fill {
+        fill: #01060f;
     }
 
-    .social-media_twitter-spot{
+    .social__twitter{
         padding: 2rem;
 
         h2{
@@ -57,7 +57,7 @@
             text-align: center;
         }
 
-        .twitter-spot_info{
+        .twitter__info{
             position: relative;
             background-color: $bg-color;
             border: 2px solid $secondary-color;
@@ -73,7 +73,7 @@
                 margin: 0 auto;
             }
 
-            .twitter-spot_feed{
+            .twitter__feed{
                 padding: 1rem;
                 font-size: .75em;
                 li{
@@ -81,7 +81,7 @@
                     margin-bottom: .5rem;
                 }
             }
-            .twitter-spot_cta{
+            .twitter__btn{
                 display: flex;
                 justify-content: center;
                 align-items: center;
