@@ -1,22 +1,30 @@
 // PORTFOLIO SECTION
+@import 'assets/mixins';
 
-
-.portfolio_section{
+.portfolio__section{
+    position: relative;
     background-color: $bg-color;
     padding: 2rem;
     width: 90%;
-    h2{
-        margin-bottom: 3rem;
+    #portfolio_water-mark{
+        position: absolute;
+        top: -50px;
+        right: 1%;
+        left: 1%;
+        opacity: .1;
+        color: $secondary-color;
+        font-size: 12em;
     }
 
-    .portfolio_section-latest-work{
+    .portfolio__latest-work{
         position: relative;
         width: 90%;
-        .latest-work_layout{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+        .latest-work__layout{
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: space-between;
+            @include flexJustify(column, space-between);
 
             @media(min-width: 490px){
                 flex-direction: row;

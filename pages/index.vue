@@ -155,20 +155,19 @@
     </div>
 
     <!-- Portfolio section -->
-    <div class="portfolio_section">
-      <h2>Portfolio</h2>
-      <div class="portfolio_section-latest-work">
+    <div class="portfolio__section">
+      <h2 id="portfolio_water-mark">Portfolio</h2>
+      <div class="portfolio__latest-work">
         <h3 id="work">Latest work</h3>
-        <div class="latest-work_layout">
-          <DesignThumbnail textContent="Probando"/>
+        <div class="latest-work__layout">
           <DesignThumbnail textContent="Probando"/>
           <DesignThumbnail textContent="Probando"/>
         </div>
       </div>
-      <div class="portfolio_section-projects">
+      <div class="portfolio__projects">
         <!-- Projects -->
       </div>
-      <div class="hero_cta-button">
+      <div class="portfolio__cta-button">
         <ButtonPrimary textContent="Download CV"/>
       </div>
     </div>
