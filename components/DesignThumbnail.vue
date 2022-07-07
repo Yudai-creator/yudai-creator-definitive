@@ -18,12 +18,11 @@ export default  {
 
 
 .container{
-    width: 200px;
-    height: 200px;
+    width: 45%;
+    height: 400px;
 
-    margin: 2rem;
+    flex-shrink: 0;
 
-    border-bottom: 3px solid $cta-color;
     border-radius: 5px;
 
     background-color: $bg-light;

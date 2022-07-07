@@ -4,8 +4,8 @@
 .portfolio__section{
     position: relative;
     background-color: $bg-color;
-    padding: 2rem;
-    width: 90%;
+    padding: 2.5rem;
+    
     #portfolio_water-mark{
         position: absolute;
         top: -50px;
@@ -18,13 +18,9 @@
 
     .portfolio__latest-work{
         position: relative;
-        width: 90%;
         .latest-work__layout{
-            // display: flex;
-            // flex-direction: column;
-            // align-items: center;
-            // justify-content: space-between;
-            @include flexJustify(column, space-between);
+            display: flex;
+            justify-content: space-between;
 
             @media(min-width: 490px){
                 flex-direction: row;
@@ -35,5 +31,11 @@
             color: $secondary-light;
             margin-bottom: 3rem;
         }
+    }
+    .portfolio__cta-button{
+        @include flexCenter(row);
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }

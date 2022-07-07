@@ -158,7 +158,7 @@
     <div class="portfolio__section">
       <h2 id="portfolio_water-mark">Portfolio</h2>
       <div class="portfolio__latest-work">
-        <h3 id="work">Latest work</h3>
+        <h3 id="work">My work</h3>
         <div class="latest-work__layout">
           <DesignThumbnail textContent="Probando"/>
           <DesignThumbnail textContent="Probando"/>
@@ -180,7 +180,6 @@
         <ServiceCard icon="/services-assets/animation-ico.svg" headline="Motion graphics and animations" text="Make your website stand out, surprise your customers with a page full of life that will make their experience better."/>
         <ServiceCard icon="/services-assets/bx-devices.svg" headline="Responsive website design" text="Your website will fit perfectly in every device, making sure that your users don't miss your message."/>
       </div>
-      <ButtonSecondary textContent="Learn more"/>
     </div>
 
     <!-- Contact -->
