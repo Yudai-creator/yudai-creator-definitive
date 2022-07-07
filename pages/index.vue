@@ -133,7 +133,15 @@
             </svg>
           </div>  
         </div>
-        <p>With more than 1k connections. Would you join me?</p>
+        <p>With more than 1k connections.</p>
+        <h2>Would you join me?</h2>
+      </div>
+      <div class="social__others">
+        <h3>You can also find me here</h3>
+        <div>
+          <a href="">Linkedin <img src="~/static/social-media_assets/bxl-linkedin-square.svg" alt="linkedin"></a>
+          <a href="">Github <img src="~/static/social-media_assets/bxl-github.svg" alt="linkedin"></a>
+        </div>
       </div>
       <!-- <svg id="wave-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 377.25 92.606">
         <path d="M309.867,72.961C285.034,56.668,258.976,24.6,233.845,11.449c-25.861-13.563-52.834-12.773-78.735.305-18.183,9.175-35.839,24.3-54.073,32.743C67.155,60,32.213,52.134,0,21.743v72.47H377.25V75.284C355.932,93.368,331.889,87.416,309.867,72.961Z" transform="translate(0 -1.607)" fill="#010713"/>
