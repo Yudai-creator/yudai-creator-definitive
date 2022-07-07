@@ -183,28 +183,28 @@
     </div>
 
     <!-- Contact -->
-    <div class="contact_section">
+    <div class="contact__section">
       <h2>Get in contact with me through this form</h2>
-      <div class="contact_form">
+      <div class="contact__form">
         <form id="contact_form" name="contact" action="/" method="POST" data-netlify="true">
-          <div class="contact-form_control">
+          <div class="contact__form_control">
             <input id="input-name" name="name" type="text" required>
             <label for="input-name">Your name</label>
           </div>
-          <div class="contact-form_control">
+          <div class="contact__form_control">
             <input id="input-email" name="email" type="text" required>
             <label for="input-email">Your email</label>
           </div>
-          <div class="contact-form_control">
+          <div class="contact__form_control">
             <textarea id="input-message" name="message"  rows="7" required></textarea>
             <label for="input-message">Your message</label>
           </div>
-          <input class="form_submit" type="submit" value="Send Message(disabled)" disabled>
+          <input class="form__submit" type="submit" value="Send Message(disabled)" disabled>
         </form>
       </div>
-      <div class="contact_email">
+      <div class="contact__email">
         <h2>Or, email me at</h2>
-        <div class="email-container">
+        <div class="email__container">
           <p>yudaipx77@gmail.com</p>
         </div>
       </div>

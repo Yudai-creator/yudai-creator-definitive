@@ -1,13 +1,13 @@
 // CONTACT SECTION
 
-.contact_section{
+.contact__section{
     padding: 2rem;
     margin-top: 2rem;
     h2{
         text-align: center;
     }
 
-    .contact_form{
+    .contact__form{
         width: 100%;
         display: flex;
         align-items: center;
@@ -15,11 +15,11 @@
         form{
             margin-top: 2rem;
             width: 90%;
-            .contact-form_control{
+            .contact__form_control{
                 margin-bottom: 1.8rem;
                 position: relative;
             }
-            .form_submit{
+            .form__submit{
                 width: 100%;
                 max-width: 700px;
                 padding: 1rem;
@@ -66,14 +66,14 @@
 
         }
     }    
-    .contact_email{
+    .contact__email{
         padding: 2rem;
 
         h2{
             margin-bottom: 1rem;
         }
 
-        .email-container{
+        .email__container{
             display: flex;
             justify-content: center;
             width: 80%;
