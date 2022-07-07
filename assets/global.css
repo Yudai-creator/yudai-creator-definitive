@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "aironedemo";
+    src: local("aironedemo")
+        url(~/assets/fonts/aironefont-demo.woff2) format('woff2'),
+         url(~/assets/fonts/aironefont-demo.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

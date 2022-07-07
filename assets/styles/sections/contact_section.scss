@@ -1,39 +1,25 @@
 // CONTACT SECTION
+@import 'assets/mixins';
 
 .contact__section{
     padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
+    
     h2{
         text-align: center;
     }
-
     .contact__form{
+        position: relative;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         form{
-            margin-top: 2rem;
-            width: 90%;
+            position: relative;
+            margin: 2rem auto;
             .contact__form_control{
                 margin-bottom: 1.8rem;
                 position: relative;
             }
-            .form__submit{
-                width: 100%;
-                max-width: 700px;
-                padding: 1rem;
-                background-color: $cta-color;
-                color: $bg-color;
-                border-radius: 2rem;
-                border: none;
-
-                box-shadow: 0 2px 10px #001D57, 0 1px 5px #2F1484;
-
-                font-weight: bold;
-                font-size: 1.2rem;
-            }
             input, textarea{
+                position: relative;
                 width: 100%;
                 max-width: 700px;
                 padding: .6rem;
@@ -41,7 +27,7 @@
                 border-radius: 1rem;
                 border: 2px solid #180D4D;
 
-                color: antiquewhite;
+                color: $text-color;
 
                 &:focus~label,&:valid~label{
                     top: -30px;
@@ -53,7 +39,20 @@
                     
                 }
             }
+            .form__submit{
+                width: 100%;
+                max-width: 700px;
+                padding: 1rem;
+                background-color: $cta-color;
+                color: $bg-color;
+                border-radius: 2rem;
+                border: none;
 
+                box-shadow: 0 1px 10px #001D57, 0 1px 5px #2F1484;
+
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
             label{
                 position: absolute;
                 left: 1%;
@@ -63,7 +62,6 @@
                 cursor: text;
                 transition: .2s all ease-in-out;
             }
-
         }
     }    
     .contact__email{
@@ -76,7 +74,8 @@
         .email__container{
             display: flex;
             justify-content: center;
-            width: 80%;
+            width: 50%;
+            max-width: 500px;
             margin: 0 auto;
             padding: .6rem;
             background-color: #020B1D;

@@ -282,10 +282,8 @@ body {
     background-color: $bg-color;
     color: $text-color;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    //font-size: 2vw;
-
-    // scrollbar-width: none;
+    font-family: Verdana, sans-serif;
+    
     // -webkit-box-sizing: border-box;
     // -moz-box-sizing: border-box;
     
