@@ -3,6 +3,7 @@
 
 
 header {
+    font-family: 'Lato', sans-serif;
     position: relative;
     width: auto;
 
@@ -29,38 +30,42 @@ header {
     //     }
     // }
 
-    .hero__contact-button{
-        @media (max-width: 490px){
+    .hero__contact-button {
+        @media (max-width: 490px) {
             display: none;
-            
+
         }
     }
 
-    .hero__nav-links{
-        @media (max-width: 490px){
-            display: none;  
+    .hero__nav-links {
+        @media (max-width: 490px) {
+            display: none;
         }
-        li{
+
+        li {
             list-style: none;
             display: inline;
             margin-left: 2.5rem;
-            a{
+
+            a {
                 position: relative;
                 text-decoration: none;
                 color: #e5e5e5;
                 font-weight: bold;
                 @include transitionCubic;
-                &::after{
+
+                &::after {
                     content: '';
                     position: absolute;
                     top: 100%;
                     left: 0%;
                     width: 0px;
                     height: 2.5px;
-                    
+
                     @include transitionCubic;
                 }
-                &:hover::after{
+
+                &:hover::after {
                     background-color: $cta-color;
                     width: 60px;
                     border-radius: 5px;
@@ -97,7 +102,7 @@ header {
         max-width: 1em;
     }
 
-    #blue_cross2{
+    #blue_cross2 {
         position: absolute;
         top: 100px;
         max-width: 1em;
@@ -122,34 +127,36 @@ header {
     @include flexCenter(column);
     padding: 3rem;
 
-    h2{
+
+
+    h2 {
         margin-bottom: 2rem;
-        
+
     }
 
     span {
         color: $cta-color;
     }
 
-    #blob-text-shadow{
+    #blob-text-shadow {
         width: 30%;
         position: absolute;
     }
 
-    #blue_cross3{
+    #blue_cross3 {
         position: absolute;
         right: 30px;
         width: 10%;
     }
 
-    #blue_cross4{
+    #blue_cross4 {
         position: absolute;
         left: 30px;
         top: 100%;
         width: 10%;
     }
 
-    #dots{
+    #dots {
         position: absolute;
         max-width: 3em;
         left: 40px;
