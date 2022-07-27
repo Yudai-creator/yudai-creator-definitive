@@ -1,9 +1,201 @@
 @font-face {
     font-family: "aironedemo";
     src: local("aironedemo")
-        url(~/assets/fonts/aironefont-demo.woff2) format('woff2'),
-         url(~/assets/fonts/aironefont-demo.woff) format('woff');
+        url('~assets/fonts/airone-web-kit/aironefont-demo.woff2') format('woff2'),
+        url('~assets/fonts/airone-web-kit/aironefont-demo.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-BoldItalic.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('~assets/fonts/univa-nova-web-kit/UnivaNova-BoldItalic.woff2') format('woff2'),
+         url('~assets/fonts/univa-nova-web-kit/UnivaNova-BoldItalic.woff') format('woff'),
+         url('~assets/fonts/univa-nova-web-kit/UnivaNova-BoldItalic.svg#UnivaNova-BoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Bold.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Bold.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Bold.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Bold.svg#UnivaNova-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-ThinItalic.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-ThinItalic.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-ThinItalic.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-ThinItalic.svg#UnivaNova-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Regular.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Regular.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Regular.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Regular.svg#UnivaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBoldItalic.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBoldItalic.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBoldItalic.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBoldItalic.svg#UnivaNova-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Medium.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Medium.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Medium.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Medium.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Medium.svg#UnivaNova-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBold.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBold.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBold.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-SemiBold.svg#UnivaNova-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-MediumItalic.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-MediumItalic.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-MediumItalic.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-MediumItalic.svg#UnivaNova-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Italic.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Italic.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Italic.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Italic.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Italic.svg#UnivaNova-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Light.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Light.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Light.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Light.svg#UnivaNova-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-HeavyItalic.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-HeavyItalic.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-HeavyItalic.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-HeavyItalic.svg#UnivaNova-HeavyItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-LightItalic.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-LightItalic.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-LightItalic.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-LightItalic.svg#UnivaNova-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova Hairline';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Hairline.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Hairline.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Hairline.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Hairline.svg#UnivaNova-Hairline') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova Hairline';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-HairlineItalic.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-HairlineItalic.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-HairlineItalic.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-HairlineItalic.svg#UnivaNova-HairlineItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Thin.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Thin.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Thin.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Thin.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Thin.svg#UnivaNova-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Heavy.eot');
+    src: url('~assets/fonts/univa-nova-web-kit/UnivaNova-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Heavy.woff2') format('woff2'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Heavy.woff') format('woff'),
+        url('~assets/fonts/univa-nova-web-kit/UnivaNova-Heavy.svg#UnivaNova-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

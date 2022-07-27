@@ -119,6 +119,7 @@ header {
 
 .hero__section-headline {
     position: relative;
+    
 
     // el bug mojoso
     // top: 2em;
@@ -126,12 +127,11 @@ header {
     margin: 0 auto;
     @include flexCenter(column);
     padding: 3rem;
-
-
-
     h2 {
         margin-bottom: 2rem;
-
+        // font-family: 'Bungee', cursive;
+        font-family: 'Univa Nova', normal;
+        font-size: 2rem;
     }
 
     span {

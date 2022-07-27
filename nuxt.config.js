@@ -16,13 +16,13 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Bungee&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet'}
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: ["~/assets/global.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
