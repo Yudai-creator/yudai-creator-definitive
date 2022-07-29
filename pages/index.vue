@@ -350,7 +350,7 @@
       </div>
       
       <div class="footer__author">
-        <p>Made by the awesome Yudai H 💙</p>
+        <p>Made by the awesome <span>Yudai H</span> 💙</p>
       </div>
     </footer>
   </div>
