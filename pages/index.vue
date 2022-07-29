@@ -421,7 +421,8 @@ body {
   background-color: $bg-color;
   color: $text-color;
 
-  font-family: "Lato", sans-serif;
+  // font-family: "Lato", sans-serif;
+  font-family: 'Univa Nova', normal;
 
   // -webkit-box-sizing: border-box;
   // -moz-box-sizing: border-box;
