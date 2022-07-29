@@ -1,21 +1,21 @@
 /* Airone font face */
 
-@font-face {
+/* @font-face {
     font-family: "aironedemo";
     src: local("aironedemo")
         url('~assets/fonts/airone-web-kit/aironefont-demo.woff2') format('woff2'),
         url('~assets/fonts/airone-web-kit/aironefont-demo.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
-/* @font-face {
+@font-face {
     font-family: 'aironedemo';
-    src: url('fonts/aironefont-demo.woff2') format('woff2'),
-         url('fonts/aironefont-demo.woff') format('woff');
+    src: url('~assets/fonts/airone-web-kit/aironefont-demo.woff2') format('woff2'),
+         url('~assets/fonts/airone-web-kit/aironefont-demo.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-} */
+}
 
 
 /* Univa Nova font face */
