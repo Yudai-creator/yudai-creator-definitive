@@ -4,7 +4,7 @@
     <div id="hero" class="hero__section">
       <header>
         <figure>
-          <img class="logo" src="~/static/imgs/yudai.png" alt="yudai-logo" />
+          <img class="logo" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/yudai_UDBphSZy8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108298328" alt="Yudai H brand mark" />
         </figure>
 
         <ul class="hero__nav-links">
@@ -34,8 +34,8 @@
         <!-- <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape"> -->
         <img
           id="blob-right-corner"
-          src="~/static/hero_assets/blob-shape-right-corner.png"
-          alt="blob_shape"
+          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-right-corner_wHCu4gECK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108635820"
+          alt="blob shape graphic"
         />
         <svg
           id="blob-stroke"
@@ -56,8 +56,8 @@
         <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross"> -->
         <img
           id="blob-right-corner-shadow"
-          src="~/static/hero_assets/blob-shape-right-corner-shadow.png"
-          alt="blob_shape"
+          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-right-corner-shadow_UzRWAQnWT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108634210"
+          alt="blob shape shadow graphic"
         />
       </header>
 
@@ -69,7 +69,7 @@
 
         <img
           id="blob-text-shadow"
-          src="~/static/hero_assets/blob shape text shadow.svg"
+          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob_shape_text_shadow_OPqNT321U.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659108632438"
           alt="blob_shadow"
         />
 
@@ -106,12 +106,12 @@
     <div class="about_blobs">
       <img
         id="blob-left-corner"
-        src="~/static/about-me_assets/blob-shape-left.png"
+        src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-left_SHfI1OMw3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108590102"
         alt="blob-shape"
       />
       <img
         id="blob-left-corner-shadow"
-        src="~/static/about-me_assets/blob-shape-left-shadow.png"
+        src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-left-shadow_8WfQK6G2x.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108587061"
         alt="blob-shape"
       />
     </div>
@@ -124,7 +124,7 @@
         />
         <img
           class="about_profile-picture"
-          src="~/static/imgs/yudai-pfp-shadow.png"
+          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/yudai-pfp-shadow_s-4y304cL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108251547"
           alt="profile-pic"
         />
       </div>
@@ -172,7 +172,7 @@
         <div class="twitter__info">
           <img
             id="twitter-banner"
-            src="~/static/social-media_assets/BANNER TWITTER.png"
+            src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/BANNER_TWITTER_9NNzxB_mT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108714009"
             alt="banner"
           />
           <div class="twitter__feed">

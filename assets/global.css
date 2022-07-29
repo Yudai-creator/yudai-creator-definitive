@@ -1,3 +1,5 @@
+/* Airone font face */
+
 @font-face {
     font-family: "aironedemo";
     src: local("aironedemo")
@@ -7,6 +9,16 @@
     font-style: normal;
 }
 
+/* @font-face {
+    font-family: 'aironedemo';
+    src: url('fonts/aironefont-demo.woff2') format('woff2'),
+         url('fonts/aironefont-demo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+/* Univa Nova font face */
 
 @font-face {
     font-family: 'Univa Nova';
