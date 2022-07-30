@@ -305,7 +305,7 @@
           <input
             class="form__submit"
             type="submit"
-            value="Send Message(disabled)"
+            value="Send Message"
             disabled
           />
         </form>
