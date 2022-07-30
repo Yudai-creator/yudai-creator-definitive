@@ -12,9 +12,10 @@
     .contact__form{
         position: relative;
         width: 100%;
+        @include flexCenter(row);
         form{
             position: relative;
-            margin: 2rem auto;
+            margin-top: 2rem;
             .contact__form_control{
                 margin-bottom: 1.8rem;
                 position: relative;
