@@ -13,7 +13,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', 
         name: 'description', 
-        content: 'Yudai H portfolio website, showing up his skills as a designer and frontend developer.' 
+        content: 'Yudai H portfolio website, showing up his skills as a UI designer and Frontend Developer.' 
       },
       { name: 'format-detection', content: 'telephone=no' },
       // { hid: 'description', name: 'description', content:  'Yudai H portfolio website, showing up his skills as a designer and frontend developer.' },
@@ -21,7 +21,7 @@ export default {
       // { hid: 'og:url', property: 'og:url', content: 'https://yudaicreator.com/' },
       // { hid: 'og:description', property: 'og:description', content: this.description },
       // { hid: 'og:image', property: 'og:image', content: 'https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Meta_Images/portfolio-og-image___1_0QRxF6SIp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659147850094'},
-      { property: 'og:image', content: 'https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Meta_Images/portfolio-og-image___1_0QRxF6SIp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659147850094'}
+      // { property: 'og:image', content: 'https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Meta_Images/portfolio-og-image___1_0QRxF6SIp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659147850094'}
 
     ],
     link: [

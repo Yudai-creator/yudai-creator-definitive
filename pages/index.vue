@@ -364,6 +364,23 @@ import ServiceCard from "../components/ServiceCard.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
 // import {gsap} from "gsap"
 export default {
+  head(){
+    return{
+      meta:[
+        { hid: 'og:type', property: 'og:type', content: 'website'},
+        { hid: 'og-title', property: 'og:title', content: 'Yudai Creator' },
+        { hid: 'og-desc', property: 'og:description', content: 'Yudai H portfolio website, showing up his skills as a UI designer and Frontend Developer.' },
+        { hid: 'og-image', property: 'og:image', content: 'https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Meta_Images/portfolio-og-image___1_0QRxF6SIp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659147850094'},
+
+        //Twitter card
+        { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
+        { hid: "twitter:title", name: "twitter:title", content: 'Yudai Creator' },
+        { hid: "twitter:url", name: "twitter:url", content: 'https://yudaicreator.com/' },
+        { hid: 'twitter:description', name: 'twitter:description', content: 'Yudai H portfolio website, showing up his skills as a UI designer and Frontend Developer.' },
+        { hid: "twitter:image", name: "twitter:image", content: 'https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Meta_Images/portfolio-og-image___1_0QRxF6SIp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659147850094'},
+      ]
+    }
+  },
   components: {
     ButtonPrimary,
     DesignThumbnail,
