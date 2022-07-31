@@ -20,7 +20,7 @@
         </ul>
 
         <div class="hero__contact-button">
-          <ButtonSecondary textContent="Contact" link="#contact_form" />
+          <ButtonSecondary textContent="Contact"/>
         </div>
 
         <HamburgerMenu />
@@ -179,6 +179,7 @@
             <ul>
               <li>UI/UX guides for beginners</li>
               <li>Frontend developer roadmap</li>
+              <li>MY daily life as WebDev</li>
             </ul>
           </div>
           <div class="twitter__btn">
@@ -253,9 +254,10 @@
       <div class="portfolio__projects">
         <!-- Projects -->
       </div>
-      <div class="portfolio__cta-button">
+      <!-- Download CV button -->
+      <!-- <div class="portfolio__cta-button">
         <ButtonPrimary textContent="Download CV" />
-      </div>
+      </div> -->
     </div>
 
     <!-- Services -->

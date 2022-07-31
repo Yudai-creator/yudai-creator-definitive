@@ -1,6 +1,6 @@
 <template name="ButtonPrimary">
     <div>
-        <a class="cta-button" href="#">{{textContent}}</a>
+        <a class="cta-button" href="#work">{{textContent}}</a>
     </div>
 </template>
 <script>

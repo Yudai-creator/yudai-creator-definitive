@@ -1,6 +1,6 @@
 <template name="ButtonPrimary">
     <div>
-        <a class="secondary-button" :href={link}>{{textContent}}</a>
+        <a class="secondary-button" href="#contact_form">{{textContent}}</a>
     </div>
 </template>
 <script>

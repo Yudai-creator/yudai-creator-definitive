@@ -63,7 +63,7 @@
 
     .about_text {
         font-family: 'Univa Nova', normal;
-
+        
         @media(min-width: 490px){
             p{
                 line-height: 1.75rem;
@@ -77,6 +77,10 @@
 
         p{
             margin-bottom: 2rem;
+            font-size: 1.5rem;
+            @media(max-width: 490px){
+                font-size: 1rem;
+            }
         }
 
     }

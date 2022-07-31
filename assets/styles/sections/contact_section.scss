@@ -8,6 +8,10 @@
     h2{
         text-align: center;
         font-family: 'aironedemo', normal;
+        font-size: 2rem;
+        @media (max-width: 490px) {
+            font-size: 1rem;
+        }
     }
     .contact__form{
         position: relative;
