@@ -20,7 +20,7 @@
         </ul>
 
         <div class="hero__contact-button">
-          <ButtonSecondary textContent="Contact" link="#contact-form" />
+          <ButtonSecondary textContent="Contact" link="#contact_form" />
         </div>
 
         <HamburgerMenu />
@@ -62,8 +62,8 @@
       </header>
 
       <div class="hero__section-headline">
-        <h2><span>Designers</span> visualize solutions.</h2>
-        <h2><span>Developers</span> turn them into reality.</h2>
+        <h2 ref="designer"><span>Designers</span> visualize solutions.</h2>
+        <h2 ref="developer"><span>Developers</span> turn them into reality.</h2>
 
         <p>I do both!</p>
 
@@ -238,10 +238,16 @@
     <div class="portfolio__section">
       <h2 id="portfolio_water-mark">Portfolio</h2>
       <div class="portfolio__latest-work">
-        <h3 id="work">My work</h3>
+        <h2 id="work">My work</h2>
         <div class="latest-work__layout">
-          <DesignThumbnail textContent="Probando" />
-          <DesignThumbnail textContent="Probando" />
+          <DesignThumbnail  
+            thumbnail="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/Design_press___4_GqBGPtGs-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236623477" 
+            
+          />
+          <DesignThumbnail 
+            thumbnail="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/design_presentation_Wg81FBJcu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236626298" 
+            
+          />
         </div>
       </div>
       <div class="portfolio__projects">

@@ -119,8 +119,6 @@ header {
 
 .hero__section-headline {
     position: relative;
-    
-
     // el bug mojoso
     // top: 2em;
     width: 90%;
@@ -131,7 +129,18 @@ header {
         margin-bottom: 2rem;
         // font-family: 'Bungee', cursive;
         font-family: 'aironedemo', normal;
+        font-size: 3rem;
+        @media (max-width: 490px) {
+            font-size: 2rem;
+        }
+    }
+
+    p{
         font-size: 2rem;
+        font-weight: 600;
+        @media (max-width: 490px) {
+            font-size: 1rem;
+        }
     }
 
     span {
@@ -146,6 +155,7 @@ header {
     #blue_cross3 {
         position: absolute;
         right: 30px;
+        top: 10%;
         width: 10%;
     }
 

@@ -23,15 +23,17 @@
             display: flex;
             justify-content: space-between;
 
-            @media(min-width: 490px){
-                flex-direction: row;
-                align-content: flex-start;
+            @media(max-width: 490px){
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
             }
         }
-        h3{
-            color: $secondary-light;
+        h2{
+            color: $text-color;
             margin-bottom: 3rem;
             font-family: 'aironedemo', normal;
+            font-size: 2rem;
         }
     }
     .portfolio__cta-button{
