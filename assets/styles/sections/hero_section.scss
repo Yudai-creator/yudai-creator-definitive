@@ -49,25 +49,32 @@ header {
 
             a {
                 position: relative;
+                
                 text-decoration: none;
                 color: #e5e5e5;
                 font-weight: bold;
-                @include transitionCubic;
+                @include transitionBack;
+
+                &:hover{
+                    text-shadow: 0 3px 5px $primary-color;
+                }
 
                 &::after {
                     content: '';
                     position: absolute;
-                    top: 100%;
-                    left: 0%;
+                    top: 120%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     width: 0px;
                     height: 2.5px;
 
-                    @include transitionCubic;
+                    @include transitionBack;
                 }
 
                 &:hover::after {
                     background-color: $cta-color;
-                    width: 60px;
+                    width: 75px;
+                    top: 100%;
                     border-radius: 5px;
                 }
             }
