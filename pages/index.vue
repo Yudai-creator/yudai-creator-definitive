@@ -403,8 +403,8 @@ export default {
       stagger: .5
     })
 
-    tl.fromTo(designer, {x: 1500}, {duration: 1, x: -50, ease: "back.out(1.5)"})
-      .fromTo(developer, {x: -1500}, {duration: 1, x:100, ease: "back.out(1.5)"}, 0.9)
+    tl.fromTo(designer, {x: 1500}, {duration: 1, x: 0, ease: "back.out(1.5)"})
+      .fromTo(developer, {x: -1500}, {duration: 1, x: 0, ease: "back.out(1.5)"}, 0.9)
       .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
       // .fromTo(yudai, {scale: 0}, {duration: 1.5, scale: 1, ease: "circ"})
       // .fromTo(warning, {scale: 0}, {duration: 2, scale: 1, ease: "circ"})
