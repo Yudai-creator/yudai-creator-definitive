@@ -54,11 +54,11 @@
          @include flexCenter(column);
 
         h2{
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             text-align: center;
-            font-family: 'aironedemo', normal;
+            // font-family: 'aironedemo', normal;
             @media (max-width: 490px) {
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
         }
 
