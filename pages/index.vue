@@ -124,26 +124,37 @@
         />
         <img
           class="about_profile-picture"
-          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/yudai-pfp-shadow_s-4y304cL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108251547"
+          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/pfp_summer_2_XbcmuS-3-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660314716539"
           alt="profile-pic"
         />
       </div>
 
       <div id="about-me" class="about_text">
         <p>
-          Hello dear visitant, Yudai here🖐 I'm a <span>web developer</span> and
+          Hello, Yudai here I'm a <span>web developer</span> and
           <span>UI designer</span>.
         </p>
 
         <p>
-          I've been programming for 5 years, and now I'm doing my best to get
-          into the tech industry as a Frontend Developer.
+          Frontend developer specialist, focus on creating user centered UI/UX design.
+          Capable of recreating client needs upon a project. Achieving the best results.
         </p>
 
         <p>
           I'm passionate about design and animations, love to be creative. I
           feel like building projects and doing design is my way to help and
           contribute with the society.
+        </p>
+        <p class="about__text_tagline">
+          This is not a job, this is what I love to do 
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g id="vuesax_bold_flash" data-name="vuesax/bold/flash" transform="translate(-428 -316)">
+              <g id="flash">
+                <path id="Vector" d="M13.186,8.721H10.1v-7.2c0-1.68-.91-2.02-2.02-.76l-.8.91-6.77,7.7c-.93,1.05-.54,1.91.86,1.91h3.09v7.2c0,1.68.91,2.02,2.02.76l.8-.91,6.77-7.7C14.976,9.581,14.586,8.721,13.186,8.721Z" transform="translate(432.724 317.999)" fill="#00A1FF"/>
+                <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(452 340) rotate(180)" fill="none" opacity="0"/>
+              </g>
+            </g>
+          </svg>
         </p>
       </div>
     </div>
@@ -166,8 +177,7 @@
       </div>
       <div class="social__twitter">
         <h2>
-          I share my everyday learnings and achievements in my social media
-          accounts.
+          I share my everyday learnings and achievements on twitter.
         </h2>
         <div class="twitter__info">
           <img
@@ -183,7 +193,7 @@
             </ul>
           </div>
           <div class="twitter__btn">
-            <svg
+            <svg ref="twitterLogo" class="twitter_logo"
               id="twitter-logo"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 23.333 20.333"
@@ -397,21 +407,33 @@ export default {
     HamburgerMenu,
   },
   mounted(){
-    const {designer, developer, both} = this.$refs
+    const breakPoint = window.matchMedia("(min-width: 490px)");
+    const {designer, developer, both, twitterLogo} = this.$refs
+
+
 
     const tl = new gsap.timeline({
       stagger: .5
     })
 
-    tl.fromTo(designer, {x: 1500}, {duration: 1, x: 0, ease: "back.out(1.5)"})
-      .fromTo(developer, {x: -1500}, {duration: 1, x: 0, ease: "back.out(1.5)"}, 0.9)
-      .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
-      // .fromTo(yudai, {scale: 0}, {duration: 1.5, scale: 1, ease: "circ"})
-      // .fromTo(warning, {scale: 0}, {duration: 2, scale: 1, ease: "circ"})
-      //.fromTo(building, {y: -2, rotate: -10}, {duration: 1, y: 2, rotate: 10})
-      // .fromTo(texts, {opacity: 1}, {duration: .6, opacity: 0, x: 20, ease: "expo"})
-      // .fromTo(brand, {opacity: 0, x: 100}, {duration: .6, opacity:1, x: -50, ease: "circ"})
-      //.fromTo(social, {opacity: 0}, {duration: .5, opacitiy: 1})
+    if(breakPoint.matches){
+      tl.fromTo(designer, {x: 1500}, {duration: 1, x: 0, ease: "back.out(1.5)"})
+        .fromTo(developer, {x: -1500}, {duration: 1, x: 0, ease: "back.out(1.5)"}, 0.9)
+        .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
+    }else{
+      tl.fromTo(designer, {x: 1500}, {duration: 1, x: -50, ease: "back.out(1.5)"})
+        .fromTo(developer, {x: -1500}, {duration: 1, x:100, ease: "back.out(1.5)"}, 0.9)
+        .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
+    }
+
+    const twittertl = new gsap.timeline({
+      stagger: .5,
+      ease: "back.out(1.5)",
+      repeat:-1,
+      yoyo: true
+    })
+
+    twittertl.fromTo(twitterLogo, {rotate: -2, delay: .2}, {duration: .3, rotate: 3})
   }
 };
 </script>

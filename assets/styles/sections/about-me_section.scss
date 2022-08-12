@@ -43,10 +43,11 @@
     .about_profile-picture-wrapper{
         position: relative;
         .about_profile-picture {
-            width: 15em;
+            width: 28em;
             //box-shadow: 5px 5px 0px $secondary-color, -5px -5px 0px $secondary-color;
-            border: 3px solid $secondary-color;
-            margin-bottom: 2rem;
+            @media(max-width: 490px){
+                width: 15em;
+            }
         }
 
         #horizontal-dots{
@@ -81,6 +82,10 @@
             @media(max-width: 490px){
                 font-size: 1rem;
             }
+        }
+        .about__text_tagline{
+            font-weight: bold;
+            font-style: italic;
         }
 
     }
