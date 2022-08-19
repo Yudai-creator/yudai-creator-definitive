@@ -271,7 +271,7 @@
     </div>
 
     <!-- Services -->
-    <div class="services__section">
+    <!-- <div class="services__section">
       <h2>You can hire my services as freelancer</h2>
       <div class="services__card-container">
         <ServiceCard
@@ -290,7 +290,7 @@
           text="Your website will fit perfectly in every device, making sure that your users don't miss your message."
         />
       </div>
-    </div>
+    </div> -->
 
     <!-- Contact -->
     <div class="contact__section">

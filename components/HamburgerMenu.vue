@@ -30,19 +30,19 @@ export default {
             let tl = gsap.timeline();
 
             if(bool === false){
-                gsap.to(bar1, {duration: .1, width: '45px', height: '6px',
+                tl.to(bar1, {duration: .1, width: '45px', height: '6px',
                         top: '45%', left: '15%', rotate: '45deg'});
-                gsap.to(bar2, {duration: .1, opacity: 0});
-                gsap.to(bar3, {duration: .1, width: '45px', height: '6px',
+                tl.to(bar2, {duration: .1, opacity: 0});
+                tl.to(bar3, {duration: .1, width: '45px', height: '6px',
                         top: '45%', left: '15%', rotate: '-45deg'});
                         
                 bool = true;
                 console.log(bool);
             }else{
-                gsap.to(bar1, {duration: .1, width: '37px', height: '5px',
+                tl.to(bar1, {duration: .1, width: '37px', height: '5px',
                         top: '25%', left: '25%', rotate: '0deg'});
-                gsap.to(bar2, {duration: .1, opacity: 1});
-                gsap.to(bar3, {duration: .1, width: '37px', height: '5px',
+                tl.to(bar2, {duration: .1, opacity: 1});
+                tl.to(bar3, {duration: .1, width: '37px', height: '5px',
                         top: '65%', left: '25%', rotate: '0deg'}); 
                         
                 bool = false;
