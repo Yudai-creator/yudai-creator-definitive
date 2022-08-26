@@ -33,11 +33,15 @@
 
         <!-- <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape"> -->
         <img
+          @mousemove="move"
+          ref="blobRight"
           id="blob-right-corner"
           src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-right-corner_wHCu4gECK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108635820"
           alt="blob shape graphic"
         />
         <svg
+          ref="blobStroke"
+          @mousemove="move"
           id="blob-stroke"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 297.655 208.389"
@@ -55,6 +59,8 @@
         <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
         <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross"> -->
         <img
+          ref="blobShadow"
+          @mousemove="move"
           id="blob-right-corner-shadow"
           src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-right-corner-shadow_UzRWAQnWT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108634210"
           alt="blob shape shadow graphic"
@@ -116,7 +122,7 @@
       />
     </div>
     <div class="about_section">
-      <div class="about_profile-picture-wrapper">
+      <div ref="profilePicture" class="about_profile-picture-wrapper">
         <img
           id="horizontal-dots"
           src="~/static/about-me_assets/dots-compound-horizontal.svg"
@@ -129,7 +135,7 @@
         />
       </div>
 
-      <div id="about-me" class="about_text">
+      <div ref="aboutText" id="about-me" class="about_text">
         <p>
           Hello, Yudai here I'm a <span>web developer</span> and
           <span>UI designer</span>.
@@ -212,18 +218,8 @@
       <div class="social__others">
         <h3>You can also find me here</h3>
         <div>
-          <a href=""
-            >Linkedin
-            <img
-              src="~/static/social-media_assets/bxl-linkedin-square.svg"
-              alt="linkedin"
-          /></a>
-          <a href=""
-            >Github
-            <img
-              src="~/static/social-media_assets/bxl-github.svg"
-              alt="linkedin"
-          /></a>
+          <a href="https://www.linkedin.com/in/yudai-h-911bb01bb/" target="_blank"> <img src="~/static/social-media_assets/bxl-linkedin-square.svg" alt="linkedin"/> Linkedin </a>
+          <a href="https://github.com/Yudai-creator" target="_blank"> <img src="~/static/social-media_assets/bxl-github.svg" alt="github"/> Github </a>
         </div>
       </div>
       <!-- <svg id="wave-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 377.25 92.606">
@@ -381,6 +377,7 @@ import DesignThumbnail from "../components/DesignThumbnail.vue";
 import ServiceCard from "../components/ServiceCard.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
 import {gsap} from "gsap"
+import { scrollTrigger } from "gsap";
 export default {
   head(){
     return{
@@ -408,23 +405,30 @@ export default {
   },
   mounted(){
     const breakPoint = window.matchMedia("(min-width: 490px)");
-    const {designer, developer, both, twitterLogo} = this.$refs
+    const {designer, developer, both, twitterLogo, aboutText, profilePicture, blobRight, blobShadow, blobStroke} = this.$refs
+
+    // gsap.fromTo(aboutText, {x: -100, opacity: 0}, {scrollTrigger:{
+    //   trigger: aboutText,
+    //   toggleActions: "restart pause resume none"
+    // },duration: .5, x: 0, opacity: 1})
+
+    // gsap.to(aboutText, {scrollTrigger:{trigger: aboutText, toggleActions:"restart pause resume"},duration: .5, x: 50, opacity: 1})
 
 
+    // Headline animation
+    // const tl = new gsap.timeline({
+    //   stagger: .5
+    // })
 
-    const tl = new gsap.timeline({
-      stagger: .5
-    })
-
-    if(breakPoint.matches){
-      tl.fromTo(designer, {x: 1500}, {duration: 1, x: 0, ease: "back.out(1.5)"})
-        .fromTo(developer, {x: -1500}, {duration: 1, x: 0, ease: "back.out(1.5)"}, 0.9)
-        .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
-    }else{
-      tl.fromTo(designer, {x: 1500}, {duration: 1, x: -50, ease: "back.out(1.5)"})
-        .fromTo(developer, {x: -1500}, {duration: 1, x:100, ease: "back.out(1.5)"}, 0.9)
-        .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
-    }
+    // if(breakPoint.matches){
+    //   tl.fromTo(designer, {x: 1500}, {duration: 1, x: 0, ease: "back.out(1.5)"})
+    //     .fromTo(developer, {x: -1500}, {duration: 1, x: 0, ease: "back.out(1.5)"}, 0.9)
+    //     .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
+    // }else{
+    //   tl.fromTo(designer, {x: 1500}, {duration: 1, x: -50, ease: "back.out(1.5)"})
+    //     .fromTo(developer, {x: -1500}, {duration: 1, x:100, ease: "back.out(1.5)"}, 0.9)
+    //     .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
+    // }
 
     const twittertl = new gsap.timeline({
       stagger: .5,
@@ -433,7 +437,24 @@ export default {
       yoyo: true
     })
 
-    twittertl.fromTo(twitterLogo, {rotate: -2, delay: .2}, {duration: .3, rotate: 3})
+    twittertl.fromTo(twitterLogo, {rotate: -5}, {duration: .3, rotate: 5, delay: .3})
+  },
+  methods:{
+    move(e){
+      const {blobRight, blobShadow, blobStroke} = this.$refs;
+
+      const speed = 1.5;
+      const xs = (window.innerWidth - e.pageX * speed)/120;
+      const ys = (window.innerHeight - e.pageY * speed)/120;
+
+      const tl = new gsap.timeline({
+        stagger: .5,
+        ease: "back.out(1.5)",
+      })
+
+      tl.to(blobRight, {duration: .5, x: xs, y: ys})
+    }
+
   }
 };
 </script>
