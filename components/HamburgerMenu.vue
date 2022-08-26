@@ -25,16 +25,14 @@ export default {
         //     console.log(e)
         // },
         hamburgerMenu(){
-            const {bar1, bar2, bar3} = this.$refs;
+            const {bar1, bar2, bar3, toggle} = this.$refs;
             let bool = false;
             let tl = gsap.timeline();
 
             if(bool === false){
-                tl.to(bar1, {duration: .1, width: '45px', height: '6px',
-                        top: '45%', left: '15%', rotate: '45deg'});
-                tl.to(bar2, {duration: .1, opacity: 0});
-                tl.to(bar3, {duration: .1, width: '45px', height: '6px',
-                        top: '45%', left: '15%', rotate: '-45deg'});
+                tl.to(bar1, {duration: .1, width: '25px', height: '6px', top: '60%', left: '20%', rotate: '45deg'});
+                tl.to(bar2, {duration: .1, rotate: '90deg' });
+                tl.to(bar3, {duration: .1, width: '25px', height: '6px', top: '60%', left: '55%', rotate: '-45deg'});
                         
                 bool = true;
                 console.log(bool);
@@ -48,36 +46,10 @@ export default {
                 bool = false;
                 console.log(bool);
             }
+
+            tl.fromTo(toggle, {y: 0}, {duration: 1, y: 5})
         }
     }
-    // mounted(){
-    //     const {toggle, bar1, bar2, bar3} = this.$refs;
-    //     let bool = false;
-    //     let tl = gsap.timeline();
-    //     // gsap.to(toggle, {duration: .3, y: 10})
-
-    //     toggle.addEventListener('click', () => {
-    //         if(bool === false){
-    //             gsap.to(bar1, {duration: .1, width: '45px', height: '6px', 
-    //                     top: '45%', left: '15%', rotate: '45deg'})
-    //             gsap.to(bar2, {duration: .1, opacity: 0})
-    //             gsap.to(bar3, {duration: .1, width: '45px', height: '6px', 
-    //                     top: '45%', left: '15%', rotate: '-45deg'})
-                
-    //             bool = true;
-    //             console.log(bool);
-    //         }else{
-    //             gsap.to(bar1, {duration: .1, width: '37px', height: '5px', 
-    //                     top: '25%', left: '25%', rotate: '0deg'})
-    //             gsap.to(bar2, {duration: .1, opacity: 1})
-    //             gsap.to(bar3, {duration: .1, width: '37px', height: '5px', 
-    //                     top: '65%', left: '25%', rotate: '0deg'})
-                
-    //             bool = false;
-    //             console.log(bool);
-    //         }
-    //     })
-    // }
 }
 </script>
 <style lang="scss" scoped>
