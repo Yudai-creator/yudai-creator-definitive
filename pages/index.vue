@@ -192,6 +192,7 @@
           I share my everyday learnings and achievements on twitter.
         </h2>
         <div ref="twitterInfo" class="twitter__info">
+          
           <img
             id="twitter-banner"
             src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/BANNER_TWITTER_9NNzxB_mT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108714009"
@@ -218,7 +219,13 @@
         </div>
         <p>With more than 1k connections.</p>
         <h2>Would you join me?</h2>
+        <svg id="social_media_stroke_1" viewBox="0 0 360.231 126.02">
+          <path  d="M2399,3828s317,104,357-96" transform="translate(-2398.221 -3731.51)" fill="none" stroke="#2f1484" stroke-width="3"/>
+        </svg>
       </div>
+      <svg id="social_media_stroke_2"  height="258" viewBox="0 0 4 288">
+        <path  d="M2056,3988v288" transform="translate(-2054 -3988)" fill="none" stroke="#231169" stroke-width="3"/>
+      </svg>
       <div class="social__others">
         <h3>You can also find me here</h3>
         <div>
@@ -333,10 +340,12 @@
             class="form__submit"
             type="submit"
             value="Send Message"
-            disabled
           />
         </form>
       </div>
+      <svg id="contact_stroke" width="3" height="165" viewBox="0 0 3 165">
+        <path d="M2095.5,12210v165" transform="translate(-2094 -12210)" fill="none" stroke="#180d4d" stroke-width="3"/>
+      </svg>
       <div class="contact__email">
         <h2>Or, email me at</h2>
         <div class="email__container">
@@ -439,29 +448,32 @@ export default {
     gsap.fromTo(aboutText, {x: -150, opacity: 0}, {scrollTrigger:{
       trigger: aboutText,
       toggleActions: "restart pause resume none"
-    },duration: .5, x: 0, opacity: 1})
+    },duration: .5, x: 0, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(profilePicture, {x: 150, opacity: 0}, {scrollTrigger:{
       trigger: profilePicture,
       toggleActions: "restart pause resume none"
-    },duration: .5, x: 0, opacity: 1})
+    },duration: .5, x: 0, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(twitterInfo, {y: 300, opacity: 0}, {scrollTrigger:{
       trigger: divider_top,
       toggleActions: "restart pause resume none",
       start: "top bottom"
-    },duration: .5, y: 0, opacity: 1})
+    },duration: .5, y: 0, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(contactForm, {y: 300, opacity: 0}, {scrollTrigger:{
       trigger: contactSection,
       toggleActions: "restart pause resume none",
       start: "top bottom"
-    },duration: .5, y: 0, opacity: 1})
+    },duration: .5, y: 0, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(waterMark, {x: -250, opacity: 0}, {scrollTrigger:{
       trigger: waterMark,
       toggleActions: "restart pause resume none"
-    },duration: .5, x: 0, opacity: .1})
+    },duration: .5, x: 0, opacity: .1, ease: "circ.out"})
+
+    gsap.to(designer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
+    gsap.to(developer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
 
     // gsap.to(aboutText, {scrollTrigger:{trigger: aboutText, toggleActions:"restart pause resume"},duration: .5, x: 50, opacity: 1})
     // gsap.to(profilePicture, {scrollTrigger:{trigger: aboutText, toggleActions:"restart pause resume"},duration: .5, x: - 50, opacity: 1})
