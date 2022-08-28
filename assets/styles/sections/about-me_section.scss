@@ -84,8 +84,14 @@
             }
         }
         .about__text_tagline{
+            display: flex;
+            align-items: center;
             font-weight: bold;
             font-style: italic;
+
+            svg{
+                margin-left: .5rem;
+            }
         }
 
     }
