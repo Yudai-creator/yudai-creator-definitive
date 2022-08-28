@@ -428,22 +428,8 @@ export default {
   },
   mounted(){
     
-    const breakPoint = window.matchMedia("(min-width: 490px)");
-    const {designer, developer, both, twitterInfo, aboutText, profilePicture, waterMark, contactForm, divider_top, contactSection, blobRight, blobShadow, blobStroke} = this.$refs
-    
-    // let path = document.getElementById('about_me_stroke');
-    // let pathLenght = path.getTotalLength();
-
-    // path.style.strokeDasharray = pathLenght + ' ' + pathLenght;
-    // path.style.strokeDashoffset = pathLenght;
-
-    // window.addEventListener('scroll', () => {
-    //   let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-
-    //   let drawLenght = pathLenght + scrollPercentage;
-
-    //   path.style.strokeDashoffset = pathLenght - drawLenght;
-    // })
+    // const breakPoint = window.matchMedia("(min-width: 490px)");
+    const {designer, developer, both, twitterInfo, aboutText, profilePicture, waterMark, contactForm, divider_top, contactSection, blobRight, blobShadow, blobStroke} = this.$refs;
 
     gsap.fromTo(aboutText, {x: -150, opacity: 0}, {scrollTrigger:{
       trigger: aboutText,
@@ -474,36 +460,6 @@ export default {
 
     gsap.to(designer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
     gsap.to(developer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
-
-    // gsap.to(aboutText, {scrollTrigger:{trigger: aboutText, toggleActions:"restart pause resume"},duration: .5, x: 50, opacity: 1})
-    // gsap.to(profilePicture, {scrollTrigger:{trigger: aboutText, toggleActions:"restart pause resume"},duration: .5, x: - 50, opacity: 1})
-
-
-    // Headline animation
-    // const tl = new gsap.timeline({
-    //   stagger: .5
-    // })
-
-    // if(breakPoint.matches){
-    //   tl.fromTo(designer, {x: 1500}, {duration: 1, x: 0, ease: "back.out(1.5)"})
-    //     .fromTo(developer, {x: -1500}, {duration: 1, x: 0, ease: "back.out(1.5)"}, 0.9)
-    //     .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
-    // }else{
-    //   tl.fromTo(designer, {x: 1500}, {duration: 1, x: -50, ease: "back.out(1.5)"})
-    //     .fromTo(developer, {x: -1500}, {duration: 1, x:100, ease: "back.out(1.5)"}, 0.9)
-    //     .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
-    // }
-
-
-    // Twitter button action
-    // const twittertl = new gsap.timeline({
-    //   stagger: .5,
-    //   ease: "back.out(1.5)",
-    //   repeat:-1,
-    //   yoyo: true
-    // })
-
-    // twittertl.fromTo(twitterLogo, {rotate: -5}, {duration: .3, rotate: 5, delay: .3})
   },
   methods:{
     move(e){
@@ -524,7 +480,6 @@ export default {
     goTo(){
       parent.location = 'https://twitter.com/creator_yudai';
     }
-
   }
 };
 </script>
