@@ -312,7 +312,7 @@
       <h2>Get in contact with me 
       </h2>
       <div ref="contactForm" class="contact__form">
-        <form id="contact_form" name="contact" action="https://formsubmit.co/perezheber73@gmail.com" method="POST">
+        <form id="contact_form" name="contact" action="https://formsubmit.co/30a2345106bd0554c2129772ee4df342" method="POST">
           <div class="contact__form_control">
             <input id="input-name" name="name" type="text" required />
             <label for="input-name">Your name</label>
