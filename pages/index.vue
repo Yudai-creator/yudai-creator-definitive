@@ -162,13 +162,19 @@
             </g>
           </svg>
         </p>
+
+        <!-- Stroke on scroll -->
+        <!-- <svg class="about_stroke_scroll" viewBox="0 0 286.698 464.79" preserveAspectRatio="xMidYMax meet">
+          <path id="about_me_stroke" d="M2009.091,2089s442.424,144.333,224.242,462.515" transform="translate(-2008.626 -2087.574)" fill="none" stroke="#2f1484" stroke-width="3"/>
+        </svg> -->
+
       </div>
     </div>
 
     <!-- Social media spot -->
     <div class="social__section">
       <!-- <img id="wave-top" src="~/static/social-media_assets/waves-top.png" alt="waves"> -->
-      <div class="social__section_divider-top">
+      <div  class="social__section_divider-top">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -182,10 +188,10 @@
         </svg>
       </div>
       <div class="social__twitter">
-        <h2>
+        <h2 ref="divider_top">
           I share my everyday learnings and achievements on twitter.
         </h2>
-        <div class="twitter__info">
+        <div ref="twitterInfo" class="twitter__info">
           <img
             id="twitter-banner"
             src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/BANNER_TWITTER_9NNzxB_mT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108714009"
@@ -241,9 +247,9 @@
 
     <!-- Portfolio section -->
     <div class="portfolio__section">
-      <h2 id="portfolio_water-mark">Portfolio</h2>
+      <h2 ref="waterMark" id="portfolio_water-mark">Portfolio</h2>
       <div class="portfolio__latest-work">
-        <h2 id="work">My work</h2>
+        <h2 id="work">My work as UI designer</h2>
         <div class="latest-work__layout">
           <DesignThumbnail  
             thumbnail="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/Design_press___4_GqBGPtGs-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236623477" 
@@ -287,7 +293,7 @@
     </div> -->
 
     <!-- Contact -->
-    <div class="contact__section">
+    <div ref="contactSection" class="contact__section">
       <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <g id="vuesax_bold_emoji-happy" data-name="vuesax/bold/emoji-happy" transform="translate(-428 -380)">
             <g id="emoji-happy">
@@ -298,7 +304,7 @@
       </svg> -->
       <h2>Get in contact with me 
       </h2>
-      <div class="contact__form">
+      <div ref="contactForm" class="contact__form">
         <form
           id="contact_form"
           name="contact"
@@ -384,7 +390,8 @@ import DesignThumbnail from "../components/DesignThumbnail.vue";
 import ServiceCard from "../components/ServiceCard.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
 import {gsap} from "gsap"
-import { scrollTrigger } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
   head(){
     return{
@@ -411,15 +418,53 @@ export default {
     HamburgerMenu,
   },
   mounted(){
+    
     const breakPoint = window.matchMedia("(min-width: 490px)");
-    const {designer, developer, both, twitterLogo, aboutText, profilePicture, blobRight, blobShadow, blobStroke} = this.$refs
+    const {designer, developer, both, twitterInfo, aboutText, profilePicture, waterMark, contactForm, divider_top, contactSection, blobRight, blobShadow, blobStroke} = this.$refs
+    
+    // let path = document.getElementById('about_me_stroke');
+    // let pathLenght = path.getTotalLength();
 
-    // gsap.fromTo(aboutText, {x: -100, opacity: 0}, {scrollTrigger:{
-    //   trigger: aboutText,
-    //   toggleActions: "restart pause resume none"
-    // },duration: .5, x: 0, opacity: 1})
+    // path.style.strokeDasharray = pathLenght + ' ' + pathLenght;
+    // path.style.strokeDashoffset = pathLenght;
+
+    // window.addEventListener('scroll', () => {
+    //   let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+    //   let drawLenght = pathLenght + scrollPercentage;
+
+    //   path.style.strokeDashoffset = pathLenght - drawLenght;
+    // })
+
+    gsap.fromTo(aboutText, {x: -150, opacity: 0}, {scrollTrigger:{
+      trigger: aboutText,
+      toggleActions: "restart pause resume none"
+    },duration: .5, x: 0, opacity: 1})
+
+    gsap.fromTo(profilePicture, {x: 150, opacity: 0}, {scrollTrigger:{
+      trigger: profilePicture,
+      toggleActions: "restart pause resume none"
+    },duration: .5, x: 0, opacity: 1})
+
+    gsap.fromTo(twitterInfo, {y: 300, opacity: 0}, {scrollTrigger:{
+      trigger: divider_top,
+      toggleActions: "restart pause resume none",
+      start: "top bottom"
+    },duration: .5, y: 0, opacity: 1})
+
+    gsap.fromTo(contactForm, {y: 300, opacity: 0}, {scrollTrigger:{
+      trigger: contactSection,
+      toggleActions: "restart pause resume none",
+      start: "top bottom"
+    },duration: .5, y: 0, opacity: 1})
+
+    gsap.fromTo(waterMark, {x: -250, opacity: 0}, {scrollTrigger:{
+      trigger: waterMark,
+      toggleActions: "restart pause resume none"
+    },duration: .5, x: 0, opacity: .1})
 
     // gsap.to(aboutText, {scrollTrigger:{trigger: aboutText, toggleActions:"restart pause resume"},duration: .5, x: 50, opacity: 1})
+    // gsap.to(profilePicture, {scrollTrigger:{trigger: aboutText, toggleActions:"restart pause resume"},duration: .5, x: - 50, opacity: 1})
 
 
     // Headline animation

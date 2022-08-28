@@ -94,5 +94,13 @@
             }
         }
 
+        .about_stroke_scroll{
+            position: absolute;
+            top: 75%;
+            left: 40%;
+            width: 10%;
+            z-index: 2;
+        }
+
     }
 }
