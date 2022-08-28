@@ -199,17 +199,15 @@
             </ul>
           </div>
           <div class="twitter__btn">
-            <svg ref="twitterLogo" class="twitter_logo"
-              id="twitter-logo"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 23.333 20.333"
-            >
-              <path
-                d="M22.936,9.086c.015.223.015.445.015.666,0,6.783-4.812,14.6-13.607,14.6A12.855,12.855,0,0,1,2,22.048a9.322,9.322,0,0,0,1.155.064,9.176,9.176,0,0,0,5.938-2.192A4.847,4.847,0,0,1,4.62,16.361a5.686,5.686,0,0,0,.9.079,4.763,4.763,0,0,0,1.26-.175A5.053,5.053,0,0,1,2.949,11.23v-.064a4.581,4.581,0,0,0,2.161.651A5.23,5.23,0,0,1,2.977,7.545a5.376,5.376,0,0,1,.651-2.588,13.322,13.322,0,0,0,9.862,5.369,6.239,6.239,0,0,1-.119-1.176,4.964,4.964,0,0,1,4.783-5.131,4.625,4.625,0,0,1,3.494,1.62A9.067,9.067,0,0,0,24.683,4.4a5.073,5.073,0,0,1-2.1,2.828,9.078,9.078,0,0,0,2.753-.795A10.705,10.705,0,0,1,22.936,9.086Z"
+            <svg ref="twitterLogo" class="twitter_logo" id="twitter-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809	c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793	c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05	c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032	c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028	c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22	c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z " fill="#25c1e9"/>
+            </svg>
+            <!-- <svg ref="twitterLogo" class="twitter_logo" id="twitter-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.333 20.333">
+              <path class="twitter_logo" d="M22.936,9.086c.015.223.015.445.015.666,0,6.783-4.812,14.6-13.607,14.6A12.855,12.855,0,0,1,2,22.048a9.322,9.322,0,0,0,1.155.064,9.176,9.176,0,0,0,5.938-2.192A4.847,4.847,0,0,1,4.62,16.361a5.686,5.686,0,0,0,.9.079,4.763,4.763,0,0,0,1.26-.175A5.053,5.053,0,0,1,2.949,11.23v-.064a4.581,4.581,0,0,0,2.161.651A5.23,5.23,0,0,1,2.977,7.545a5.376,5.376,0,0,1,.651-2.588,13.322,13.322,0,0,0,9.862,5.369,6.239,6.239,0,0,1-.119-1.176,4.964,4.964,0,0,1,4.783-5.131,4.625,4.625,0,0,1,3.494,1.62A9.067,9.067,0,0,0,24.683,4.4a5.073,5.073,0,0,1-2.1,2.828,9.078,9.078,0,0,0,2.753-.795A10.705,10.705,0,0,1,22.936,9.086Z"
                 transform="translate(-2 -4.019)"
                 fill="#25c1e9"
               />
-            </svg>
+            </svg> -->
           </div>
         </div>
         <p>With more than 1k connections.</p>
@@ -218,8 +216,8 @@
       <div class="social__others">
         <h3>You can also find me here</h3>
         <div>
-          <a href="https://www.linkedin.com/in/yudai-h-911bb01bb/" target="_blank"> <img src="~/static/social-media_assets/bxl-linkedin-square.svg" alt="linkedin"/> Linkedin </a>
-          <a href="https://github.com/Yudai-creator" target="_blank"> <img src="~/static/social-media_assets/bxl-github.svg" alt="github"/> Github </a>
+          <a class="social__others_link" href="https://www.linkedin.com/in/yudai-h-911bb01bb/" target="_blank"> <img src="~/static/social-media_assets/bxl-linkedin-square.svg" alt="linkedin"/> Linkedin </a>
+          <a class="social__others_link" href="https://github.com/Yudai-creator" target="_blank"> <img src="~/static/social-media_assets/bxl-github.svg" alt="github"/> Github </a>
         </div>
       </div>
       <!-- <svg id="wave-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 377.25 92.606">
@@ -290,7 +288,16 @@
 
     <!-- Contact -->
     <div class="contact__section">
-      <h2>Get in contact with me through this form</h2>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <g id="vuesax_bold_emoji-happy" data-name="vuesax/bold/emoji-happy" transform="translate(-428 -380)">
+            <g id="emoji-happy">
+              <path id="Vector" d="M14.19,0H5.81C2.17,0,0,2.17,0,5.81v8.37C0,17.83,2.17,20,5.81,20h8.37c3.64,0,5.81-2.17,5.81-5.81V5.81C20,2.17,17.83,0,14.19,0ZM6.5,4.38A1.88,1.88,0,1,1,4.62,6.25,1.884,1.884,0,0,1,6.5,4.38ZM10,17.08A4.887,4.887,0,0,1,5.12,12.2a1.28,1.28,0,0,1,1.27-1.28h7.2a1.274,1.274,0,0,1,1.27,1.28A4.857,4.857,0,0,1,10,17.08Zm3.5-8.96a1.88,1.88,0,1,1,1.88-1.88A1.884,1.884,0,0,1,13.5,8.12Z" transform="translate(430 382)" fill="#00A1FF"/>
+              <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(452 404) rotate(180)" fill="none" opacity="0"/>
+            </g>
+          </g>
+      </svg> -->
+      <h2>Get in contact with me 
+      </h2>
       <div class="contact__form">
         <form
           id="contact_form"
@@ -352,13 +359,13 @@
         <div class="footer__content_social-links">
           <a class="social-links_pop" href="https://twitter.com/creator_yudai" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-twitter_uc1z2SuZu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585976" alt="twitter logo"></a>
 
-          <a class="social-links_pop" href="#" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-linkedin_5HaHYJ0hF.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585980" alt="linkedin logo"></a>
+          <a class="social-links_pop" href="https://www.linkedin.com/in/yudai-h-911bb01bb/" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-linkedin_5HaHYJ0hF.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585980" alt="linkedin logo"></a>
 
-          <a class="social-links_pop" href="#" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-instagram_ZoEV25n5z.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585965" alt="instagram logo"></a>
+          <a class="social-links_pop" href="https://www.instagram.com/creator_yudai/" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-instagram_ZoEV25n5z.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585965" alt="instagram logo"></a>
 
-          <a class="social-links_pop" href="#" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-github_FqVGwPThg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585983" alt="github logo"></a>
+          <a class="social-links_pop" href="https://github.com/Yudai-creator" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-github_FqVGwPThg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585983" alt="github logo"></a>
 
-          <a class="social-links_pop" href="#" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-youtube_BQucKyUgS.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585974" alt="youtube logo"></a>
+          <a class="social-links_pop" href="#" target="_blank" hidden><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-youtube_BQucKyUgS.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585974" alt="youtube logo"></a>
 
         </div>
       </div>
@@ -430,14 +437,16 @@ export default {
     //     .fromTo(both, {scale: 0}, {duration: 1, scale: 1, ease: "back.out(1.5)"}, 1.5)
     // }
 
-    const twittertl = new gsap.timeline({
-      stagger: .5,
-      ease: "back.out(1.5)",
-      repeat:-1,
-      yoyo: true
-    })
 
-    twittertl.fromTo(twitterLogo, {rotate: -5}, {duration: .3, rotate: 5, delay: .3})
+    // Twitter button action
+    // const twittertl = new gsap.timeline({
+    //   stagger: .5,
+    //   ease: "back.out(1.5)",
+    //   repeat:-1,
+    //   yoyo: true
+    // })
+
+    // twittertl.fromTo(twitterLogo, {rotate: -5}, {duration: .3, rotate: 5, delay: .3})
   },
   methods:{
     move(e){

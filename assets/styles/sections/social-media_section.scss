@@ -106,7 +106,10 @@
                 border: 2px solid $cta-color;
                 background-color: $bg-color;
 
+                box-shadow: 0 3px 5px #2F1484;
+
                cursor: pointer;
+               
 
                @media (max-width: 490px) {
                     width: 70px;
@@ -114,7 +117,16 @@
                     left: 90%;
                 }
                 #twitter-logo{
-                    width: 50%;
+                    width: 60%;
+                }
+                .twitter_logo{
+                    @include transitionBackIn;
+                    animation: shake 1s ease-in-out infinite alternate forwards;
+                    &:hover{
+                        filter: drop-shadow(0 3px 5px #2F1484);
+                        transform: rotate(20deg);
+                        animation-play-state: paused
+                    }
                 }
             }
         }
@@ -131,6 +143,7 @@
             @include flexCenter(row);
             a{
                 @include flexCenter(row);
+                @include transitionBackIn;
                 margin-left: 2rem;
                 padding: .5rem;
                 border-radius: 50px;
@@ -141,7 +154,29 @@
                 img{
                     margin-right: .3rem;
                 }
+
+                &:hover{
+                    font-weight: bold;
+                    text-decoration: none;
+                    animation: colored 2.5s ease-in 5 alternate forwards;
+                }
             }
         }
     }
+}
+
+@keyframes colored {
+    0%{color: $cta-color;}
+    50%{color: $secondary-light;}
+    100%{color: $tertiary-color;}
+}
+
+@keyframes shake {
+    0%{ transform: rotate(0deg);}
+    25%{ transform: rotate(3deg);}
+    30%{ transform: scale(1.1);}
+    50%{ transform: rotate(-3deg);}
+    60%{ transform: scale(1);}
+    75%{ transform: rotate(3deg);}
+    100%{ transform: rotate(0deg);}
 }
