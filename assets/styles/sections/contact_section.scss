@@ -79,17 +79,9 @@
         }
     }
     
-    #contact_stroke{
-        position: absolute;
-        left: 50%;
-        top: 60%;
-        @media (max-width: 490px) {
-            display: none;
-        }
-    }
     .contact__email{
         padding: 2rem;
-        margin-top: 15rem;
+        margin-top: 5rem;
         @media (max-width: 490px) {
             margin-top: 8rem;
         }

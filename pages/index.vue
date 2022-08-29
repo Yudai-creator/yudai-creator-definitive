@@ -137,21 +137,17 @@
 
       <div ref="aboutText" id="about-me" class="about_text">
         <p>
-          Hello, Yudai here I'm a <span>web developer</span> and
-          <span>UI designer</span>.
+          Hello,  I'm Yudai, a <span>web developer</span> and <span>UI designer</span>.
         </p>
 
         <p>
-          Frontend developer specialist, focus on creating user centered UI/UX design.
-          Capable of recreating client needs upon a project. Achieving the best results.
+          I am a frontend developer utilising React and or Vue to deliver beautifully designed, user-centric UI / UX experiences.
         </p>
 
         <p>
-          I'm passionate about design and animations, love to be creative. I
-          feel like building projects and doing design is my way to help and
-          contribute with the society.
+          I don't think of software design and development as a job, I love what I do that much! 
         </p>
-        <p class="about__text_tagline">
+        <!-- <p class="about__text_tagline">
           This is not a job, this is what I love to do 
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <g id="vuesax_bold_flash" data-name="vuesax/bold/flash" transform="translate(-428 -316)">
@@ -161,7 +157,7 @@
               </g>
             </g>
           </svg>
-        </p>
+        </p> -->
 
         <!-- Stroke on scroll -->
         <!-- <svg class="about_stroke_scroll" viewBox="0 0 286.698 464.79" preserveAspectRatio="xMidYMax meet">
@@ -219,13 +215,7 @@
         </div>
         <p>With more than 1k connections.</p>
         <h2>Would you join me?</h2>
-        <svg id="social_media_stroke_1" viewBox="0 0 360.231 126.02">
-          <path  d="M2399,3828s317,104,357-96" transform="translate(-2398.221 -3731.51)" fill="none" stroke="#2f1484" stroke-width="3"/>
-        </svg>
       </div>
-      <svg id="social_media_stroke_2"  height="258" viewBox="0 0 4 288">
-        <path  d="M2056,3988v288" transform="translate(-2054 -3988)" fill="none" stroke="#231169" stroke-width="3"/>
-      </svg>
       <div class="social__others">
         <h3>You can also find me here</h3>
         <div>
@@ -269,6 +259,7 @@
         </div>
       </div>
       <div class="portfolio__projects">
+
         <!-- Projects -->
       </div>
       <!-- Download CV button -->
@@ -334,18 +325,18 @@
             class="form__submit"
             type="submit"
             value="Send Message"
+            disabled
           />
         </form>
       </div>
-      <svg id="contact_stroke" width="3" height="165" viewBox="0 0 3 165">
-        <path d="M2095.5,12210v165" transform="translate(-2094 -12210)" fill="none" stroke="#180d4d" stroke-width="3"/>
-      </svg>
-      <div class="contact__email">
+      <!-- Another option of contact -->
+
+      <!-- <div class="contact__email">
         <h2>Or, email me at</h2>
         <div class="email__container">
           <p>yudaipx77@gmail.com</p>
         </div>
-      </div>
+      </div> -->
     </div>
     <footer>
       <div class="footer__content">
@@ -380,7 +371,7 @@
       </div>
       
       <div class="footer__author">
-        <p>Made by the awesome <span>Yudai H</span> 💙</p>
+        <p>Made by <span>Yudai H</span> 💙</p>
       </div>
     </footer>
   </div>
