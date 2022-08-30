@@ -500,7 +500,7 @@ html {
 
 body {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 
   //overflow-y: hidden;
 
