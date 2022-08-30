@@ -404,7 +404,8 @@ export default {
       ],
       script: [
         {  src: "https://plausible.io/js/plausible.js" ,
-           datadomain: "yudaicreator.com"
+           defer: true,
+           domain: "yudaicreator.com"
       }
     ]
     }
