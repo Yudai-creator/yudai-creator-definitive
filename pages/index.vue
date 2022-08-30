@@ -403,11 +403,12 @@ export default {
         { hid: "twitter:image", name: "twitter:image", content: 'https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Meta_Images/portfolio-og-image___1_0QRxF6SIp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659147850094'},
       ],
       script: [
-        {  src: "https://plausible.io/js/plausible.js" ,
-           defer: true,
-           domain: "yudaicreator.com"
-      }
-    ]
+        {
+          defer: true,
+          domain: "yudaicreator.com",
+          src: "https://plausible.io/js/plausible.js"
+        }
+      ]
     }
   },
   components: {
