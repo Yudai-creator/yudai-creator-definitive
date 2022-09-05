@@ -239,12 +239,12 @@
         <h2 id="work">My work</h2>
         <div class="latest-work__layout">
           <DesignThumbnail  
-            thumbnail="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/Design_press___4_GqBGPtGs-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236623477" 
-            
+          thumbnailLink="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/Design_press___4_GqBGPtGs-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236623477" 
+          thumbnailAlt="Design"
           />
           <DesignThumbnail 
-            thumbnail="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/design_presentation_Wg81FBJcu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236626298" 
-            
+          thumbnailLink="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/design_presentation_Wg81FBJcu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236626298" 
+          thumbnailAlt="Design"
           />
         </div>
       </div>
@@ -335,7 +335,7 @@
         </div>
 
         <NavLinks/>
-        
+
         <div class="footer__content_social-links">
           <a class="social-links_pop" href="https://twitter.com/creator_yudai" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-twitter_uc1z2SuZu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585976" alt="twitter logo"></a>
 

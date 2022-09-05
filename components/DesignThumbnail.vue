@@ -1,7 +1,7 @@
 <template name="DesignThumbnail">
-    <div class="container" :style="{ backgroundImage: `url(${thumbnail})` }">
+    <div class="container">
         <!-- <p>{{textContent}}</p> -->
-       <!-- <img class="container_thumbnail" :src={thumbnail} :alt={thumbnailAlt}> -->
+       <img class="design_thumbnail" :src=thumbnailLink :alt=thumbnailAlt> 
     </div>
 </template>
 <script>
@@ -10,8 +10,14 @@ export default  {
     props:{
         textContent: String,
         thumbnail: String,
-        // thumbnailAlt: String,
+        thumbnailLink: String,
+        thumbnailAlt: String
     }
+
+    // <div class="container" :style="{ backgroundImage: `url(${thumbnail})` }">
+    //     <!-- <p>{{textContent}}</p> -->
+    //    <!-- <img class="container_thumbnail" :src={thumbnail} :alt={thumbnailAlt}> -->
+    // </div>
 }
 </script>
 <style lang="scss" scoped>
@@ -21,18 +27,22 @@ export default  {
 
 .container{
     width: 48%;
-    min-width: 250px;
-    height: 500px;
     flex-shrink: 0;
+    z-index: 2;
 
-    border-radius: 5px;
-    // background-color: $bg-light;
-    
-    // background-size:  cover;
-    background-repeat: no-repeat;
-    // background-size: contain;
+    &:hover{
+        cursor: pointer;
+    }
+
     @media (max-width: 490px){
-        height: 250px;  
+        width: 100%;
+
+        margin-top: 2rem;
+    }
+
+    .design_thumbnail{
+        width: 95%;
+        border-radius: 5px;
     }
 }
 
