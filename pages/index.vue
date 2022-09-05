@@ -7,17 +7,7 @@
           <img class="logo" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/yudai_UDBphSZy8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108298328" alt="Yudai H brand mark" />
         </figure>
 
-        <ul class="hero__nav-links">
-          <li>
-            <a href="#hero">Home</a>
-          </li>
-          <li>
-            <a href="#about-me">About me</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-        </ul>
+        <NavLinks/>
 
         <div class="hero__contact-button">
           <ButtonSecondary textContent="Contact"/>
@@ -343,19 +333,9 @@
         <div class="footer__content_logo">
           <a href="#hero"><img class="logo" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/yudai_UDBphSZy8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108298328" alt="Yudai H brand mark" /></a>
         </div>
-        <div class="footer__content_nav-links">
-          <ul class="nav-links">
-            <li>
-              <a href="#hero">Home</a>
-            </li>
-            <li>
-              <a href="#about-me">About me</a>
-            </li>
-            <li>
-              <a href="#work">Work</a>
-            </li>
-          </ul>
-        </div>
+
+        <NavLinks/>
+        
         <div class="footer__content_social-links">
           <a class="social-links_pop" href="https://twitter.com/creator_yudai" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-twitter_uc1z2SuZu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585976" alt="twitter logo"></a>
 
@@ -383,8 +363,11 @@ import ButtonSecondary from "../components/ButtonSecondary.vue";
 import DesignThumbnail from "../components/DesignThumbnail.vue";
 import ServiceCard from "../components/ServiceCard.vue";
 import HamburgerMenu from "../components/HamburgerMenu.vue";
+import NavLinks from "../components/NavLinks.vue";
 import {gsap} from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import NavLinks1 from "../components/NavLinks.vue";
+import NavLinks2 from "../components/NavLinks.vue";
 gsap.registerPlugin(ScrollTrigger);
 export default {
   head(){
@@ -417,7 +400,10 @@ export default {
     ServiceCard,
     ButtonSecondary,
     HamburgerMenu,
-  },
+    NavLinks,
+    NavLinks1,
+    NavLinks2
+},
   mounted(){
     
     // const breakPoint = window.matchMedia("(min-width: 490px)");
