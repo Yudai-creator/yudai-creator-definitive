@@ -246,7 +246,7 @@
     <div class="portfolio__section">
       <h2 ref="waterMark" id="portfolio_water-mark">Portfolio</h2>
       <div class="portfolio__latest-work">
-        <h2 id="work">My work as UI designer</h2>
+        <h2 id="work">My work</h2>
         <div class="latest-work__layout">
           <DesignThumbnail  
             thumbnail="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/Design_press___4_GqBGPtGs-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236623477" 

@@ -74,7 +74,7 @@ header {
                 &:hover::after {
                     background-color: $cta-color;
                     width: 75px;
-                    top: 100%;
+                    top: 115%;
                     border-radius: 5px;
                 }
             }
@@ -136,6 +136,7 @@ header {
         margin-bottom: 2rem;
         // font-family: 'Bungee', cursive;
         font-family: 'aironedemo', normal;
+        font-weight: 100;
         font-size: 3rem;
         clip-path: polygon(22% 100%, 75% 100%, 100% 100%, 0% 100%);
         @media (max-width: 490px) {
