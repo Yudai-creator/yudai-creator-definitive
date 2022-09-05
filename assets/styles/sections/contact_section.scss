@@ -51,10 +51,12 @@
             }
             .form__submit{
                 @include transitionBackIn;
+                -webkit-appearance: none;
                 width: 100%;
                 
                 padding: 1rem;
                 background-color: $cta-color;
+                
                 color: $bg-color;
                 border-radius: 2rem;
                 border: none;
