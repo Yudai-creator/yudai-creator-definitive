@@ -184,11 +184,18 @@
             src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/BANNER_TWITTER_9NNzxB_mT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108714009"
             alt="banner"
           />
-          <div class="twitter__feed">
+          <div class="twitter__threads">
+            <h2>Popular threads</h2>
             <ul>
-              <li>UI/UX guides for beginners</li>
-              <li>Frontend developer roadmap</li>
-              <li>MY daily life as WebDev</li>
+              <li>
+                <a href="https://twitter.com/creator_yudai/status/1503726543171895311?s=20&t=AJawjDbeyi0SvIMWmEvcGA">CSS series: explaining from the basics to more complex topics of CSS.</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/creator_yudai/status/1554413927576092672?s=20&t=AJawjDbeyi0SvIMWmEvcGA">Free UI design resources: A compilation of tools and resources to aid our work as UI designers and Frontend Developers.</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/creator_yudai/status/1531968617960570886?s=20&t=AJawjDbeyi0SvIMWmEvcGA">9 modern Javascript features: These are awesome features of javascript one needs to learn before React.</a>
+              </li>
             </ul>
           </div>
           <div class="twitter__btn" @click="goTo">
@@ -205,6 +212,7 @@
         </div>
         <p>With more than 1k connections.</p>
         <h2>Would you join me?</h2>
+        <a href="https://twitter.com/creator_yudai?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @creator_yudai</a>
       </div>
       <div class="social__others">
         <h3>You can also find me here</h3>
@@ -321,12 +329,10 @@
       </div>
       <!-- Another option of contact -->
 
-      <!-- <div class="contact__email">
-        <h2>Or, email me at</h2>
-        <div class="email__container">
-          <p>yudaipx77@gmail.com</p>
-        </div>
-      </div> -->
+      <div class="contact__dm">
+        <h2>Or, send me a DM</h2>
+        <a href="https://twitter.com/messages/compose?recipient_id=1176871799411433473&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-lang="en" data-screen-name="https://twitter.com/creator_yudai" data-show-count="false">Message @https://twitter.com/creator_yudai</a>
+      </div> 
     </div>
     <footer>
       <div class="footer__content">
@@ -390,7 +396,12 @@ export default {
           defer: true,
           domain: "yudaicreator.com",
           src: "https://plausible.io/js/plausible.js"
+        },
+        {
+          src: "https://platform.twitter.com/widgets.js",
         }
+
+        
       ]
     }
   },
