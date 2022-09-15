@@ -301,7 +301,7 @@
       <h2>Get in contact with me 
       </h2>
       <div ref="contactForm" class="contact__form">
-        <form action="POST" id="contact_form" name="contact" data-netlify="true">
+        <form id="contact_form" name="contact">
           <div class="contact__form_control">
             <input id="input-name" name="name" type="text" required />
             <label for="input-name">Your name</label>
@@ -319,7 +319,6 @@
             ></textarea>
             <label for="input-message">Your message</label>
           </div>
-          <div data-netlify-recaptcha="true"></div>
           <input
             class="form__submit"
             type="submit"
