@@ -390,6 +390,14 @@ export default {
         { hid: "twitter:url", name: "twitter:url", content: 'https://yudaicreator.com/' },
         { hid: 'twitter:description', name: 'twitter:description', content: 'Yudai H portfolio website, showing up his skills as a UI designer and Frontend Developer.' },
         { hid: "twitter:image", name: "twitter:image", content: 'https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Meta_Images/portfolio-og-image___1_0QRxF6SIp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659147850094'},
+
+
+        //Linkedin card
+        { hid: 't-type', name: 'linkedin:card', content: 'summary_large_image' },
+        { hid: "linkedin:title", name: "linkedin:title", content: 'Yudai Creator' },
+        { hid: "linkedin:url", name: "linkedin:url", content: 'https://yudaicreator.com/' },
+        { hid: 'linkedin:description', name: 'linkedin:description', content: 'Yudai H portfolio website, showing up his skills as a UI designer and Frontend Developer.' },
+        { hid: "linkedin:image", name: "linkedin:image", content: 'https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Meta_Images/portfolio-og-image___1_0QRxF6SIp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659147850094'}
       ],
       script: [
         {
