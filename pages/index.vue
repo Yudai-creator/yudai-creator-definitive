@@ -188,7 +188,7 @@
             <h2>Popular threads</h2>
             <ul>
               <li>
-                <a href="https://twitter.com/creator_yudai/status/1503726543171895311?s=20&t=AJawjDbeyi0SvIMWmEvcGA">CSS series: explaining from the basics to more complex topics of CSS.</a>
+                <a href="https://twitter.com/creator_yudai/status/1522584230894710785?s=21&t=_FIzG7zjfhIHM7Pgn00yag">CSS series: explaining from the basics to more complex topics of CSS.</a>
               </li>
               <li>
                 <a href="https://twitter.com/creator_yudai/status/1554413927576092672?s=20&t=AJawjDbeyi0SvIMWmEvcGA">Free UI design resources: A compilation of tools and resources to aid our work as UI designers and Frontend Developers.</a>
