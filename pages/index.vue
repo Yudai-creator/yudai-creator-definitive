@@ -301,7 +301,7 @@
       <h2>Get in contact with me 
       </h2>
       <div ref="contactForm" class="contact__form">
-        <form id="contact_form" name="contact">
+        <form @submit="sendEmail, reset" id="contact_form" name="contact">
           <div class="contact__form_control">
             <input id="input-name" name="name" type="text" required />
             <label for="input-name">Your name</label>
@@ -406,9 +406,10 @@ export default {
         },
         {
           src: "https://platform.twitter.com/widgets.js",
+        },
+        {
+          src: "https://smtpjs.com/v3/smtp.js"
         }
-
-        
       ]
     }
   },
@@ -475,6 +476,20 @@ export default {
 
     goTo(){
       parent.location = 'https://twitter.com/creator_yudai';
+    },
+
+    sendEmail(){
+      Email.send({
+          Host : "smtp.gmail.com",
+          Username : "yudaipx77@gmail.com",
+          Password : "password",
+          To : 'them@website.com',
+          From : "you@isp.com",
+          Subject : "This is the subject",
+          Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
     }
   }
 };
