@@ -120,7 +120,7 @@
         />
         <img
           class="about_profile-picture"
-          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/pfp_summer_2_XbcmuS-3-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660314716539"
+          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/pfp_NwGPmAMbP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666197907491"
           alt="profile-pic"
         />
       </div>

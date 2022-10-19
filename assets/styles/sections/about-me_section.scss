@@ -9,6 +9,8 @@
         position: absolute;
         width: 70%;
         transform: translateX(-180px);
+
+        filter: blur(70px);
         
         @media (min-width: 490px){
             transform: translateX(-150px);
@@ -24,6 +26,8 @@
         left: -160px;
         top: 25%;
         z-index: -1;
+
+        filter: blur(70px);
         @media (min-width: 1550px){
             width: 1250px;
             top: 20%;
@@ -58,13 +62,13 @@
     .about_profile-picture-wrapper{
         position: relative;
         .about_profile-picture {
-            width: 28em;
+            width: 40em;
             //box-shadow: 5px 5px 0px $secondary-color, -5px -5px 0px $secondary-color;
             @media(max-width: 490px){
-                width: 15em;
+                width: 25em;
             }
             @media (min-width: 1550px){
-                width: 35em
+                width: 55em
             }
         }
 

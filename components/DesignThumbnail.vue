@@ -1,8 +1,9 @@
 <template name="DesignThumbnail">
-    <div class="container">
+    <nuxt-link to="/caseStudy" class="container">
         <!-- <p>{{textContent}}</p> -->
-       <img class="design_thumbnail" :src=thumbnailLink :alt=thumbnailAlt> 
-    </div>
+       <img class="design_thumbnail" :src=thumbnailLink :alt=thumbnailAlt>
+       <!-- <nuxt-link to="/caseStudy">Vamosss</nuxt-link>  -->
+    </nuxt-link>
 </template>
 <script>
 // JS
