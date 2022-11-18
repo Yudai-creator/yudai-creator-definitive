@@ -154,6 +154,8 @@
           <path id="about_me_stroke" d="M2009.091,2089s442.424,144.333,224.242,462.515" transform="translate(-2008.626 -2087.574)" fill="none" stroke="#2f1484" stroke-width="3"/>
         </svg> -->
 
+        <nuxt-link to="/story">More about me</nuxt-link>
+
       </div>
     </div>
 
@@ -245,7 +247,15 @@
       <h2 ref="waterMark" id="portfolio_water-mark">Portfolio</h2>
       <div class="portfolio__latest-work">
         <h2 id="work">My work</h2>
-        <div class="latest-work__layout">
+        <div class="portfolio__case_studies_wrapper">
+          <div class="portfolio__case_studies" v-for="caseStudy of cases" :key="caseStudy">
+            <nuxt-link :to="{name: 'slug', params: {slug: caseStudy.slug}}">
+              <img class="case_studies__img" :src="`${caseStudy.imgLink}`" alt="featured image"/>
+            </nuxt-link>
+          </div>
+        </div>
+        
+        <!-- <div class="latest-work__layout">
           <DesignThumbnail  
           thumbnailLink="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/Design_press___4_GqBGPtGs-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236623477" 
           thumbnailAlt="Design"
@@ -254,7 +264,7 @@
           thumbnailLink="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/design_presentation_Wg81FBJcu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236626298" 
           thumbnailAlt="Design"
           />
-        </div>
+        </div> -->
       </div>
       <div class="portfolio__projects">
 
@@ -375,6 +385,16 @@ import NavLinks1 from "../components/NavLinks.vue";
 import NavLinks2 from "../components/NavLinks.vue";
 gsap.registerPlugin(ScrollTrigger);
 export default {
+  async asyncData({ $content, params}) {
+    const cases = await $content('case_studies', params.slug)
+      .only(['slug', 'imgLink'])
+      .sortBy('createdAt', 'asc')
+      .fetch();
+    
+    return{
+      cases
+    }
+  },
   head(){
     return{
       meta:[
@@ -409,6 +429,10 @@ export default {
         },
         {
           src: "https://smtpjs.com/v3/smtp.js"
+        },
+        {
+          type: "text/javascript",
+          src: "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
         }
       ]
     }
@@ -478,19 +502,17 @@ export default {
       parent.location = 'https://twitter.com/creator_yudai';
     },
 
-    sendEmail(){
-      Email.send({
-          Host : "smtp.gmail.com",
-          Username : "yudaipx77@gmail.com",
-          Password : "password",
-          To : 'them@website.com',
-          From : "you@isp.com",
-          Subject : "This is the subject",
-          Body : "And this is the body"
-      }).then(
-        message => alert(message)
-      );
-    }
+    
+    function(){
+      emailjs.init("24xj9x0gTw1oyWu8V");
+    },
+    
+    // SendMail(){
+    //   var params = {
+    //     from_name: 
+    //   }
+    // }
+
   }
 };
 </script>

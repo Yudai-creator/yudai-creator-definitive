@@ -23,7 +23,7 @@
 
     .portfolio__latest-work{
         position: relative;
-        .latest-work__layout{
+        .portfolio__case_studies_wrapper{
             display: flex;
             justify-content: space-between;
 
@@ -31,6 +31,28 @@
                 flex-direction: column;
                 align-content: center;
                 justify-content: space-between;
+                gap: 10%;
+            }
+
+            .portfolio__case_studies{
+                width: 47%;
+                min-width: 300px;
+                max-width: 800px;
+                margin-bottom: 2rem;
+
+
+                .case_studies__img{
+                    position: relative;
+                    width: 100%;
+                    border-radius: 10px;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 500px;
+                        background-color: rgba(0, 255, 255, 0.441);
+                    }
+                }
             }
         }
         h2{
