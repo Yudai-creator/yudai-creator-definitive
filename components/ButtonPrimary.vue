@@ -24,20 +24,23 @@ div{
     @include transitionBack;
 
     &:hover{
-        transform: translateY(-10px);
+        transform: translateY(-7px);
     }
 }
 
 
 .cta-button {
-    
+    position: relative;
     padding: 1rem 1.5rem;
     // background-color: $cta-color;
     // background: linear-gradient($cta-color, #611afa);
-    background: linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 70.71%),
-                linear-gradient(127deg, #3933b3, rgba(0,255,0,0) 70.71%),
-                linear-gradient(336deg, #170c77, rgba(0,0,255,0) 70.71%);
+    background: linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 70%),
+                linear-gradient(127deg, #3933b3, rgba(0,255,0,0) 70%),
+                linear-gradient(336deg, #170c77, rgba(0,0,255,0) 70%);
     
+    background-size: 200%;
+    background-position: 25% 50%;
+
     color: white;
     border-radius: 2.5rem;
     box-shadow: 0 2px 10px #072661af;
@@ -53,11 +56,43 @@ div{
     // }
 
     &:hover{
-        background: linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 70.71%),
-                    linear-gradient(127deg, #3933b3, rgba(0,255,0,0) 70.71%),
-                    linear-gradient(336deg, #170c77, rgba(0,0,255,0) 70.71%);
+        background-position: 90% 90%;
         
         box-shadow: 0 2px 10px #000817, 0 1px 5px #07001e;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        background: linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 70%),
+                    linear-gradient(127deg, #3933b3, rgba(0,255,0,0) 70%),
+                    linear-gradient(336deg, #170c77, rgba(0,0,255,0) 70%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transform: translateY(-80px);
+        left: 45%;
+        z-index: -1;
+        @include transitionBack;
+    }
+
+    &:hover::after{
+        animation: btn_indicator 1s cubic-bezier(0.86,0,0.07,1) forwards alternate;
+    }
+
+    @keyframes btn_indicator {
+        from { transform: rotate(0deg) translateY(-80px) rotate(0deg); }
+        to { 
+            transform: rotate(180deg) translateY(-80px) rotate(-180deg); 
+
+            background: linear-gradient(127deg, #018cdd, rgba(0,255,0,0) 100%),
+                        linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 100%);
+
+            background-size: 200%;
+            background-position-x: 100%;
+
+            box-shadow: 0 2px 10px #018cdd;
+        }
     }
 }
 
