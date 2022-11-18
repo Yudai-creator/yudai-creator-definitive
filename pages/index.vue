@@ -15,13 +15,6 @@
 
         <HamburgerMenu />
 
-        <!-- <svg class="header_hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px">
-          <g id="surface1032491">
-            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(20.392157%,59.607846%,85.882354%);fill-opacity:1;" d="M 5 8 C 4.277344 7.988281 3.609375 8.367188 3.246094 8.992188 C 2.878906 9.613281 2.878906 10.386719 3.246094 11.007812 C 3.609375 11.632812 4.277344 12.011719 5 12 L 45 12 C 45.722656 12.011719 46.390625 11.632812 46.753906 11.007812 C 47.121094 10.386719 47.121094 9.613281 46.753906 8.992188 C 46.390625 8.367188 45.722656 7.988281 45 8 Z M 5 23 C 4.277344 22.988281 3.609375 23.367188 3.246094 23.992188 C 2.878906 24.613281 2.878906 25.386719 3.246094 26.007812 C 3.609375 26.632812 4.277344 27.011719 5 27 L 45 27 C 45.722656 27.011719 46.390625 26.632812 46.753906 26.007812 C 47.121094 25.386719 47.121094 24.613281 46.753906 23.992188 C 46.390625 23.367188 45.722656 22.988281 45 23 Z M 5 38 C 4.277344 37.988281 3.609375 38.367188 3.246094 38.992188 C 2.878906 39.613281 2.878906 40.386719 3.246094 41.007812 C 3.609375 41.632812 4.277344 42.011719 5 42 L 45 42 C 45.722656 42.011719 46.390625 41.632812 46.753906 41.007812 C 47.121094 40.386719 47.121094 39.613281 46.753906 38.992188 C 46.390625 38.367188 45.722656 37.988281 45 38 Z M 5 38 "/>
-          </g>
-        </svg> -->
-
-        <!-- <img id="blob-right-corner" src="~/static/landing_assets/blob shape right corner.svg" alt="blob_shape"> -->
         <img
           @mousemove="move"
           ref="blobRight"
@@ -44,10 +37,7 @@
             stroke-width="2"
           />
         </svg>
-        <!-- <img id="blob-stroke" src="~/static/landing_assets/blob stroke 1.svg" alt="stroke">
 
-        <img id="blue_cross" src="~/static/landing_assets/blue cross.svg" alt="cross">
-        <img id="blue_cross2" src="~/static/landing_assets/blue cross2.svg" alt="cross"> -->
         <img
           ref="blobShadow"
           @mousemove="move"
@@ -82,9 +72,6 @@
             fill="#00a1ff"
           />
         </svg>
-
-        <!-- <img id="blue_cross3" src="~/static/hero_assets/blue cross.svg" alt="cross"> -->
-        <!-- <img id="blue_cross4" src="~/static/hero_assets/blue cross2.svg" alt="cross"> -->
 
         <img
           id="dots"
@@ -137,22 +124,6 @@
         <p>
           I don't think of software design and development as a job, I love what I do that much! 
         </p>
-        <!-- <p class="about__text_tagline">
-          This is not a job, this is what I love to do 
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <g id="vuesax_bold_flash" data-name="vuesax/bold/flash" transform="translate(-428 -316)">
-              <g id="flash">
-                <path id="Vector" d="M13.186,8.721H10.1v-7.2c0-1.68-.91-2.02-2.02-.76l-.8.91-6.77,7.7c-.93,1.05-.54,1.91.86,1.91h3.09v7.2c0,1.68.91,2.02,2.02.76l.8-.91,6.77-7.7C14.976,9.581,14.586,8.721,13.186,8.721Z" transform="translate(432.724 317.999)" fill="#00A1FF"/>
-                <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(452 340) rotate(180)" fill="none" opacity="0"/>
-              </g>
-            </g>
-          </svg>
-        </p> -->
-
-        <!-- Stroke on scroll -->
-        <!-- <svg class="about_stroke_scroll" viewBox="0 0 286.698 464.79" preserveAspectRatio="xMidYMax meet">
-          <path id="about_me_stroke" d="M2009.091,2089s442.424,144.333,224.242,462.515" transform="translate(-2008.626 -2087.574)" fill="none" stroke="#2f1484" stroke-width="3"/>
-        </svg> -->
 
         <nuxt-link to="/story">More about me</nuxt-link>
 
@@ -161,7 +132,6 @@
 
     <!-- Social media spot -->
     <div class="social__section">
-      <!-- <img id="wave-top" src="~/static/social-media_assets/waves-top.png" alt="waves"> -->
       <div  class="social__section_divider-top">
         <svg
           data-name="Layer 1"
@@ -204,12 +174,6 @@
             <svg ref="twitterLogo" class="twitter_logo" id="twitter-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path id="twitter_logo_path" d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809	c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793	c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05	c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032	c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028	c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22	c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z " fill="#25c1e9"/>
             </svg>
-            <!-- <svg ref="twitterLogo" class="twitter_logo" id="twitter-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.333 20.333">
-              <path class="twitter_logo" d="M22.936,9.086c.015.223.015.445.015.666,0,6.783-4.812,14.6-13.607,14.6A12.855,12.855,0,0,1,2,22.048a9.322,9.322,0,0,0,1.155.064,9.176,9.176,0,0,0,5.938-2.192A4.847,4.847,0,0,1,4.62,16.361a5.686,5.686,0,0,0,.9.079,4.763,4.763,0,0,0,1.26-.175A5.053,5.053,0,0,1,2.949,11.23v-.064a4.581,4.581,0,0,0,2.161.651A5.23,5.23,0,0,1,2.977,7.545a5.376,5.376,0,0,1,.651-2.588,13.322,13.322,0,0,0,9.862,5.369,6.239,6.239,0,0,1-.119-1.176,4.964,4.964,0,0,1,4.783-5.131,4.625,4.625,0,0,1,3.494,1.62A9.067,9.067,0,0,0,24.683,4.4a5.073,5.073,0,0,1-2.1,2.828,9.078,9.078,0,0,0,2.753-.795A10.705,10.705,0,0,1,22.936,9.086Z"
-                transform="translate(-2 -4.019)"
-                fill="#25c1e9"
-              />
-            </svg> -->
           </div>
         </div>
         <p>With more than 1k connections.</p>
@@ -223,10 +187,6 @@
           <a class="social__others_link" href="https://github.com/Yudai-creator" target="_blank"> <img src="~/static/social-media_assets/bxl-github.svg" alt="github"/> Github </a>
         </div>
       </div>
-      <!-- <svg id="wave-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 377.25 92.606">
-        <path d="M309.867,72.961C285.034,56.668,258.976,24.6,233.845,11.449c-25.861-13.563-52.834-12.773-78.735.305-18.183,9.175-35.839,24.3-54.073,32.743C67.155,60,32.213,52.134,0,21.743v72.47H377.25V75.284C355.932,93.368,331.889,87.416,309.867,72.961Z" transform="translate(0 -1.607)" fill="#010713"/>
-      </svg> -->
-      <!-- <img id="wave-bottom" src="~/static/social-media_assets/waves-bottom.png" alt="waves"> -->
       <div class="social__section_divider-bottom">
         <svg
           data-name="Layer 1"
@@ -254,26 +214,11 @@
             </nuxt-link>
           </div>
         </div>
-        
-        <!-- <div class="latest-work__layout">
-          <DesignThumbnail  
-          thumbnailLink="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/Design_press___4_GqBGPtGs-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236623477" 
-          thumbnailAlt="Design"
-          />
-          <DesignThumbnail 
-          thumbnailLink="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/design_presentation_Wg81FBJcu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659236626298" 
-          thumbnailAlt="Design"
-          />
-        </div> -->
       </div>
       <div class="portfolio__projects">
 
         <!-- Projects -->
       </div>
-      <!-- Download CV button -->
-      <!-- <div class="portfolio__cta-button">
-        <ButtonPrimary textContent="Download CV" />
-      </div> -->
     </div>
 
     <!-- Services -->
@@ -300,14 +245,6 @@
 
     <!-- Contact -->
     <div ref="contactSection" class="contact__section">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <g id="vuesax_bold_emoji-happy" data-name="vuesax/bold/emoji-happy" transform="translate(-428 -380)">
-            <g id="emoji-happy">
-              <path id="Vector" d="M14.19,0H5.81C2.17,0,0,2.17,0,5.81v8.37C0,17.83,2.17,20,5.81,20h8.37c3.64,0,5.81-2.17,5.81-5.81V5.81C20,2.17,17.83,0,14.19,0ZM6.5,4.38A1.88,1.88,0,1,1,4.62,6.25,1.884,1.884,0,0,1,6.5,4.38ZM10,17.08A4.887,4.887,0,0,1,5.12,12.2a1.28,1.28,0,0,1,1.27-1.28h7.2a1.274,1.274,0,0,1,1.27,1.28A4.857,4.857,0,0,1,10,17.08Zm3.5-8.96a1.88,1.88,0,1,1,1.88-1.88A1.884,1.884,0,0,1,13.5,8.12Z" transform="translate(430 382)" fill="#00A1FF"/>
-              <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(452 404) rotate(180)" fill="none" opacity="0"/>
-            </g>
-          </g>
-      </svg> -->
       <h2>Get in contact with me 
       </h2>
       <div ref="contactForm" class="contact__form">

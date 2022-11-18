@@ -38,6 +38,7 @@ div{
 
         &:hover{
             box-shadow: 0 2px 10px #012670, 0 1px 5px #2F1484;
+            background-color: rgba(0, 153, 255, 0.158);
         }
     }
 </style>

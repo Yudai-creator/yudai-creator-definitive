@@ -32,16 +32,32 @@ div{
 .cta-button {
     
     padding: 1rem 1.5rem;
-    background-color: $cta-color;
-    color: $bg-color;
+    // background-color: $cta-color;
+    // background: linear-gradient($cta-color, #611afa);
+    background: linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, #3933b3, rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, #170c77, rgba(0,0,255,0) 70.71%);
+    
+    color: white;
     border-radius: 2.5rem;
+    box-shadow: 0 2px 10px #072661af;
+
+
     @include transitionBack;
 
     font-weight: bold;
     text-decoration: none;
 
+    // &:hover{
+    //     box-shadow: 0 2px 10px #022f89, 0 1px 5px #2F1484;
+    // }
+
     &:hover{
-        box-shadow: 0 2px 10px #022f89, 0 1px 5px #2F1484;
+        background: linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 70.71%),
+                    linear-gradient(127deg, #3933b3, rgba(0,255,0,0) 70.71%),
+                    linear-gradient(336deg, #170c77, rgba(0,0,255,0) 70.71%);
+        
+        box-shadow: 0 2px 10px #000817, 0 1px 5px #07001e;
     }
 }
 
