@@ -279,7 +279,7 @@
 
       <!-- Another option of contact -->
 
-      <div class="contact__dm">
+      <div id="contact-dm" class="contact__dm">
         <h2>Send me a DM</h2>
         <a href="https://twitter.com/messages/compose?recipient_id=1176871799411433473&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-lang="en" data-screen-name="https://twitter.com/creator_yudai" data-show-count="false">Message @https://twitter.com/creator_yudai</a>
       </div> 
