@@ -125,7 +125,7 @@
           I don't think of software design and development as a job, I love what I do that much! 
         </p>
 
-        <nuxt-link to="/story">More about me</nuxt-link>
+        <!-- <nuxt-link to="/story">More about me</nuxt-link> -->
 
       </div>
     </div>
@@ -247,7 +247,9 @@
     <div ref="contactSection" class="contact__section">
       <h2>Get in contact with me 
       </h2>
-      <div ref="contactForm" class="contact__form">
+
+
+      <!-- <div ref="contactForm" class="contact__form">
         <form @submit="sendEmail, reset" id="contact_form" name="contact">
           <div class="contact__form_control">
             <input id="input-name" name="name" type="text" required />
@@ -272,11 +274,13 @@
             value="Send Message"
           />
         </form>
-      </div>
+      </div> -->
+
+
       <!-- Another option of contact -->
 
       <div class="contact__dm">
-        <h2>Or, send me a DM</h2>
+        <h2>Send me a DM</h2>
         <a href="https://twitter.com/messages/compose?recipient_id=1176871799411433473&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-lang="en" data-screen-name="https://twitter.com/creator_yudai" data-show-count="false">Message @https://twitter.com/creator_yudai</a>
       </div> 
     </div>
