@@ -491,7 +491,7 @@ body {
   color: $text-color;
 
   // font-family: "Lato", sans-serif;
-  font-family: 'Univa Nova', normal;
+  font-family: 'Archivo', normal;
 
   // -webkit-box-sizing: border-box;
   // -moz-box-sizing: border-box;

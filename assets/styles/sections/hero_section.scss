@@ -115,15 +115,16 @@ header {
     }
     h2 {
         margin-bottom: 2rem;
-        // font-family: 'Bungee', cursive;
-        font-family: 'aironedemo', normal;
-        font-weight: 100;
-        font-size: 3rem;
+
+        font-family: 'Clash Display', normal;
+        font-weight: bold;
+        font-size: 4rem;
+
         clip-path: polygon(22% 100%, 75% 100%, 100% 100%, 0% 100%);
         @media (max-width: 490px) {
             font-size: 1.5rem;
             text-align: center;
-            font-family: 'Univa Nova', normal;
+            font-family: 'Archivo', normal;
             font-weight: bold;
         }
         @media (min-width: 1550px){
