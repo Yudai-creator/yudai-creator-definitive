@@ -30,6 +30,7 @@ div{
 
 
 .cta-button {
+    -webkit-appearance: none;
     position: relative;
     padding: 1rem 1.5rem;
     // background-color: $cta-color;
