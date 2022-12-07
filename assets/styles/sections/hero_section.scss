@@ -140,15 +140,15 @@ header {
         }
     }
 
-    span {
-        color: $cta-color;
-        background: linear-gradient(217deg, #2676ff, rgba(255,0,0,0) 70.71%),
-                    linear-gradient(120deg, $cta-color, rgba(0,255,0,0) 70.71%),
-                    linear-gradient(336deg, #2f25f1, rgba(0,0,255,0) 70.71%);
+    // span {
+    //     color: $cta-color;
+    //     background: linear-gradient(217deg, #2676ff, rgba(255,0,0,0) 70.71%),
+    //                 linear-gradient(120deg, $cta-color, rgba(0,255,0,0) 70.71%),
+    //                 linear-gradient(336deg, #2f25f1, rgba(0,0,255,0) 70.71%);
 
-        background-clip: text;
-        color: transparent;
-    }
+    //     background-clip: text;
+    //     color: transparent;
+    // }
 
     #blob-text-shadow {
         width: 30%;
