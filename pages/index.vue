@@ -153,7 +153,7 @@
           
           <img
             id="twitter-banner"
-            src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/BANNER_TWITTER_9NNzxB_mT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108714009"
+            src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/twitter_banner_cube_wMUMyt4I5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672775173559"
             alt="banner"
           />
           <div class="twitter__threads">
@@ -163,10 +163,10 @@
                 <a href="https://twitter.com/creator_yudai/status/1522584230894710785?s=21&t=_FIzG7zjfhIHM7Pgn00yag">CSS series: explaining from the basics to more complex topics of CSS.</a>
               </li>
               <li>
-                <a href="https://twitter.com/creator_yudai/status/1554413927576092672?s=20&t=AJawjDbeyi0SvIMWmEvcGA">Free UI design resources: A compilation of tools and resources to aid our work as UI designers and Frontend Developers.</a>
+                <a href="https://twitter.com/creator_yudai/status/1554413927576092672?s=20&t=AJawjDbeyi0SvIMWmEvcGA">Free UI design resources: A compilation of tools and resources for UI designers and Frontend Developers.</a>
               </li>
               <li>
-                <a href="https://twitter.com/creator_yudai/status/1531968617960570886?s=20&t=AJawjDbeyi0SvIMWmEvcGA">9 modern Javascript features: These are awesome features of javascript one needs to learn before React.</a>
+                <a href="https://twitter.com/creator_yudai/status/1599751218720432128?s=20&t=_HgjJVMqqLOLhd8tsgxCgQ">UI Design Principles: The building blocks of the modern web.</a>
               </li>
             </ul>
           </div>
@@ -176,8 +176,8 @@
             </svg>
           </div>
         </div>
-        <p>With more than 1k connections.</p>
-        <h2>Would you join me?</h2>
+        <!-- <p>Sharing that sweet piece of content</p> -->
+        <h2>I´ll be glad to connect with you</h2>
         <a href="https://twitter.com/creator_yudai?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @creator_yudai</a>
       </div>
       <div class="social__others">
@@ -245,9 +245,7 @@
 
     <!-- Contact -->
     <div ref="contactSection" class="contact__section">
-      <h2>Get in contact with me 
-      </h2>
-
+      <!-- <h2>Get in contact with me. <br/>Send me a DM on Twitter</h2> -->
 
       <!-- <div ref="contactForm" class="contact__form">
         <form @submit="sendEmail, reset" id="contact_form" name="contact">
@@ -280,7 +278,7 @@
       <!-- Another option of contact -->
 
       <div id="contact-dm" class="contact__dm">
-        <h2>Send me a DM</h2>
+        <h2>Get in contact with me. <br/>Send me a DM on Twitter</h2>
         <a href="https://twitter.com/messages/compose?recipient_id=1176871799411433473&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-lang="en" data-screen-name="https://twitter.com/creator_yudai" data-show-count="false">Message @https://twitter.com/creator_yudai</a>
       </div> 
     </div>
