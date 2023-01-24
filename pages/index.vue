@@ -247,8 +247,8 @@
     <div ref="contactSection" class="contact__section">
       <!-- <h2>Get in contact with me. <br/>Send me a DM on Twitter</h2> -->
 
-      <!-- <div ref="contactForm" class="contact__form">
-        <form @submit="sendEmail, reset" id="contact_form" name="contact">
+      <div ref="contactForm" class="contact__form">
+        <form action="https://formcarry.com/s/1KP0RF3n-V" method="POST" accept-charset="UTF-8" id="contact_form" name="contact">
           <div class="contact__form_control">
             <input id="input-name" name="name" type="text" required />
             <label for="input-name">Your name</label>
@@ -272,7 +272,7 @@
             value="Send Message"
           />
         </form>
-      </div> -->
+      </div>
 
 
       <!-- Another option of contact -->
