@@ -245,7 +245,7 @@
 
     <!-- Contact -->
     <div ref="contactSection" class="contact__section">
-      <!-- <h2>Get in contact with me. <br/>Send me a DM on Twitter</h2> -->
+      <h2>Get in contact with me.</h2>
 
       <div ref="contactForm" class="contact__form">
         <form action="https://formcarry.com/s/1KP0RF3n-V" method="POST" accept-charset="UTF-8" id="contact_form" name="contact">
@@ -278,7 +278,7 @@
       <!-- Another option of contact -->
 
       <div id="contact-dm" class="contact__dm">
-        <h2>Get in contact with me. <br/>Send me a DM on Twitter</h2>
+        <h2> Or send me a DM on Twitter</h2>
         <a href="https://twitter.com/messages/compose?recipient_id=1176871799411433473&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-lang="en" data-screen-name="https://twitter.com/creator_yudai" data-show-count="false">Message @https://twitter.com/creator_yudai</a>
       </div> 
     </div>
