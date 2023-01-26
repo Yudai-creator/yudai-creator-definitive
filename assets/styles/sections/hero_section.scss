@@ -16,7 +16,7 @@ header {
     // margin-top: 1rem;
     // margin-bottom: 1rem;
 
-    padding: 2rem;
+    padding: 2rem 3rem 2rem 3rem;
 
     .logo {
         max-width: 4em;
@@ -179,6 +179,11 @@ header {
         top: 10px;
 
         z-index: -1;
+    }
+
+    #bubbles{
+        max-width: 80%;
+        position: absolute;
     }
 }
 

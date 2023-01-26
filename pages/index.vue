@@ -59,7 +59,9 @@
           alt="blob_shadow"
         />
 
-        <svg id="blue_cross3" xmlns="http://www.w3.org/2000/svg">
+        <img id="bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_A69kFhoAu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674752443011" alt="bubbles">
+
+        <!-- <svg id="blue_cross3" xmlns="http://www.w3.org/2000/svg">
           <path
             d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
             fill="#00a1ff"
@@ -77,7 +79,9 @@
           id="dots"
           src="~/static/hero_assets/dots compound 1.svg"
           alt="dots"
-        />
+        /> -->
+
+        
       </div>
 
       <div class="hero__cta-button">
@@ -98,6 +102,7 @@
         alt="blob-shape"
       />
     </div>
+
     <div class="about_section">
       <div ref="profilePicture" class="about_profile-picture-wrapper">
         <img
@@ -128,6 +133,8 @@
         <!-- <nuxt-link to="/story">More about me</nuxt-link> -->
 
       </div>
+
+      <img id="bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles">
     </div>
 
     <!-- Social media spot -->
@@ -204,7 +211,7 @@
 
     <!-- Portfolio section -->
     <div class="portfolio__section">
-      <h2 ref="waterMark" id="portfolio_water-mark">Portfolio</h2>
+      <h2 ref="waterMark" id="portfolio_water-mark">Designer</h2>
       <div class="portfolio__latest-work">
         <h2 id="work">My work</h2>
         <div class="portfolio__case_studies_wrapper">
