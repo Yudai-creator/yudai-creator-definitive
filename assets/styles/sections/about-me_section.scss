@@ -10,7 +10,7 @@
         width: 70%;
         transform: translateX(-180px);
 
-        filter: blur(70px);
+        filter: blur(40px);
         
         @media (min-width: 490px){
             transform: translateX(-150px);
@@ -27,7 +27,7 @@
         top: 25%;
         z-index: -1;
 
-        filter: blur(70px);
+        filter: blur(40px);
         @media (min-width: 1550px){
             width: 1250px;
             top: 20%;
@@ -110,21 +110,29 @@
                 line-height: 2.75rem;
             }
         }
-        .about__text_tagline{
-            font-weight: bold;
-            font-style: italic;
+        
+        .about_socials{
+            position: relative;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            svg{
-                margin-left: .5rem;
+            &::before{
+                content: "";
+                position: absolute;
+                background-color: #36008E;
+                border-radius: 20%;
+                width: 100%;
             }
-        }
 
-        .about_stroke_scroll{
-            position: absolute;
-            top: 75%;
-            left: 40%;
-            width: 10%;
-            z-index: 2;
+            a{
+                margin-left: 5rem;
+            }
+
+            img{
+                width: 30px;
+            }
         }
 
     }

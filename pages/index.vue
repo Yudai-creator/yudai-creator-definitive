@@ -106,31 +106,36 @@
     <div class="about_section">
       <div ref="profilePicture" class="about_profile-picture-wrapper">
         <img
-          id="horizontal-dots"
-          src="~/static/about-me_assets/dots-compound-horizontal.svg"
-          alt="dots"
-        />
-        <img
           class="about_profile-picture"
-          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/pfp_NwGPmAMbP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666197907491"
+          src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/pfp_shadow_CJcj9zFcxo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675091473619"
           alt="profile-pic"
         />
       </div>
 
       <div ref="aboutText" id="about-me" class="about_text">
-        <p>
-          Hello,  I'm Yudai, a <span>web developer</span> and <span>UI designer</span>.
-        </p>
+        <div>
+          <p>
+            Hello,  I'm Yudai, a <span>web developer</span> and <span>UI designer</span>.
+          </p>
 
-        <p>
-          I am a frontend developer utilising React and or Vue to deliver beautifully designed, user-centric UI / UX experiences.
-        </p>
+          <p>
+            I am a frontend developer utilising React and or Vue to deliver beautifully designed, user-centric UI / UX experiences.
+          </p>
 
-        <p>
-          I don't think of software design and development as a job, I love what I do that much! 
-        </p>
+          <p>
+            So far I have been working with international companies building products that gives users a great experience of usage, increasing company’s conversation rate. 
+          </p>
 
-        <!-- <nuxt-link to="/story">More about me</nuxt-link> -->
+          <p>Above all, I am a good researcher, who knows where to find the best solution.</p>
+        </div>
+
+        <div class="about_socials">
+          <a href="https://twitter.com/creator_yudai"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-twitter_uc1z2SuZu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585976" alt="twitter"></a>
+          <a href="https://www.linkedin.com/in/creatoryudai/"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-linkedin_5HaHYJ0hF.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585980" alt="linkedin"></a>
+          <a href="https://github.com/Yudai-creator?tab=repositories"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-github_FqVGwPThg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585983" alt="github"></a>
+          <a href="#"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-youtube_BQucKyUgS.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585974" alt="youtube"></a>
+        </div>
+
 
       </div>
 
@@ -223,8 +228,41 @@
         </div>
       </div>
       <div class="portfolio__projects">
-
-        <!-- Projects -->
+        <h2 id="projects__water_mark">Dev</h2>
+        <h2>My projects</h2>
+        <div class="portfolio__projects_wrapper">
+          <div class="project">
+            <div class="project_icon"></div>
+            <div class="project_info">
+              <p>
+                My latest projects, check it out to see how I work. Done with best frameworks in the house.
+              </p>
+              <div class="project_stack">
+                <p>NUXT</p>
+                <p style="margin-left: 1rem;">SASS</p>
+                <p style="margin-left: 1rem;">GSAP</p>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/Yudai-creator/yudai-creator-definitive"> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project_icon"></div>
+            <div class="project_info">
+              <p>
+                An archive to gather all my threads through out my journey on twitter. Great pieces of content about Web Development, UI/UX Design and my day to day learnings. 
+              </p>
+              <div class="project_stack">
+                <p>HTML</p>
+                <p style="margin-left: 1rem;">CSS</p>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/Yudai-creator/yudai-h-twitter-threads"> Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -249,6 +287,21 @@
         />
       </div>
     </div> -->
+
+    <!-- Referals -->
+
+    <div class="referals">
+      <h2>Referals from friends and clients</h2>
+      <div class="referals_message">
+        <div class="referals_pfp"></div>
+        <p id="referal_name">Graham Ritchie</p>
+        <p>I consider Yudai as one of the most talented professionals
+        I have ever met, he’s very passionate about his work and
+        always does everything he can to solve the problem.
+        </p>
+      </div>
+      <img id="referal_blob" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/referal_blob_xzZ56yrIo.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1675090868069" alt="blob">
+    </div>
 
     <!-- Contact -->
     <div ref="contactSection" class="contact__section">
@@ -470,6 +523,7 @@ export default {
 @import "~assets/styles/sections/social-media_section";
 @import "~assets/styles/sections/portfolio_section";
 @import "~assets/styles/sections/services_section";
+@import "~assets/styles/sections/referals_section";
 @import "~assets/styles/sections/contact_section";
 @import "~assets/styles/sections/footer";
 

@@ -1,0 +1,48 @@
+
+.referals{
+    position: relative;
+    margin-top: 10rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-family: 'Clash Display', normal;
+        font-size: 2rem;
+    }
+
+    #referal_blob{
+       position: absolute;
+       top: 5%;
+    }
+}
+
+.referals_message{
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: #020B1D;
+    width: 35%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .referals_pfp{
+        width: 150px;
+        height: 150px;
+        background-image: url("https://ik.imagekit.io/u33i3sss0/Portfolio_Website/5ZhB2ZTV_400x400_nPS1RsE3i.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675099106099");
+        background-size: contain;
+    }
+
+    p{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #referal_name{
+        font-weight: bold;
+    }
+}

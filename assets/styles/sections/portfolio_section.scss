@@ -4,7 +4,7 @@
 .portfolio__section{
     position: relative;
     background-color: $bg-color;
-    padding: 2.5rem;
+    padding: 3rem 4rem 3rem 4rem;
     
     #portfolio_water-mark{
         position: absolute;
@@ -25,8 +25,7 @@
     .portfolio__latest-work{
         position: relative;
         .portfolio__case_studies_wrapper{
-            display: flex;
-            justify-content: space-between;
+            
 
             @media(max-width: 490px){
                 flex-direction: column;
@@ -36,23 +35,12 @@
             }
 
             .portfolio__case_studies{
-                width: 47%;
-                min-width: 300px;
-                max-width: 800px;
                 margin-bottom: 2rem;
-
 
                 .case_studies__img{
                     position: relative;
                     width: 100%;
                     border-radius: 10px;
-
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        width: 500px;
-                        background-color: rgba(0, 255, 255, 0.441);
-                    }
                 }
             }
         }
@@ -60,7 +48,7 @@
             color: $text-color;
             margin-bottom: 3rem;
             font-family: 'Clash Display', normal;
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
     .portfolio__cta-button{
@@ -68,5 +56,58 @@
         padding: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+
+
+    .portfolio__projects{
+        margin-top: 15rem;
+
+        h2{
+            font-family: 'Clash Display', normal;
+            font-size: 3rem;
+        }
+
+        .portfolio__projects_wrapper{
+            position: relative;
+            margin-top: 2rem;
+            width: 50%;
+
+            .project{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+   
+                .project_icon{
+                    background-color: #020B1D;
+                    width: 170px;
+                    height: 170px;
+                    flex-shrink: 0;
+                }
+
+                .project_info{
+                    margin-left: 1.5rem;
+                }
+
+                .project_stack{
+                    display: flex;
+                    margin-top: .5rem;
+
+                    p{
+                        background-color: #001235;
+                        padding: .2rem 1rem .2rem 1rem;
+                        border-radius: 100px;
+                        
+                    }
+                }
+
+                .project_links{
+                    margin-top: 1rem;
+
+                    a{
+                        color: $cta-color;
+                    }
+                }
+            }
+        }
     }
 }

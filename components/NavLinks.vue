@@ -56,6 +56,8 @@ export default  {
                     width: 0px;
                     height: 2.5px;
 
+                    filter: blur(5px);
+
                     @include transitionBack;
                 }
 
