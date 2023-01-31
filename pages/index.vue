@@ -333,45 +333,70 @@
 
     <!-- Contact -->
     <div ref="contactSection" class="contact__section">
-      <h2>Get in contact with me.</h2>
+      <h2 id="contact-dm">Let's have a chat</h2>
 
-      <div ref="contactForm" class="contact__form">
-        <form action="https://formcarry.com/s/1KP0RF3n-V" method="POST" accept-charset="UTF-8" id="contact_form" name="contact">
-          <div class="contact__form_control">
-            <input id="input-name" name="name" type="text" required />
-            <label for="input-name">Your name</label>
+      <div class="contact">
+        <div ref="contactForm" class="contact__form">
+          <form action="https://formcarry.com/s/1KP0RF3n-V" method="POST" accept-charset="UTF-8" id="contact_form" name="contact">
+            <div class="contact__form_control">
+              <input id="input-name" name="name" type="text" required />
+              <label for="input-name">Your name</label>
+            </div>
+            <div class="contact__form_control">
+              <input id="input-email" name="email" type="text" required />
+              <label for="input-email">Your email</label>
+            </div>
+            <div class="contact__form_control">
+              <textarea
+                id="input-message"
+                name="message"
+                rows="7"
+                required
+              ></textarea>
+              <label for="input-message">Your message</label>
+            </div>
+            <input
+              class="form__submit"
+              type="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
+
+        <div class="contact__info">
+          <p>
+            If you are interested
+            in what I do and how I work, 
+            send me a message and let’s
+            have a chat, I’ll be happy to 
+            assit you.
+          </p>
+          <div class="contact__dm">
+            <p>Send me a DM:</p>
+            <a href="https://twitter.com/messages/compose?recipient_id=1176871799411433473&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-lang="en" data-screen-name="https://twitter.com/creator_yudai" data-show-count="false">Message @https://twitter.com/creator_yudai</a>
           </div>
-          <div class="contact__form_control">
-            <input id="input-email" name="email" type="text" required />
-            <label for="input-email">Your email</label>
+          <div class="contanct__socials">
+            <p>Socials:</p>
+            <div class="contact__social-links">
+              <a class="social-links_pop" href="https://twitter.com/creator_yudai" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-twitter_uc1z2SuZu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585976" alt="twitter logo"></a>
+
+              <a class="social-links_pop" href="https://www.linkedin.com/in/yudai-h-911bb01bb/" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-linkedin_5HaHYJ0hF.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585980" alt="linkedin logo"></a>
+
+              <a class="social-links_pop" href="https://www.instagram.com/creator_yudai/" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-instagram_ZoEV25n5z.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585965" alt="instagram logo"></a>
+
+              <a class="social-links_pop" href="https://github.com/Yudai-creator" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-github_FqVGwPThg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585983" alt="github logo"></a>
+
+              <a class="social-links_pop" href="#" target="_blank" hidden><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-youtube_BQucKyUgS.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585974" alt="youtube logo"></a>
+
+            </div>
           </div>
-          <div class="contact__form_control">
-            <textarea
-              id="input-message"
-              name="message"
-              rows="7"
-              required
-            ></textarea>
-            <label for="input-message">Your message</label>
-          </div>
-          <input
-            class="form__submit"
-            type="submit"
-            value="Send Message"
-          />
-        </form>
-      </div>
-
-
-      <!-- Another option of contact -->
-
-      <div id="contact-dm" class="contact__dm">
-        <h2> Or send me a DM on Twitter</h2>
-        <a href="https://twitter.com/messages/compose?recipient_id=1176871799411433473&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-lang="en" data-screen-name="https://twitter.com/creator_yudai" data-show-count="false">Message @https://twitter.com/creator_yudai</a>
+        </div>
       </div> 
     </div>
+
+
     <footer>
-      <div class="footer__content">
+      <!-- <div class="footer__content">
         <div class="footer__content_logo">
           <a href="#hero"><img class="logo" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/yudai_UDBphSZy8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108298328" alt="Yudai H brand mark" /></a>
         </div>
@@ -390,7 +415,7 @@
           <a class="social-links_pop" href="#" target="_blank" hidden><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-youtube_BQucKyUgS.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585974" alt="youtube logo"></a>
 
         </div>
-      </div>
+      </div> -->
       
       <div class="footer__author">
         <p>Made by <span>Yudai H</span> 💙</p>
