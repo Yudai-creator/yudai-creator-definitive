@@ -220,10 +220,38 @@
       <div class="portfolio__latest-work">
         <h2 id="work">My work</h2>
         <div class="portfolio__case_studies_wrapper">
-          <div class="portfolio__case_studies" v-for="caseStudy of cases" :key="caseStudy">
+          <!-- <div class="portfolio__case_studies" v-for="caseStudy of cases" :key="caseStudy">
             <nuxt-link :to="{name: 'slug', params: {slug: caseStudy.slug}}">
               <img class="case_studies__img" :src="`${caseStudy.imgLink}`" alt="featured image"/>
             </nuxt-link>
+          </div> -->
+          <div class="portfolio__case_studies">
+            <div class="portfolio__main">
+              <nuxt-link class="main__link" to="/telepay">
+                <img class="main__img" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/telepay_landing_JGKnXx9Fs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675093268088" alt="telepay">
+                <p>Telepay</p>
+              </nuxt-link>
+            </div>
+            <div class="portfolio__samples">
+              <div class="sample">
+                <div>
+                  <h2>Produce O/S</h2>
+                  <p>Enterprise Software Platform for the Produce Industry.</p>
+                </div>
+                <nuxt-link class="sample__link" to="/produce-os">
+                  <img class="sample__img" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/dark_bg_impact_achieved_3__xwiCr0LJ8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675094110243" alt="produce-os">
+                </nuxt-link>
+              </div>
+              <div class="sample">
+                <nuxt-link class="sample__link" to="/portfolio-website">
+                  <img class="sample__img" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/Screenshot_2023-01-11_at_15-11-45_Figma_POSvQPord.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675099044199" alt="produce-os">
+                </nuxt-link>
+                <div>
+                  <h2>Portfolio Website</h2>
+                  <p>Enterprise Software Platform for the Produce Industry.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
