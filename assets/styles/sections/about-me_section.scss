@@ -113,10 +113,10 @@
         
         .about_socials{
             position: relative;
-            
             display: flex;
-            justify-content: center;
             align-items: center;
+
+            z-index: 1;
 
             &::before{
                 content: "";
@@ -128,6 +128,19 @@
 
             a{
                 margin-left: 5rem;
+
+                img{
+                    @include transitionBack;
+    
+                    &:hover{
+                        transform: translateY(-5px);
+                        filter: drop-shadow(0 3px 5px $cta-color);
+                    }
+                }
+
+                &:nth-child(1){
+                    margin-left: 0;
+                }
             }
 
             img{
@@ -142,5 +155,7 @@
         left: 2%;
         top: 40%;
         position: absolute;
+
+        z-index: 0;
     }
 }

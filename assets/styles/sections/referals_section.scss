@@ -11,6 +11,9 @@
     h2{
         font-family: 'Clash Display', normal;
         font-size: 2rem;
+        @media (max-width: 490px) {
+            font-size: 1.5rem;
+        }
     }
 
     #referal_blob{
@@ -30,12 +33,22 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 490px) {
+        width: 70%;
+        padding: 2rem;
+    }
+
     .referals_pfp{
         width: 150px;
         height: 150px;
         background-image: url("https://ik.imagekit.io/u33i3sss0/Portfolio_Website/5ZhB2ZTV_400x400_nPS1RsE3i.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675099106099");
         background-size: contain;
         border-radius: 50px;
+
+        @media (max-width: 490px) {
+            width: 100px;
+            height: 100px;
+        }
     }
 
     p{

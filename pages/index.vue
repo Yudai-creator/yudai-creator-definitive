@@ -60,28 +60,6 @@
         />
 
         <img id="bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_A69kFhoAu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674752443011" alt="bubbles">
-
-        <!-- <svg id="blue_cross3" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
-            fill="#00a1ff"
-          />
-        </svg>
-
-        <svg id="blue_cross4" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
-            fill="#00a1ff"
-          />
-        </svg>
-
-        <img
-          id="dots"
-          src="~/static/hero_assets/dots compound 1.svg"
-          alt="dots"
-        /> -->
-
-        
       </div>
 
       <div class="hero__cta-button">
@@ -112,6 +90,8 @@
         />
       </div>
 
+      <img id="bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles"></img>
+
       <div ref="aboutText" id="about-me" class="about_text">
         <div>
           <p>
@@ -130,16 +110,16 @@
         </div>
 
         <div class="about_socials">
-          <a href="https://twitter.com/creator_yudai"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-twitter_uc1z2SuZu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585976" alt="twitter"></a>
-          <a href="https://www.linkedin.com/in/creatoryudai/"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-linkedin_5HaHYJ0hF.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585980" alt="linkedin"></a>
-          <a href="https://github.com/Yudai-creator?tab=repositories"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-github_FqVGwPThg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585983" alt="github"></a>
-          <a href="#"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-youtube_BQucKyUgS.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585974" alt="youtube"></a>
+          <a href="https://twitter.com/creator_yudai" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-twitter_uc1z2SuZu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585976" alt="twitter"></a>
+          <a href="https://www.linkedin.com/in/creatoryudai/" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-linkedin_5HaHYJ0hF.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585980" alt="linkedin"></a>
+          <a href="https://github.com/Yudai-creator?tab=repositories" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-github_FqVGwPThg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585983" alt="github"></a>
+          <a href="#" target="_blank"><img src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/yudai-youtube_BQucKyUgS.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659113585974" alt="youtube"></a>
         </div>
 
 
       </div>
 
-      <img id="bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles">
+      
     </div>
 
     <!-- Social media spot -->
@@ -192,13 +172,13 @@
         <h2>I´ll be glad to connect with you</h2>
         <a href="https://twitter.com/creator_yudai?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @creator_yudai</a>
       </div>
-      <div class="social__others">
+      <!-- <div class="social__others">
         <h3>You can also find me here</h3>
         <div>
           <a class="social__others_link" href="https://www.linkedin.com/in/yudai-h-911bb01bb/" target="_blank"> <img src="~/static/social-media_assets/bxl-linkedin-square.svg" alt="linkedin"/> Linkedin </a>
           <a class="social__others_link" href="https://github.com/Yudai-creator" target="_blank"> <img src="~/static/social-media_assets/bxl-github.svg" alt="github"/> Github </a>
         </div>
-      </div>
+      </div> -->
       <div class="social__section_divider-bottom">
         <svg
           data-name="Layer 1"
@@ -234,7 +214,7 @@
             </div>
             <div class="portfolio__samples">
               <div class="sample">
-                <div>
+                <div class="sample_description">
                   <h2>Produce O/S</h2>
                   <p>Enterprise Software Platform for the Produce Industry.</p>
                 </div>
@@ -255,7 +235,9 @@
           </div>
         </div>
       </div>
-      <div class="portfolio__projects">
+
+      <!-- portfolio projects code -->
+      <!-- <div class="portfolio__projects">
         <h2 id="projects__water_mark">Dev</h2>
         <h2>My projects</h2>
         <div class="portfolio__projects_wrapper">
@@ -291,7 +273,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Services -->
