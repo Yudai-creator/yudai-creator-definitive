@@ -2,7 +2,7 @@
   <div>
     <!--Hero section-->
     <div class="hero__section">
-      <header>
+      <!-- <header>
         <figure id="hero">
           <img class="logo" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/yudai_UDBphSZy8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108298328" alt="Yudai H brand mark" />
         </figure>
@@ -45,7 +45,7 @@
           src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-right-corner-shadow_UzRWAQnWT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108634210"
           alt="blob shape shadow graphic"
         />
-      </header>
+      </header> -->
 
       <div class="hero__section-headline">
         <h2 ref="designer"><span>Designers</span> visualize solutions.</h2>
@@ -547,7 +547,9 @@ export default {
     //   }
     // }
 
-  }
+  },
+
+  transition: 'home'
 };
 </script>
 
@@ -594,6 +596,11 @@ body {
 // body::-webkit-scrollbar{
 //   display: none;
 // }
+
+
+.home-enter-active, .home-leave-active { transition: opacity .5s; }
+.home-enter, .home-leave-active { opacity: 0; }
+
 
 @media (max-width: 480px) {
 }

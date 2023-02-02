@@ -2,13 +2,13 @@
     <div>
         <ul class="nav_links">
           <li>
-            <a href="#hero">Home</a>
+            <nuxt-link to="/">Home</nuxt-link>
           </li>
           <li>
-            <a href="#about-me">About me</a>
+            <nuxt-link to="/#about-me">About Me</nuxt-link>
           </li>
           <li>
-            <a href="#work">Work</a>
+            <nuxt-link to="/#work">Work</nuxt-link>
           </li>
         </ul>
     </div>
