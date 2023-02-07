@@ -13,7 +13,6 @@
         <HamburgerMenu />
 
         <img
-          @mousemove="move"
           ref="blobRight"
           id="blob-right-corner"
           src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-right-corner_wHCu4gECK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108635820"
@@ -21,7 +20,6 @@
         />
         <svg
           ref="blobStroke"
-          @mousemove="move"
           id="blob-stroke"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 297.655 208.389"
@@ -37,7 +35,6 @@
 
         <img
           ref="blobShadow"
-          @mousemove="move"
           id="blob-right-corner-shadow"
           src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob-shape-right-corner-shadow_UzRWAQnWT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659108634210"
           alt="blob shape shadow graphic"

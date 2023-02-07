@@ -63,7 +63,7 @@
                         position: relative;
                         width: 100%;
                         border-radius: 10px;
-                        box-shadow: 0px 5px 50px rgba(36, 216, 255, 0.5);
+                        // box-shadow: 0px 5px 50px rgba(36, 216, 255, 0.5);
                     }
                 }
 
@@ -107,7 +107,7 @@
                         .sample__img{
                             width: 100%;
                             border-radius: 10px; 
-                            box-shadow: 0px 5px 30px rgba(0, 108, 133, 0.5);
+                            // box-shadow: 0px 5px 30px rgba(0, 108, 133, 0.5);
                             
 
                             @media (max-width: 490px) {
@@ -116,7 +116,7 @@
                         }
 
                         .sample__link{
-                            width: 50%;
+                            width: 65%;
                             @media (max-width: 490px) {
                                 width: 85%;
                             }
