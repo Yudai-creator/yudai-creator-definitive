@@ -6,11 +6,11 @@
       
 
       <div class="hero__section-headline">
-        <h2 ref="designer"><span>Designers</span> visualize solutions.</h2>
-        <h2 ref="developer"><span>Developers</span> turn them into reality.</h2>
-
-        <p ref="both">I do both!</p>
-
+        <div>
+          <h2 id="designer_h" ref="designer"><span id="designer">Designers</span> visualize solutions.</h2>
+          <h2 id="developer_h" ref="developer"><span id="developer">Developers</span> turn them into reality.</h2>
+        </div>
+        <!-- <p ref="both">I do both!</p> -->
         <img
           id="blob-text-shadow"
           src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/blob_shape_text_shadow_OPqNT321U.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1659108632438"
@@ -21,7 +21,7 @@
       </div>
 
       <div class="hero__cta-button">
-        <ButtonPrimary textContent="See my work" />
+        <ButtonPrimary textContent="I do both" />
       </div>
     </div>
 
@@ -48,7 +48,7 @@
         />
       </div>
 
-      <img id="bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles"></img>
+      <img id="about_bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles"></img>
 
       <div ref="aboutText" id="about-me" class="about_text">
         <div>
@@ -373,6 +373,8 @@ import HamburgerMenu from "../components/HamburgerMenu.vue";
 import NavLinks from "../components/NavLinks.vue";
 import Header from "../components/Header.vue";
 
+import SplitType from 'split-type'
+
 import {gsap} from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -446,55 +448,60 @@ export default {
     
     // const breakPoint = window.matchMedia("(min-width: 490px)");
     const {designer, developer, both, twitterInfo, aboutText, profilePicture, waterMark, 
-          contactForm, divider_top, contactSection, blobRight, blobShadow, blobStroke} = this.$refs;
-
-    const about = document.querySelector(".about_text")
-    const profile = document.querySelector(".about_profile-picture")
-
-    about.addEventListener('mouseover', () => {
-      gsap.to(profilePicture, {duration: 1, scale: 1.2})
-    })
-
-    about.addEventListener('mouseout', () => {
-      gsap.to(profilePicture, {scale: 1})
-    })
-
+          contactForm, divider_top, contactSection, blobRight, blobShadow} = this.$refs;
 
     gsap.fromTo(aboutText, {x: -150, opacity: 0}, {scrollTrigger:{
       trigger: aboutText,
-      toggleActions: "restart pause resume none"
-    },duration: .5, x: 0, opacity: 1, ease: "circ.out"})
+      scrub: true,
+      toggleActions: "restart pause reverse pause"
+    },duration: .5, x: 10, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(profilePicture, {x: 150, opacity: 0}, {scrollTrigger:{
       trigger: profilePicture,
-      toggleActions: "restart pause resume none"
-    },duration: .5, x: 0, opacity: 1, ease: "circ.out"})
+      scrub: true,
+      toggleActions: "restart pause reverse pause"
+    },duration: .5, x: 10, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(twitterInfo, {y: 300, opacity: 0}, {scrollTrigger:{
       trigger: divider_top,
-      toggleActions: "restart pause resume none",
-      start: "top bottom"
+      toggleActions: "restart pause reverse pause",
+      start: "top bottom",
+      scrub: true,
     },duration: .5, y: 0, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(contactForm, {y: 300, opacity: 0}, {scrollTrigger:{
       trigger: contactSection,
-      toggleActions: "restart pause resume none",
+      toggleActions: "restart pause reverse pause",
       start: "top bottom"
     },duration: .5, y: 0, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(waterMark, {x: -250, opacity: 0}, {scrollTrigger:{
       trigger: waterMark,
-      toggleActions: "restart pause resume none"
+      toggleActions: "restart pause reverse pause"
     },duration: .5, x: 0, opacity: .1, ease: "circ.out"})
+
+
+
+    //Headline
+
+    const designerHeadline = new SplitType('#designer_h');
+    const developerHeadline = new SplitType('#developer_h')
+
+    gsap.to('.char', {duration: .01, y: 0, stagger: 0.05, delay: 0.2})
 
     gsap.to(designer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
     gsap.to(developer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
 
 
+    //Moving around things
+
     const bubbles = document.querySelector("#bubbles");
+    const bubblesAbout = document.querySelector('#about_bubbles');
 
     const blobRightCorner = document.querySelector("#blob-right-corner");
     const blobLeftCorner = document.querySelector("#blob-left-corner");
+
+    const blobStroke = document.querySelector('#blob-stroke');
 
     bubbles.addEventListener('mousemove', animateBubbles);
     let mouseX = 0;
@@ -506,8 +513,27 @@ export default {
 
       gsap.to(bubbles, {duration: 1, x: mouseX * 0.015, y: mouseY * 0.015});
       gsap.to(blobRightCorner, {duration: 1, x: -mouseX * 0.035, y: -mouseY * 0.035})
-      gsap.to(blobLeftCorner, {duration: 1, x: -mouseX * 0.035, y: -mouseY * 0.035})
+      gsap.to(blobLeftCorner, {duration: 1, x: -mouseX * 0.035, y: -mouseY * 0.095})
     }
+
+    bubblesAbout.addEventListener('mousemove', animateAboutBubbles);
+
+    function animateAboutBubbles(event){
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+
+      gsap.to(bubblesAbout, {duration: 1, x: mouseX * 0.055, y: -mouseY * 0.035});
+    }
+
+    gsap.to(bubblesAbout, {duration: .5, y: 50}, {scrollTrigger:{
+      trigger: bubblesAbout, 
+      toggleActions: "restart pause reverse pause",
+      scrub: 1,
+    }})
+
+    
+
+
   },
 
   methods:{

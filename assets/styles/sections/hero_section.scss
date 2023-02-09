@@ -64,22 +64,10 @@ header {
         top: .1%;
         z-index: -1;
 
-        filter: blur(10px);
+        filter: blur(3px);
         @media (min-width: 1450px){
             width: 1650px;
         }
-    }
-
-    #blue_cross {
-        position: absolute;
-        left: -140px;
-        max-width: 1em;
-    }
-
-    #blue_cross2 {
-        position: absolute;
-        top: 100px;
-        max-width: 1em;
     }
 
     #blob-right-corner-shadow {
@@ -105,7 +93,9 @@ header {
     width: 100%;
 
     margin-top: 4rem;
+
     @include flexCenter(column);
+    
     padding: 2rem;
     @media (max-width: 490px){
         margin-top: 5rem;
@@ -114,13 +104,15 @@ header {
         margin-top: 10rem;
     }
     h2 {
-        margin-bottom: 2rem;
+        
+        margin-bottom: 1rem;
 
         font-family: 'Clash Display', normal;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 4rem;
 
-        clip-path: polygon(22% 100%, 75% 100%, 100% 100%, 0% 100%);
+        // clip-path: polygon(22% 100%, 75% 100%, 100% 100%, 0% 100%);
+
         @media (max-width: 490px) {
             font-size: 1.5rem;
             text-align: center;
@@ -130,6 +122,21 @@ header {
         @media (min-width: 1550px){
             font-size: 3rem;
         }
+
+        #designer{
+            color: #9665FF;
+            font-weight: 600;
+        }
+
+        #developer{
+            color: #0055FF;
+            font-weight: 600;
+        }
+    }
+
+    .char{
+        transform: translateY(100px);
+        transition: transform .3s;
     }
 
     p{
@@ -155,30 +162,7 @@ header {
         position: absolute;
         z-index: -1;
 
-        filter: blur(5px);
-    }
-
-    #blue_cross3 {
-        position: absolute;
-        right: 30px;
-        top: 10%;
-        width: 10%;
-    }
-
-    #blue_cross4 {
-        position: absolute;
-        left: 30px;
-        top: 100%;
-        width: 10%;
-    }
-
-    #dots {
-        position: absolute;
-        max-width: 3em;
-        left: 40px;
-        top: 10px;
-
-        z-index: -1;
+        filter: blur(1px);
     }
 
     #bubbles{
