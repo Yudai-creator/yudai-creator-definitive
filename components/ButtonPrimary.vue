@@ -33,7 +33,7 @@ div{
 
 .cta-button {
     display: flex;
-
+    width: 200px;
     -webkit-appearance: none;
     position: relative;
     padding: 1rem 1.5rem;

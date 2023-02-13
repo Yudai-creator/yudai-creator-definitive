@@ -2,13 +2,15 @@
   <div>
     <!--Hero section-->
     <div class="hero__section">
-
-      
-
       <div class="hero__section-headline">
         <div>
           <h2 id="designer_h" ref="designer"><span id="designer">Designers</span> visualize solutions.</h2>
           <h2 id="developer_h" ref="developer"><span id="developer">Developers</span> turn them into reality.</h2>
+          <hr>
+          <div class="hero__cta-button">
+            <ButtonPrimary textContent="I do both" />
+            <ButtonSecondary textContent="Contact"/>
+          </div>
         </div>
         <!-- <p ref="both">I do both!</p> -->
         <img
@@ -18,10 +20,9 @@
         />
 
         <img id="bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_A69kFhoAu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674752443011" alt="bubbles">
-      </div>
 
-      <div class="hero__cta-button">
-        <ButtonPrimary textContent="I do both" />
+        
+
       </div>
     </div>
 
@@ -107,7 +108,7 @@
             alt="banner"
           />
           <div class="twitter__threads">
-            <h2>Popular threads</h2>
+            <h3>Popular threads</h3>
             <ul>
               <li>
                 <a href="https://twitter.com/creator_yudai/status/1522584230894710785?s=21&t=_FIzG7zjfhIHM7Pgn00yag">CSS series: explaining from the basics to more complex topics of CSS.</a>
@@ -154,7 +155,7 @@
 
     <!-- Portfolio section -->
     <div class="portfolio__section">
-      <h2 ref="waterMark" id="portfolio_water-mark">Designer</h2>
+      <!-- <h2 ref="waterMark" id="portfolio_water-mark">Designer</h2> -->
       <div class="portfolio__latest-work">
         <h2 id="work">My work</h2>
         <div class="portfolio__case_studies_wrapper">
@@ -475,10 +476,7 @@ export default {
       start: "top bottom"
     },duration: .5, y: 0, opacity: 1, ease: "circ.out"})
 
-    gsap.fromTo(waterMark, {x: -250, opacity: 0}, {scrollTrigger:{
-      trigger: waterMark,
-      toggleActions: "restart pause reverse pause"
-    },duration: .5, x: 0, opacity: .1, ease: "circ.out"})
+    
 
 
 
@@ -491,6 +489,17 @@ export default {
 
     gsap.to(designer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
     gsap.to(developer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
+
+    //Portfolio images
+
+    const mainImg = document.querySelector('.main__img');
+
+    gsap.to(mainImg, {duration: 1.5, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", scale: 1, ease: "expo.out"}, {scrollTrigger:{
+        trigger: mainImg,
+        
+        markers: true
+    }})
+    
 
 
     //Moving around things

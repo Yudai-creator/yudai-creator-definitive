@@ -2,87 +2,7 @@
 @import 'assets/mixins';
 
 
-header {
-    font-family: 'Lato', sans-serif;
-    position: relative;
-    width: auto;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    // margin-left: 1.5rem;
-    // margin-right: 1.5rem;
-    // margin-top: 1rem;
-    // margin-bottom: 1rem;
-
-    padding: 2rem 3rem 2rem 3rem;
-
-    .logo {
-        max-width: 4em;
-        cursor: pointer;
-    }
-
-    // .header_hamburger-menu {
-    //     cursor: pointer;
-    //     @media (min-width: 490px){
-    //         display: none;
-    //     }
-    // }
-
-    .hero__contact-button {
-        @media (max-width: 490px) {
-            display: none;
-
-        }
-    }
-
-
-
-    #blob-right-corner {
-        width: 80%;
-
-        // responsive width
-        // max-width: 60em;
-        position: absolute;
-        left: 60%;
-
-        z-index: -1;
-
-        filter: blur(40px);
-
-        @media (min-width: 1450px){
-            width: 1650px;
-        }
-    }
-
-    #blob-stroke {
-        position: absolute;
-        width: 60%;
-        max-width: 40em;
-        left: 55%;
-        top: .1%;
-        z-index: -1;
-
-        filter: blur(3px);
-        @media (min-width: 1450px){
-            width: 1650px;
-        }
-    }
-
-    #blob-right-corner-shadow {
-        width: 80%;
-        position: absolute;
-        left: 50%;
-        overflow: hidden;
-        z-index: -2;
-
-        filter: blur(40px);
-        @media (min-width: 1450px){
-            width: 1650px;
-        }
-    }
-}
 
 .hero__section-headline {
     position: relative;
@@ -104,7 +24,7 @@ header {
         margin-top: 10rem;
     }
     h2 {
-        
+        position: relative;
         margin-bottom: 1rem;
 
         font-family: 'Clash Display', normal;
@@ -115,7 +35,7 @@ header {
 
         @media (max-width: 490px) {
             font-size: 1.5rem;
-            text-align: center;
+            
             font-family: 'Archivo', normal;
             font-weight: bold;
         }
@@ -132,6 +52,19 @@ header {
             color: #0055FF;
             font-weight: 600;
         }
+
+        // #developer_h::after{
+        //     position: absolute;
+        //     content: '';
+        //     top: 100%;
+        //     width: 100px;
+        //     height: 5px;
+        //     background-color: red;
+        // }
+    }
+
+    hr{
+        color: white;
     }
 
     .char{
@@ -168,13 +101,15 @@ header {
     #bubbles{
         max-width: 80%;
         position: absolute;
+        
+        z-index: 0;
+    }
+
+    .hero__cta-button {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 2.5rem;
     }
 }
 
-.hero__cta-button {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-
-    margin-top: 2.5rem;
-}

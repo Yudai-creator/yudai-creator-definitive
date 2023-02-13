@@ -5,10 +5,10 @@
             <nuxt-link to="/">Home</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/#about-me">About Me</nuxt-link>
+            <a href="#about-me">About Me</a>
           </li>
           <li>
-            <nuxt-link to="/#work">Work</nuxt-link>
+            <a href="#work">Work</a>
           </li>
         </ul>
     </div>
@@ -26,14 +26,16 @@ export default  {
 @import 'assets/mixins';
 
 .nav_links {
-        @media (max-width: 490px) {
-            display: none;
-        }
+        z-index: 2;
+        
 
         li {
             list-style: none;
             display: inline;
-            margin-left: 2.5rem;
+            margin-left: 5rem;
+            @media (max-width: 490px) {
+                margin-left: 2rem;
+            }
 
             a {
                 position: relative;
@@ -56,7 +58,7 @@ export default  {
                     width: 0px;
                     height: 2.5px;
 
-                    filter: blur(5px);
+                    
 
                     @include transitionBack;
                 }
