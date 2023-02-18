@@ -6,7 +6,7 @@
         <div>
           <h2 id="designer_h" ref="designer"><span id="designer">Designers</span> visualize solutions.</h2>
           <h2 id="developer_h" ref="developer"><span id="developer">Developers</span> turn them into reality.</h2>
-          <hr>
+          
           <div class="hero__cta-button">
             <ButtonPrimary textContent="I do both" />
             <ButtonSecondary textContent="Contact"/>
@@ -478,26 +478,34 @@ export default {
 
     
 
-
-
     //Headline
 
     const designerHeadline = new SplitType('#designer_h');
     const developerHeadline = new SplitType('#developer_h')
 
-    gsap.to('.char', {duration: .01, y: 0, stagger: 0.05, delay: 0.2})
+    gsap.to('.char', {duration: .01, y: 0, stagger: 0.05})
 
     gsap.to(designer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
-    gsap.to(developer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
+    gsap.to(developer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"}, 1)
+
+    // gsap.fromTo('.hero__cta-button', {opacity: 0, y: 5}, {duration: 1, opacity: 1, y: 0})
+
+
 
     //Portfolio images
 
     const mainImg = document.querySelector('.main__img');
 
-    gsap.to(mainImg, {duration: 1.5, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", scale: 1, ease: "expo.out"}, {scrollTrigger:{
+    gsap.to(mainImg, {duration: 1.5, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",  ease: "expo.out"}, 
+    {scrollTrigger:{
         trigger: mainImg,
-        
-        markers: true
+        toggleActions: "restart pause reverse pause",
+    }})
+
+    gsap.to('.sample__img', {duration: 1.5, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: "expo.out", stagger: 0.05},
+    {scrollTrigger:{
+        trigger: '.sample__img',
+        toggleActions: "restart pause reverse pause",
     }})
     
 
@@ -512,7 +520,7 @@ export default {
 
     const blobStroke = document.querySelector('#blob-stroke');
 
-    bubbles.addEventListener('mousemove', animateBubbles);
+    document.addEventListener('mousemove', animateBubbles);
     let mouseX = 0;
     let mouseY = 0;
 
@@ -525,13 +533,13 @@ export default {
       gsap.to(blobLeftCorner, {duration: 1, x: -mouseX * 0.035, y: -mouseY * 0.095})
     }
 
-    bubblesAbout.addEventListener('mousemove', animateAboutBubbles);
+    document.addEventListener('mousemove', animateAboutBubbles);
 
     function animateAboutBubbles(event){
       mouseX = event.clientX;
       mouseY = event.clientY;
 
-      gsap.to(bubblesAbout, {duration: 1, x: mouseX * 0.055, y: -mouseY * 0.035});
+      gsap.to(bubblesAbout, {duration: 1, x: mouseX * 0.015, y: -mouseY * 0.015});
     }
 
     gsap.to(bubblesAbout, {duration: .5, y: 50}, {scrollTrigger:{

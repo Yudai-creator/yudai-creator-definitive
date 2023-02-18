@@ -21,6 +21,7 @@ export default  {
 
 
 div{
+    z-index: 2;
     // animation: shake 3s ease-out infinite forwards;
     // animation-delay: 5s;
     @include transitionBack;
@@ -32,6 +33,7 @@ div{
 
 
 .cta-button {
+    z-index: 2;
     display: flex;
     width: 200px;
     -webkit-appearance: none;
