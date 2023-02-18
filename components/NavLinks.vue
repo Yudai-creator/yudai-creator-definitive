@@ -2,10 +2,10 @@
     <div>
         <ul class="nav_links">
           <li>
-            <a href="#hero">Home</a>
+            <nuxt-link to="/">Home</nuxt-link>
           </li>
           <li>
-            <a href="#about-me">About me</a>
+            <a href="#about-me">About Me</a>
           </li>
           <li>
             <a href="#work">Work</a>
@@ -26,14 +26,16 @@ export default  {
 @import 'assets/mixins';
 
 .nav_links {
-        @media (max-width: 490px) {
-            display: none;
-        }
+        z-index: 2;
+        
 
         li {
             list-style: none;
             display: inline;
-            margin-left: 2.5rem;
+            margin-left: 5rem;
+            @media (max-width: 490px) {
+                margin-left: 2rem;
+            }
 
             a {
                 position: relative;
@@ -55,6 +57,8 @@ export default  {
                     transform: translate(-50%, -50%);
                     width: 0px;
                     height: 2.5px;
+
+                    
 
                     @include transitionBack;
                 }

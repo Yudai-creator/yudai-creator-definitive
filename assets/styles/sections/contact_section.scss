@@ -2,116 +2,157 @@
 @import 'assets/mixins';
 
 .contact__section{
-    padding: 2rem;
-    margin-top: 10.5rem;
+    padding: 2rem 4rem 4rem 3rem;
+    margin-top: 15.5rem;
     position: relative;
+
+    @media (max-width: 490px) {
+        padding: 2rem 2.5rem 2rem 2.5rem;
+    }
     
     h2{
-        text-align: center;
-        // font-family: 'aironedemo', normal;
-        font-size: 2rem;
+        font-family: 'Clash Display', normal;
+        font-size: 3rem;
+        margin-bottom: 2rem;
         @media (max-width: 490px) {
-            font-size: 1rem;
+            font-size: 2rem;
         }
     }
-    .contact__form{
-        position: relative;
-        width: 100%;
-        @include flexCenter(row);
-        form{
-            position: relative;
+
+    .contact{
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: 490px) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+
+        .contact__info{
             width: 50%;
             margin-top: 2rem;
-            min-width: 250px;
-            max-width: 600px;
-            font-family: 'Univa Nova', normal;
-            .contact__form_control{
-                margin-bottom: 1.8rem;
-                position: relative;
-            }
-            input, textarea{
-                position: relative;
+            @media (max-width: 490px) {
                 width: 100%;
-                padding: .6rem;
-                background-color: #020B1D;
-                border-radius: 1rem;
-                border: 2px solid #00a2ff32;
+                margin-top: 5rem;
+            }
+            p{
+                font-family: 'Clash Display', normal;
+                font-size: 1.8rem;
+                max-width: 30ch;
+            }
 
-                color: $text-color;
+            .contact__dm{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                @media (max-width: 490px) {
+                    margin-top: 3rem;
+                }
+                
+                a{
+                    margin-top: 1rem;
+                }
+                
+                h2{
+                    margin-bottom: 2rem;
+                    font-family: 'Clash Display', normal;
+                }
+            }
+            
+            .contact__social-links{
+                margin-top: .5rem;
 
-                &:focus~label,&:valid~label{
-                    top: -30px;
-                    font-size: .8rem;
+                a{
+                    margin-left: 1.5rem;
+                    img{
+                        @include transitionBack;
+        
+                        &:hover{
+                            transform: translateY(-5px);
+                            filter: drop-shadow(0 3px 5px $cta-color);
+                        }
+                    }
+
+                    &:nth-child(1){
+                        margin-left: 0;
+                    }
                 }
 
-                &:focus{
-                    color: white;
+            }
+        }
+
+        .contact__form{
+            position: relative;
+            width: 50%;
+            // @include flexCenter(row);
+            @media (max-width: 490px) {
+                width: 100%;
+            }
+            form{
+                position: relative;
+                
+                margin-top: 2rem;
+                min-width: 250px;
+                max-width: 600px;
+                .contact__form_control{
+                    margin-bottom: 2.3rem;
+                    position: relative;
+                }
+                input, textarea{
+                    position: relative;
+                    width: 100%;
+                    padding: .8rem;
+                    background-color: #020B1D;
+                    border-radius: 7px;
+                    border: 2px solid #00a2ff32;
+    
+                    color: $text-color;
+    
+                    // &:focus~label,&:valid~label{
+                    //     top: -30px;
+                    //     font-size: .8rem;
+                    // }
+    
+                    // &:focus{
+                    //     color: white;
+                        
+                    // }
+                }
+                .form__submit{
+                    @include transitionBackIn;
+                    -webkit-appearance: none;
+                    width: 100%;
                     
+                    padding: 1rem;
+                    background-color: $cta-color;
+                    
+                    color: $bg-color;
+                    border-radius: 7px;
+                    border: none;
+                    box-shadow: 0 1px 10px #0037a4;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+    
+                    cursor: pointer;
+    
+                    &:hover{
+                        transform: translateY(-5px);
+                        box-shadow: none;
+                        // animation: colored 1s ease-in  infinite alternate forwards;
+                    }
                 }
-            }
-            .form__submit{
-                @include transitionBackIn;
-                -webkit-appearance: none;
-                width: 100%;
-                
-                padding: 1rem;
-                background-color: $cta-color;
-                
-                color: $bg-color;
-                border-radius: 2rem;
-                border: none;
-                box-shadow: 0 1px 10px #001D57, 0 1px 5px #2F1484;
-                font-weight: bold;
-                font-size: 1.2rem;
-
-                cursor: pointer;
-
-                &:hover{
-                    transform: scale(1.1);
-                    animation: colored 1s ease-in  infinite alternate forwards;
+                label{
+                    font-family: 'Clash Display', normal;
+                    position: absolute;
+                    left: 0;
+                    top: -30px;
+                    opacity: .4;
+                    padding: .5rem;
+                    cursor: text;
+                    transition: .2s all ease-in-out;
                 }
-            }
-            label{
-                position: absolute;
-                left: 1%;
-                top: 0;
-                opacity: .4;
-                padding: .5rem;
-                cursor: text;
-                transition: .2s all ease-in-out;
             }
         }
     }
-    
-    .contact__dm{
-        padding: 2rem;
-        margin-top: 5rem;
-        @include flexCenter(column);
-        @media (max-width: 490px) {
-            margin-top: 8rem;
-        }
-        h2{
-            margin-bottom: 2rem;
-            font-family: 'Clash Display', normal;
-        }
-
-        // .email__container{
-        //     display: flex;
-        //     justify-content: center;
-        //     width: 50%;
-        //     max-width: 500px;
-        //     min-width: 250px;
-        //     margin: 0 auto;
-        //     padding: .6rem;
-        //     background-color: #020B1D;
-        //     border-radius: 2rem;
-        //     border: 2px solid #180D4D;
-        // }
-    } 
-}
-
-@keyframes colored {
-    0%{background-color: $cta-color;}
-    50%{background-color: $secondary-light;}
-    100%{background-color: $tertiary-color;}
 }

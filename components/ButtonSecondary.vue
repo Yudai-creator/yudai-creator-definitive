@@ -18,6 +18,7 @@ export default  {
 @import 'assets/mixins';
 
 div{
+    z-index: 2;
     @include transitionBack;
 
     &:hover{
@@ -26,6 +27,7 @@ div{
 }
 
 .secondary-button {
+        z-index: 2;
         padding: 1rem 1.5rem;
         // background-color: $cta-color;
         color: $text-color;

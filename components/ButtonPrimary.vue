@@ -1,14 +1,16 @@
 <template name="ButtonPrimary">
     <div>
-        <a class="cta-button" href="#work">{{textContent}}</a>
+        <a class="cta-button" href="#work">{{textContent}}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m12 15.586-4.293-4.293-1.414 1.414L12 18.414l5.707-5.707-1.414-1.414z" fill="#fff"/><path d="m17.707 7.707-1.414-1.414L12 10.586 7.707 6.293 6.293 7.707 12 13.414z" fill="#fff"/></svg>
+        </a>
     </div>
 </template>
 <script>
+
 // JS
 export default  {
     props:{
         textContent: String,
-
     }
 }
 </script>
@@ -19,6 +21,7 @@ export default  {
 
 
 div{
+    z-index: 2;
     // animation: shake 3s ease-out infinite forwards;
     // animation-delay: 5s;
     @include transitionBack;
@@ -30,6 +33,9 @@ div{
 
 
 .cta-button {
+    z-index: 2;
+    display: flex;
+    width: 200px;
     -webkit-appearance: none;
     position: relative;
     padding: 1rem 1.5rem;
@@ -62,20 +68,20 @@ div{
         box-shadow: 0 2px 10px #000817, 0 1px 5px #07001e;
     }
 
-    &::after{
-        content: '';
-        position: absolute;
-        background: linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 70%),
-                    linear-gradient(127deg, #3933b3, rgba(0,255,0,0) 70%),
-                    linear-gradient(336deg, #170c77, rgba(0,0,255,0) 70%);
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        transform: translateY(-80px);
-        left: 45%;
-        z-index: -1;
-        @include transitionBack;
-    }
+    // &::after{
+    //     content: '';
+    //     position: absolute;
+    //     background: linear-gradient(217deg, $cta-color, rgba(255,0,0,0) 70%),
+    //                 linear-gradient(127deg, #3933b3, rgba(0,255,0,0) 70%),
+    //                 linear-gradient(336deg, #170c77, rgba(0,0,255,0) 70%);
+    //     width: 20px;
+    //     height: 20px;
+    //     border-radius: 50%;
+    //     transform: translateY(-80px);
+    //     left: 45%;
+    //     z-index: -1;
+    //     @include transitionBack;
+    // }
 
     &:hover::after{
         animation: btn_indicator 1s cubic-bezier(0.86,0,0.07,1) forwards alternate;
