@@ -49,12 +49,12 @@
         />
       </div>
 
-      <img id="about_bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles"></img>
+      <img id="about_bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles"/>
 
       <div ref="aboutText" id="about-me" class="about_text">
         <div>
           <p>
-            Hello,  I'm Yudai, a <span>web developer</span> and <span>UI designer</span>.
+            Hello,  I'm Yudai, a <span>Web Developer</span> and <span>UI Designer</span>.
           </p>
 
           <p>

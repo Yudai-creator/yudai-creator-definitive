@@ -26,6 +26,7 @@ export default  {
 @import 'assets/mixins';
 
 .nav_links {
+        font-family: 'Clash Display', normal;
         z-index: 2;
         
 
@@ -39,10 +40,10 @@ export default  {
 
             a {
                 position: relative;
-                
+                font-size: 1.2rem;
                 text-decoration: none;
                 color: #e5e5e5;
-                font-weight: bold;
+                
                 @include transitionBack;
 
                 &:hover{
