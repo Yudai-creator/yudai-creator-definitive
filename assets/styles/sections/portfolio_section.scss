@@ -68,7 +68,7 @@
                     }
 
                     .main__img{
-                        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+                        // clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
                         position: relative;
                         width: 85%;
                         border-radius: 10px;
@@ -116,7 +116,7 @@
                         .sample__img{
                             width: 100%;
                             border-radius: 10px;
-                            clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); 
+                            // clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); 
                             // box-shadow: 0px 5px 30px rgba(0, 108, 133, 0.5);
                             
 

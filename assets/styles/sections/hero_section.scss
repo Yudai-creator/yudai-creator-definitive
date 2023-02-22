@@ -32,7 +32,11 @@
         font-weight: 500;
         font-size: 4rem;
 
-        // clip-path: polygon(22% 100%, 75% 100%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+
+        transform: translateY(50px);
+        transition: transform .3s;
+        opacity: 0;
 
         @media (max-width: 490px) {
             font-size: 1.5rem;
@@ -68,10 +72,10 @@
     //     color: white;
     // }
 
-    .char{
-        transform: translateY(100px);
-        transition: transform .3s;
-    }
+    // .char{
+    //     transform: translateY(100px);
+    //     transition: transform .3s;
+    // }
 
     p{
         font-size: 2rem;
