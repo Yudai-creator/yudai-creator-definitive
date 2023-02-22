@@ -5,10 +5,18 @@
 </template>
 <script>
 // JS
+import {gsap} from "gsap"
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 export default  {
     props:{
         textContent: String,
         link: String
+    },
+
+    mounted(){
+        gsap.to('.secondary-button', {duraion: 1,'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', y: 0, ease: "circ.out"}, .8)
     }
 }
 </script>
@@ -21,12 +29,17 @@ div{
     z-index: 2;
     @include transitionBack;
 
+    // clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+
     &:hover{
         transform: translateY(-5px);
     }
 }
 
 .secondary-button {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        transform: translateY(10px);
+
         z-index: 2;
         padding: 1rem 1.5rem;
         // background-color: $cta-color;

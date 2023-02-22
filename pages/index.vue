@@ -8,8 +8,8 @@
           <h2 id="developer_h" ref="developer"><span id="developer">Developers</span> turn them into reality.</h2>
           
           <div class="hero__cta-button">
-            <ButtonPrimary textContent="I do both" />
-            <ButtonSecondary textContent="Contact"/>
+            <ButtonPrimary ref="primary" textContent="I do both" />
+            <ButtonSecondary ref="secondary" textContent="Contact"/>
           </div>
         </div>
         <!-- <p ref="both">I do both!</p> -->
@@ -49,12 +49,12 @@
         />
       </div>
 
-      <img id="about_bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles"></img>
+      <img id="about_bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_about_dHVZUO1hg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674754037477" alt="bubbles"/>
 
       <div ref="aboutText" id="about-me" class="about_text">
         <div>
           <p>
-            Hello,  I'm Yudai, a <span>web developer</span> and <span>UI designer</span>.
+            Hello,  I'm Yudai, a <span>Web Developer</span> and <span>UI Designer</span>.
           </p>
 
           <p>
@@ -449,19 +449,20 @@ export default {
     
     // const breakPoint = window.matchMedia("(min-width: 490px)");
     const {designer, developer, both, twitterInfo, aboutText, profilePicture, waterMark, 
-          contactForm, divider_top, contactSection, blobRight, blobShadow} = this.$refs;
+          contactForm, divider_top, contactSection, blobRight, blobShadow, primary, secondary} = this.$refs;
 
-    gsap.fromTo(aboutText, {x: -150, opacity: 0}, {scrollTrigger:{
+
+    gsap.fromTo(aboutText, {x: -150, 'clip-path': 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}, {scrollTrigger:{
       trigger: aboutText,
-      scrub: true,
       toggleActions: "restart pause reverse pause"
-    },duration: .5, x: 10, opacity: 1, ease: "circ.out"})
+    },duration: 1, x: 10, 'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', ease: "circ.out"})
+
+
 
     gsap.fromTo(profilePicture, {x: 150, opacity: 0}, {scrollTrigger:{
       trigger: profilePicture,
-      scrub: true,
       toggleActions: "restart pause reverse pause"
-    },duration: .5, x: 10, opacity: 1, ease: "circ.out"})
+    },duration: .75, x: 10, opacity: 1, ease: "circ.out"})
 
     gsap.fromTo(twitterInfo, {y: 300, opacity: 0}, {scrollTrigger:{
       trigger: divider_top,
@@ -470,25 +471,43 @@ export default {
       scrub: true,
     },duration: .5, y: 0, opacity: 1, ease: "circ.out"})
 
-    gsap.fromTo(contactForm, {y: 300, opacity: 0}, {scrollTrigger:{
-      trigger: contactSection,
-      toggleActions: "restart pause reverse pause",
-      start: "top bottom"
-    },duration: .5, y: 0, opacity: 1, ease: "circ.out"})
-
     
 
     //Headline
 
-    const designerHeadline = new SplitType('#designer_h');
-    const developerHeadline = new SplitType('#developer_h')
+    let heroTimeline = new gsap.timeline({
+      defaults:{
+        duration: 1,
+        ease: "circ.out",
+        stagger: 0.05
+      }
+    })
 
-    gsap.to('.char', {duration: .01, y: 0, stagger: 0.05})
+    heroTimeline.to(designer,{'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', y: 0, opacity: 1})
+                .to(developer, {'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', y: 0, opacity: 1}, .4)
 
-    gsap.to(designer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"})
-    gsap.to(developer, {duration: 1, 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: "circ.out"}, 1)
 
-    // gsap.fromTo('.hero__cta-button', {opacity: 0, y: 5}, {duration: 1, opacity: 1, y: 0})
+
+
+    //Contact 
+
+    let contactTimeline = new gsap.timeline({
+      defaults:{
+        duration: 1,
+        ease: "circ.out",
+        stagger: 0.05
+      }
+    })
+
+    gsap.fromTo(contactForm, {x: -150, 'clip-path': 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}, {scrollTrigger:{
+      trigger: contactForm,
+      toggleActions: "restart pause reverse pause"
+    },duration: 1, x: 10, 'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', ease: "circ.out"})
+
+    gsap.fromTo('.contact__info', {x: -150, 'clip-path': 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}, {scrollTrigger:{
+      trigger: '.contact__info',
+      toggleActions: "restart pause reverse pause"
+    },duration: 1, x: 10, 'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', ease: "circ.out"}, 1)
 
 
 
@@ -496,17 +515,21 @@ export default {
 
     const mainImg = document.querySelector('.main__img');
 
-    gsap.to(mainImg, {duration: 1.5, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",  ease: "expo.out"}, 
-    {scrollTrigger:{
-        trigger: mainImg,
-        toggleActions: "restart pause reverse pause",
-    }})
+    gsap.fromTo(mainImg, {x: -150, 'clip-path': 'polygon(0 0, 0 0, 0 100%, 0% 100%)', opacity: 0}, {scrollTrigger:{
+      trigger: mainImg,
+      toggleActions: "restart pause reverse pause"
+    },duration: 1, x: 10, 'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', opacity: 1, ease: "circ.out"})
 
-    gsap.to('.sample__img', {duration: 1.5, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: "expo.out", stagger: 0.05},
-    {scrollTrigger:{
-        trigger: '.sample__img',
-        toggleActions: "restart pause reverse pause",
-    }})
+    gsap.fromTo('.sample__img', {x: 150, 'clip-path': 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}, {scrollTrigger:{
+      trigger: '.sample__img',
+      toggleActions: "restart pause reverse pause"
+    },duration: 1, x: 0, 'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', ease: "circ.out"})
+
+    // gsap.to('.sample__img', {duration: 1.5, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", ease: "expo.out", stagger: 0.05},
+    // {scrollTrigger:{
+    //     trigger: '.sample__img',
+    //     toggleActions: "restart pause reverse pause",
+    // }})
     
 
 

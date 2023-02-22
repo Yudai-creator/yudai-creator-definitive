@@ -21,16 +21,17 @@
     },
 
     methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
+      formatDate(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' }
+        return new Date(date).toLocaleDateString('en', options)
+      }
     }
- }
   
   }
 </script>
   
 <style lang="scss">
+@use "~/assets/variables" as *;
 
   .banner{
     width: 100%;
@@ -44,12 +45,8 @@
   }
 
   .nuxt-content{
-    padding: 2rem 10rem 2rem 10rem;
-    h1 {
-      font-family: 'Clash Display', normal;
-      font-weight: bold;
-      font-size: 4rem;;
-    }
+    padding: 2rem 6rem 2rem 6rem;
+    font-family: 'Clash Display', normal;
 
     img{
       width: 80%;
