@@ -15,8 +15,7 @@
                 </div>
                 <p class="description">{{ caso.description }}</p> 
             </div>
-        </slot>
-        
+        </slot>        
     </div>
 </template>
 
@@ -37,7 +36,7 @@
 @use "~/assets/variables" as *;
 
 .container{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .case_headline{

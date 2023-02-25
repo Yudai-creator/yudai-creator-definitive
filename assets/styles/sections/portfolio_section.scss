@@ -47,6 +47,13 @@
                 .main__link{
                     position: relative;
                     width: 85%;
+                    @include transitionBack;
+
+                    &:hover{
+                        opacity: .5;
+                        cursor: url(/cursor_search.svg), pointer;
+                        @include transitionBack;
+                    }
 
                     p{
                         position: absolute;
@@ -127,8 +134,16 @@
 
                         .sample__link{
                             width: 55%;
+                            @include transitionBack;
+
+                            &:hover{
+                                opacity: .5;
+                                cursor: url(/cursor_search.svg), pointer;
+                                @include transitionBack;
+                            }
                             @media (max-width: 490px) {
                                 width: 85%;
+                                
                             }
                         }
                     }
