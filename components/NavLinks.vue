@@ -46,30 +46,62 @@ export default  {
                 
                 @include transitionBack;
 
-                &:hover{
-                    text-shadow: 0 3px 5px $primary-color;
-                }
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 
-                &::after {
+                &:before, &:after{
                     content: '';
                     position: absolute;
-                    top: 120%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 0px;
-                    height: 2.5px;
-
-                    
+                    border-bottom: 3px solid $cta-color;
+                    border-radius: 1em;
+                    bottom: 0;
 
                     @include transitionBack;
                 }
 
-                &:hover::after {
-                    background-color: $cta-color;
-                    width: 75px;
-                    top: 115%;
-                    border-radius: 5px;
+                &:before{
+                    width: 1em;
+                    transform-origin: left;
                 }
+
+                &:after{
+                    width: 82%;
+                    left: 0;
+                    transform: translateX(125%);
+                }
+
+                &:hover:before{
+                    transform: scaleX(0.3);
+                }
+
+                &:hover:after{
+                    transform: translateX(30%);
+                    border-bottom: 3px solid #9665FF;
+                }
+
+                // &:hover{
+                //     text-shadow: 0 3px 5px $primary-color;
+                // }
+
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     top: 120%;
+                //     left: 50%;
+                //     transform: translate(-50%, -50%);
+                //     width: 0px;
+                //     height: 2.5px;
+
+                    
+
+                //     @include transitionBack;
+                // }
+
+                // &:hover::after {
+                //     background-color: $cta-color;
+                //     width: 75px;
+                //     top: 115%;
+                //     border-radius: 5px;
+                // }
             }
         }
     }
