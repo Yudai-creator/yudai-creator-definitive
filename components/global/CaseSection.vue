@@ -20,6 +20,10 @@
 </template>
 
 <script>
+
+    import {gsap} from "gsap"
+    import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+    gsap.registerPlugin(ScrollTrigger);
    export default {
 
     props:{
@@ -43,6 +47,14 @@
 .section_headline{
     position: relative;
     width: 100%;
+
+    margin-bottom: 2rem;
+
+    h1{
+        @media (max-width: 490px){
+            font-size: 1.5 rem;
+        }
+    }
 }
 
 .section_img_grid{
@@ -61,12 +73,26 @@
         justify-content: space-between;
         align-items: center;
 
-        gap: .5rem;
+        gap: 1rem;
 
         margin-bottom: 1rem;
 
+        @media (max-width: 490px){
+            flex-direction: column;
+        }
+
         img{
-            width: 45%;
+            width: 50%;
+            transition: .5s all cubic-bezier(0.65,0.05,0.36,1);
+
+            &:hover{
+                transform: scale(1.035);
+                box-shadow: 1px 1px 5px rgb(112, 112, 112);
+            }
+
+            @media (max-width: 490px){
+                width: 100%;
+            }
         }
     }
 }

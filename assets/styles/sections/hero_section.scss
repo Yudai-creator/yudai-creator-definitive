@@ -39,9 +39,9 @@
         opacity: 0;
 
         @media (max-width: 490px) {
-            font-size: 1.5rem;
+            font-size: 2rem;
             
-            font-family: 'Archivo', normal;
+            font-family: 'Clash Display', normal;
             font-weight: bold;
         }
         @media (min-width: 1550px){
@@ -57,25 +57,7 @@
             color: #0055FF;
             font-weight: 600;
         }
-
-        // #developer_h::after{
-        //     position: absolute;
-        //     content: '';
-        //     top: 100%;
-        //     width: 100px;
-        //     height: 5px;
-        //     background-color: red;
-        // }
     }
-
-    // hr{
-    //     color: white;
-    // }
-
-    // .char{
-    //     transform: translateY(100px);
-    //     transition: transform .3s;
-    // }
 
     p{
         font-size: 2rem;
@@ -84,16 +66,6 @@
             font-size: 1rem;
         }
     }
-
-    // span {
-    //     color: $cta-color;
-    //     background: linear-gradient(217deg, #2676ff, rgba(255,0,0,0) 70.71%),
-    //                 linear-gradient(120deg, $cta-color, rgba(0,255,0,0) 70.71%),
-    //                 linear-gradient(336deg, #2f25f1, rgba(0,0,255,0) 70.71%);
-
-    //     background-clip: text;
-    //     color: transparent;
-    // }
 
     #blob-text-shadow {
         width: 30%;
