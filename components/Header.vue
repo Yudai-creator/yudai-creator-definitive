@@ -53,8 +53,9 @@ export default {
 <style lang="scss">
 
 header {
-    font-family: 'Lato', sans-serif;
+
     position: relative;
+
     width: auto;
 
     display: flex;

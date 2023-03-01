@@ -46,6 +46,8 @@ div{
 
     z-index: 2;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     -webkit-appearance: none;
     position: relative;

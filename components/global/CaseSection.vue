@@ -43,6 +43,8 @@
 .section_headline{
     position: relative;
     width: 100%;
+
+    margin-bottom: 2rem;
 }
 
 .section_img_grid{
@@ -61,12 +63,12 @@
         justify-content: space-between;
         align-items: center;
 
-        gap: .5rem;
+        gap: 1rem;
 
         margin-bottom: 1rem;
 
         img{
-            width: 45%;
+            width: 50%;
         }
     }
 }

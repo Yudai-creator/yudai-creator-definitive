@@ -21,8 +21,6 @@
 
         <img id="bubbles" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/bubbles_A69kFhoAu.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674752443011" alt="bubbles">
 
-        
-
       </div>
     </div>
 
@@ -264,9 +262,11 @@
       <div class="referals_message">
         <div class="referals_pfp"></div>
         <p id="referal_name">Graham Ritchie</p>
-        <p>I consider Yudai as one of the most talented professionals
-        I have ever met, he’s very passionate about his work and
-        always does everything he can to solve the problem.
+        <p>Yudai is a highly talented UX expert who puts significant thought 
+          into addressing the core problem and giving you what you NEED, not 
+          necessarily what you THINK you need. This attention to addressing 
+          the underlying problem is an invaluable skill that means the results 
+          are beyond expectations and aligned with your goals.
         </p>
       </div>
       <img id="referal_blob" src="https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Graphics/referal_blob_xzZ56yrIo.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1675090868069" alt="blob">
