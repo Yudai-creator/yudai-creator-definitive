@@ -3,6 +3,12 @@
     <article>
       <nuxt-content :document="caseStudy" />
     </article>
+
+    <footer>
+        <div class="footer__author">
+            <p>Made by <span>Yudai H</span> 💙</p>
+        </div>
+    </footer>
   </div>
 </template>
   
@@ -30,6 +36,10 @@
   .nuxt-content{
     padding: 2rem 6rem 2rem 6rem;
     font-family: 'Clash Display', normal;
+
+    @media (max-width: 490px){
+      padding: 2rem 3rem 2rem 3rem;
+    }
 
     img{
       width: 100%;

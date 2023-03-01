@@ -11,7 +11,7 @@ caso:
                     the barrier on receiving crypto payments, making it easy and accessible to everyone. 
 
 section:
-    title: Simple crypto-payments
+    title: Simple, fast and accessible.
     description: Erase una vez en Telepay.
     img1: https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/hero_1___6T8ErSjAo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677603261885
     img2: https://ik.imagekit.io/u33i3sss0/Portfolio_Website/Work_Presentation/fast_6BBUWRNQFR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1677603255505

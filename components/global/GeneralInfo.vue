@@ -7,10 +7,13 @@
             </div>
 
             <div class="case_description">
-                <div>
+                <div class="case_perks">
                     <p>Branding & Identity</p>
+                    <span>*</span>
                     <p>Web Design</p>
+                    <span>*</span>
                     <p>UI/UX</p>
+                    <span>*</span>
                     <p>Development</p>
                 </div>
                 <p class="description">{{ caso.description }}</p> 
@@ -53,8 +56,27 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 490px){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .case_perks{
+        
+        @media (max-width: 490px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+    }
+
     .description{
         width: 45%;
+
+        @media (max-width: 490px){
+            width: 100%;
+        }
     }
 }
 
